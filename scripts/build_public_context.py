@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import argparse, json, re, math
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from pathlib import Path
 from collections import defaultdict
 
@@ -365,6 +365,8 @@ def public_form_three_layer(match, form_row):
     target = parse_date(match.get("matchDate") or match.get("kickoff"))
     def side_items(side):
         rows = form_row.get(side) or []
+        if target:
+            rows = [row for row in rows if parse_date(row.get("date")) and target - timedelta(days=365) <= parse_date(row.get("date")) < target]
         if not rows:
             return {}, {}, {}
         sample = rows[:5]

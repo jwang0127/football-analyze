@@ -1,6 +1,6 @@
 {
   "version": "public-context-v1",
-  "generatedAt": "2026-08-19T11:34:44",
+  "generatedAt": "2026-08-19T11:39:26",
   "matches": {
     "wed001": {
       "ranking": "安养FC 未提供；济州SK 未提供",
@@ -135,12 +135,6 @@
               "evidence": "公开交锋页列出近年安养对济州多次取胜",
               "source": "zucaijia/webjx",
               "analysis": "客队交锋处于被动，分数仅反映历史维度"
-            },
-            "styleMatchup": {
-              "score": 48.6,
-              "evidence": "近五场场均进0.80、失1.00",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           }
         },
@@ -172,18 +166,6 @@
             }
           },
           "away": {
-            "recentForm": {
-              "score": 48.4,
-              "evidence": "公开赛果近5场：WLDDD，场均积分1.20、净胜球-0.20",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "近五场积分与净胜球量化近期状态"
-            },
-            "venueAttribute": {
-              "score": 63.6,
-              "evidence": "近五场中对应客场样本2场，场均积分2.00",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
-            },
             "squadValue": {
               "score": 52.16,
               "evidence": "公开阵容总身价：€8.80m vs €7.90m",
@@ -213,20 +195,7 @@
               "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
             }
           },
-          "away": {
-            "lastResult": {
-              "score": 70,
-              "evidence": "上轮 2014-09-27 W，2-1 对 Gwangju Football Club U18",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "上轮赛果只作短期心理修正"
-            },
-            "scheduleFitness": {
-              "score": 69,
-              "evidence": "最近已赛日 2014-09-27，赛前休息4344天",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
-            }
-          }
+          "away": {}
         }
       },
       "apiFootball": {
@@ -2320,12 +2289,6 @@
               "evidence": "官方赛程字段：Play-offs",
               "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
               "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
-            },
-            "lastResult": {
-              "score": 35,
-              "evidence": "上轮 2024-10-27 L，1-3 对 Harstad",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "上轮赛果只作短期心理修正"
             }
           }
         },
@@ -2339,18 +2302,6 @@
             }
           },
           "away": {
-            "recentForm": {
-              "score": 30,
-              "evidence": "公开赛果近5场：LLLLL，场均积分0.00、净胜球-3.20",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "近五场积分与净胜球量化近期状态"
-            },
-            "venueAttribute": {
-              "score": 32,
-              "evidence": "近五场中对应客场样本2场，场均积分0.00",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
-            },
             "squadValue": {
               "score": 57.63,
               "evidence": "公开阵容总身价：€82.55m vs €56.38m",
@@ -2374,12 +2325,6 @@
               "evidence": "API-Football伤停记录 4 人：H. Evjen、A. Mikkelsen、I. Sjong、J. Gundersen",
               "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
               "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
-            },
-            "styleMatchup": {
-              "score": 35,
-              "evidence": "近五场场均进1.20、失4.40",
-              "source": "https://sportscore.com/developers/",
-              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           }
         }
