@@ -1,0 +1,1032 @@
+{
+  "version": "api-football-enrichment-v1",
+  "date": "20260817",
+  "provider": "API-Football",
+  "matches": {
+    "2040914": {
+      "status": "ok",
+      "fixtureId": 1495762,
+      "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1495762",
+      "league": {
+        "id": 244,
+        "name": "Veikkausliiga",
+        "country": "Finland",
+        "logo": "https://media.api-sports.io/football/leagues/244.png",
+        "flag": "https://media.api-sports.io/flags/fi.svg",
+        "season": 2026,
+        "round": "Regular Season - 20",
+        "standings": true
+      },
+      "round": "Regular Season - 20",
+      "season": 2026,
+      "teams": {
+        "home": {
+          "id": 2082,
+          "name": "Gnistan",
+          "logo": "https://media.api-sports.io/football/teams/2082.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1163,
+          "name": "Ilves",
+          "logo": "https://media.api-sports.io/football/teams/1163.png",
+          "winner": null
+        }
+      },
+      "fixture": {
+        "date": "2026-08-17T15:00:00+00:00",
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        },
+        "venue": {
+          "id": 2698,
+          "name": "Markku.fi Areena",
+          "city": "Helsinki"
+        },
+        "referee": null
+      },
+      "injuries": [],
+      "injuryCount": 0,
+      "injuryApiErrors": [],
+      "marketOdds": {
+        "bookmaker": "10Bet",
+        "home": "2.40",
+        "draw": "3.55",
+        "away": "2.56"
+      },
+      "h2h": [
+        {
+          "date": "2024-04-13",
+          "home": "Ilves",
+          "away": "Gnistan",
+          "homeGoals": 4,
+          "awayGoals": 6,
+          "league": "Veikkausliiga"
+        },
+        {
+          "date": "2025-08-04",
+          "home": "Ilves",
+          "away": "Gnistan",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "league": "Veikkausliiga"
+        },
+        {
+          "date": "2025-03-28",
+          "home": "Ilves",
+          "away": "Gnistan",
+          "homeGoals": 4,
+          "awayGoals": 0,
+          "league": "Friendlies Clubs"
+        },
+        {
+          "date": "2025-09-23",
+          "home": "Ilves",
+          "away": "Gnistan",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "league": "Veikkausliiga"
+        },
+        {
+          "date": "2026-05-23",
+          "home": "Ilves",
+          "away": "Gnistan",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "league": "Veikkausliiga"
+        },
+        {
+          "date": "2026-01-24",
+          "home": "Ilves",
+          "away": "Gnistan",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "league": "Friendlies Clubs"
+        },
+        {
+          "date": "2024-09-01",
+          "home": "Gnistan",
+          "away": "Ilves",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "league": "Veikkausliiga"
+        },
+        {
+          "date": "2025-06-01",
+          "home": "Gnistan",
+          "away": "Ilves",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "league": "Veikkausliiga"
+        },
+        {
+          "date": "2025-05-28",
+          "home": "Gnistan",
+          "away": "Ilves",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "league": "Suomen Cup"
+        },
+        {
+          "date": "2025-10-25",
+          "home": "Gnistan",
+          "away": "Ilves",
+          "homeGoals": 1,
+          "awayGoals": 3,
+          "league": "Veikkausliiga"
+        },
+        {
+          "date": "2026-08-17",
+          "home": "Gnistan",
+          "away": "Ilves",
+          "homeGoals": null,
+          "awayGoals": null,
+          "league": "Veikkausliiga"
+        }
+      ],
+      "sportscoreNext": {
+        "home": {
+          "home": "HJK Helsinki",
+          "away": "Gnistan Helsinki",
+          "time": "2026-08-23T12:00:00+00:00",
+          "competition": "Finnish Veikkausliiga",
+          "source": "https://sportscore.com/developers/"
+        },
+        "away": {
+          "home": "Ilves Tampere",
+          "away": "Vaasa VPS",
+          "time": "2026-08-22T14:00:00+00:00",
+          "competition": "Finnish Veikkausliiga",
+          "source": "https://sportscore.com/developers/"
+        }
+      }
+    },
+    "2040915": {
+      "status": "ok",
+      "fixtureId": 1494246,
+      "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1494246",
+      "league": {
+        "id": 113,
+        "name": "Allsvenskan",
+        "country": "Sweden",
+        "logo": "https://media.api-sports.io/football/leagues/113.png",
+        "flag": "https://media.api-sports.io/flags/se.svg",
+        "season": 2026,
+        "round": "Regular Season - 17",
+        "standings": true
+      },
+      "round": "Regular Season - 17",
+      "season": 2026,
+      "teams": {
+        "home": {
+          "id": 367,
+          "name": "BK Hacken",
+          "logo": "https://media.api-sports.io/football/teams/367.png",
+          "winner": null
+        },
+        "away": {
+          "id": 766,
+          "name": "Halmstad",
+          "logo": "https://media.api-sports.io/football/teams/766.png",
+          "winner": null
+        }
+      },
+      "fixture": {
+        "date": "2026-08-17T17:00:00+00:00",
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        },
+        "venue": {
+          "id": null,
+          "name": "Nordic Wellness Arena",
+          "city": null
+        },
+        "referee": "A. Aganovic"
+      },
+      "injuries": [
+        {
+          "teamId": 367,
+          "team": "BK Hacken",
+          "playerId": 191980,
+          "player": "B. Engdahl",
+          "status": "Missing Fixture",
+          "reason": "Injury",
+          "position": "Defender"
+        },
+        {
+          "teamId": 367,
+          "team": "BK Hacken",
+          "playerId": 496418,
+          "player": "F. Ohman",
+          "status": "Missing Fixture",
+          "reason": "Shoulder Injury",
+          "position": "Defender"
+        }
+      ],
+      "injuryCount": 2,
+      "injuryApiErrors": [],
+      "marketOdds": {
+        "bookmaker": "10Bet",
+        "home": "1.30",
+        "draw": "5.20",
+        "away": "9.00"
+      },
+      "h2h": [
+        {
+          "date": "2017-09-10",
+          "home": "Halmstad",
+          "away": "BK Hacken",
+          "homeGoals": 0,
+          "awayGoals": 3,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2021-04-11",
+          "home": "Halmstad",
+          "away": "BK Hacken",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2023-05-07",
+          "home": "Halmstad",
+          "away": "BK Hacken",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2024-05-15",
+          "home": "Halmstad",
+          "away": "BK Hacken",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2025-07-20",
+          "home": "Halmstad",
+          "away": "BK Hacken",
+          "homeGoals": 0,
+          "awayGoals": 0,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2026-07-19",
+          "home": "Halmstad",
+          "away": "BK Hacken",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2017-05-17",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2021-10-23",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 2,
+          "awayGoals": 3,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2021-06-28",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "league": "Friendlies Clubs"
+        },
+        {
+          "date": "2022-06-16",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "league": "Friendlies Clubs"
+        },
+        {
+          "date": "2023-03-04",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "league": "Svenska Cupen"
+        },
+        {
+          "date": "2023-09-17",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2024-10-27",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2024-06-30",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 4,
+          "awayGoals": 2,
+          "league": "Friendlies Clubs"
+        },
+        {
+          "date": "2025-07-13",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 4,
+          "awayGoals": 1,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2026-08-17",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": null,
+          "awayGoals": null,
+          "league": "Allsvenskan"
+        },
+        {
+          "date": "2026-03-21",
+          "home": "BK Hacken",
+          "away": "Halmstad",
+          "homeGoals": 4,
+          "awayGoals": 0,
+          "league": "Friendlies Clubs"
+        }
+      ],
+      "sportscoreNext": {
+        "home": {
+          "home": "IK Sirius FK",
+          "away": "Hacken",
+          "time": "2026-08-21T17:00:00+00:00",
+          "competition": "Sweden Allsvenskan",
+          "source": "https://sportscore.com/developers/"
+        },
+        "away": {
+          "home": "Orgryte",
+          "away": "Halmstads",
+          "time": "2026-08-22T13:00:00+00:00",
+          "competition": "Sweden Allsvenskan",
+          "source": "https://sportscore.com/developers/"
+        }
+      }
+    },
+    "2040916": {
+      "status": "ok",
+      "fixtureId": 1563094,
+      "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1563094",
+      "league": {
+        "id": 40,
+        "name": "Championship",
+        "country": "England",
+        "logo": "https://media.api-sports.io/football/leagues/40.png",
+        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+        "season": 2026,
+        "round": "Regular Season - 1",
+        "standings": true
+      },
+      "round": "Regular Season - 1",
+      "season": 2026,
+      "teams": {
+        "home": {
+          "id": 43,
+          "name": "Cardiff",
+          "logo": "https://media.api-sports.io/football/teams/43.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1837,
+          "name": "Wrexham",
+          "logo": "https://media.api-sports.io/football/teams/1837.png",
+          "winner": null
+        }
+      },
+      "fixture": {
+        "date": "2026-08-17T19:00:00+00:00",
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        },
+        "venue": {
+          "id": null,
+          "name": "Cardiff City Stadium",
+          "city": "Cardiff"
+        },
+        "referee": "A. Kitchen"
+      },
+      "injuries": [],
+      "injuryCount": 0,
+      "injuryApiErrors": {
+        "exception": "HTTP Error 429: Too Many Requests"
+      },
+      "marketOdds": {},
+      "h2h": [],
+      "sportscoreNext": {
+        "home": {
+          "home": "Cardiff City",
+          "away": "Preston North End",
+          "time": "2026-11-24T19:45:00+00:00",
+          "competition": "English Football League Championship",
+          "source": "https://sportscore.com/developers/"
+        },
+        "away": {
+          "home": "Bristol City",
+          "away": "Wrexham",
+          "time": "2026-11-24T19:45:00+00:00",
+          "competition": "English Football League Championship",
+          "source": "https://sportscore.com/developers/"
+        }
+      }
+    },
+    "2040922": {
+      "status": "ok",
+      "fixtureId": 1570337,
+      "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1570337",
+      "league": {
+        "id": 140,
+        "name": "La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/140.png",
+        "flag": "https://media.api-sports.io/flags/es.svg",
+        "season": 2026,
+        "round": "Regular Season - 1",
+        "standings": true
+      },
+      "round": "Regular Season - 1",
+      "season": 2026,
+      "teams": {
+        "home": {
+          "id": 544,
+          "name": "Deportivo La Coruna",
+          "logo": "https://media.api-sports.io/football/teams/544.png",
+          "winner": null
+        },
+        "away": {
+          "id": 797,
+          "name": "Elche",
+          "logo": "https://media.api-sports.io/football/teams/797.png",
+          "winner": null
+        }
+      },
+      "fixture": {
+        "date": "2026-08-17T19:00:00+00:00",
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        },
+        "venue": {
+          "id": null,
+          "name": "Estadio Municipal de Riazor",
+          "city": null
+        },
+        "referee": null
+      },
+      "injuries": [
+        {
+          "teamId": 544,
+          "team": "Deportivo La Coruna",
+          "playerId": 628615,
+          "player": "N. Carrillo",
+          "status": "Missing Fixture",
+          "reason": "Injury",
+          "position": "Midfielder"
+        },
+        {
+          "teamId": 544,
+          "team": "Deportivo La Coruna",
+          "playerId": 295880,
+          "player": "Y. Hernandez",
+          "status": "Missing Fixture",
+          "reason": "Groin Injury",
+          "position": "Attacker"
+        },
+        {
+          "teamId": 544,
+          "team": "Deportivo La Coruna",
+          "playerId": 162122,
+          "player": "A. Altimira",
+          "status": "Questionable",
+          "reason": "Knee Injury",
+          "position": "Defender"
+        },
+        {
+          "teamId": 544,
+          "team": "Deportivo La Coruna",
+          "playerId": 354754,
+          "player": "J. Asp",
+          "status": "Questionable",
+          "reason": "Injury",
+          "position": "Midfielder"
+        },
+        {
+          "teamId": 797,
+          "team": "Elche",
+          "playerId": 18821,
+          "player": "G. Diangana",
+          "status": "Missing Fixture",
+          "reason": "Knee Injury",
+          "position": "Midfielder"
+        },
+        {
+          "teamId": 797,
+          "team": "Elche",
+          "playerId": 358600,
+          "player": "A. Osorio",
+          "status": "Missing Fixture",
+          "reason": "Muscle Injury",
+          "position": ""
+        },
+        {
+          "teamId": 797,
+          "team": "Elche",
+          "playerId": 284415,
+          "player": "Y. Santiago",
+          "status": "Missing Fixture",
+          "reason": "Knee Injury",
+          "position": "Attacker"
+        },
+        {
+          "teamId": 797,
+          "team": "Elche",
+          "playerId": 439293,
+          "player": "A. Boayar",
+          "status": "Questionable",
+          "reason": "Muscle Injury",
+          "position": "Attacker"
+        }
+      ],
+      "injuryCount": 8,
+      "injuryApiErrors": [],
+      "marketOdds": {
+        "bookmaker": "10Bet",
+        "home": "2.28",
+        "draw": "3.00",
+        "away": "3.35"
+      },
+      "h2h": [
+        {
+          "date": "2018-10-12",
+          "home": "Deportivo La Coruna",
+          "away": "Elche",
+          "homeGoals": 4,
+          "awayGoals": 0,
+          "league": "Segunda División"
+        },
+        {
+          "date": "2014-12-15",
+          "home": "Deportivo La Coruna",
+          "away": "Elche",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "league": "La Liga"
+        },
+        {
+          "date": "2019-11-10",
+          "home": "Deportivo La Coruna",
+          "away": "Elche",
+          "homeGoals": 1,
+          "awayGoals": 3,
+          "league": "Segunda División"
+        },
+        {
+          "date": "2025-06-01",
+          "home": "Deportivo La Coruna",
+          "away": "Elche",
+          "homeGoals": 0,
+          "awayGoals": 4,
+          "league": "Segunda División"
+        },
+        {
+          "date": "2026-08-17",
+          "home": "Deportivo La Coruna",
+          "away": "Elche",
+          "homeGoals": null,
+          "awayGoals": null,
+          "league": "La Liga"
+        },
+        {
+          "date": "2019-06-04",
+          "home": "Elche",
+          "away": "Deportivo La Coruna",
+          "homeGoals": 0,
+          "awayGoals": 0,
+          "league": "Segunda División"
+        },
+        {
+          "date": "2015-04-29",
+          "home": "Elche",
+          "away": "Deportivo La Coruna",
+          "homeGoals": 4,
+          "awayGoals": 0,
+          "league": "La Liga"
+        },
+        {
+          "date": "2020-06-23",
+          "home": "Elche",
+          "away": "Deportivo La Coruna",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "league": "Segunda División"
+        },
+        {
+          "date": "2024-10-13",
+          "home": "Elche",
+          "away": "Deportivo La Coruna",
+          "homeGoals": 0,
+          "awayGoals": 0,
+          "league": "Segunda División"
+        },
+        {
+          "date": "2027-02-14",
+          "home": "Elche",
+          "away": "Deportivo La Coruna",
+          "homeGoals": null,
+          "awayGoals": null,
+          "league": "La Liga"
+        }
+      ],
+      "sportscoreNext": {
+        "home": {
+          "home": "Deportivo La Coruna",
+          "away": "Levante",
+          "time": "2026-10-17T19:00:00+00:00",
+          "competition": "Spanish La Liga",
+          "source": "https://sportscore.com/developers/"
+        },
+        "away": {
+          "home": "Villarreal CF",
+          "away": "Elche CF",
+          "time": "2026-10-17T19:00:00+00:00",
+          "competition": "Spanish La Liga",
+          "source": "https://sportscore.com/developers/"
+        }
+      }
+    },
+    "2040917": {
+      "status": "ok",
+      "fixtureId": 1575459,
+      "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1575459",
+      "league": {
+        "id": 94,
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "logo": "https://media.api-sports.io/football/leagues/94.png",
+        "flag": "https://media.api-sports.io/flags/pt.svg",
+        "season": 2026,
+        "round": "Regular Season - 2",
+        "standings": true
+      },
+      "round": "Regular Season - 2",
+      "season": 2026,
+      "teams": {
+        "home": {
+          "id": 4716,
+          "name": "Casa Pia",
+          "logo": "https://media.api-sports.io/football/teams/4716.png",
+          "winner": null
+        },
+        "away": {
+          "id": 211,
+          "name": "Benfica",
+          "logo": "https://media.api-sports.io/football/teams/211.png",
+          "winner": null
+        }
+      },
+      "fixture": {
+        "date": "2026-08-17T19:15:00+00:00",
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        },
+        "venue": {
+          "id": null,
+          "name": null,
+          "city": "Rio Maior"
+        },
+        "referee": "J. Pinheiro"
+      },
+      "injuries": [],
+      "injuryCount": 0,
+      "injuryApiErrors": [],
+      "marketOdds": {
+        "bookmaker": "10Bet",
+        "home": "14.00",
+        "draw": "5.60",
+        "away": "1.22"
+      },
+      "h2h": [
+        {
+          "date": "2022-08-13",
+          "home": "Casa Pia",
+          "away": "Benfica",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2024-03-17",
+          "home": "Casa Pia",
+          "away": "Benfica",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2025-01-25",
+          "home": "Casa Pia",
+          "away": "Benfica",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2026-04-06",
+          "home": "Casa Pia",
+          "away": "Benfica",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2026-08-17",
+          "home": "Casa Pia",
+          "away": "Benfica",
+          "homeGoals": null,
+          "awayGoals": null,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2023-02-04",
+          "home": "Benfica",
+          "away": "Casa Pia",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2023-10-28",
+          "home": "Benfica",
+          "away": "Casa Pia",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2024-08-17",
+          "home": "Benfica",
+          "away": "Casa Pia",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2025-11-09",
+          "home": "Benfica",
+          "away": "Casa Pia",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "league": "Primeira Liga"
+        },
+        {
+          "date": "2027-01-24",
+          "home": "Benfica",
+          "away": "Casa Pia",
+          "homeGoals": null,
+          "awayGoals": null,
+          "league": "Primeira Liga"
+        }
+      ],
+      "sportscoreNext": {
+        "home": {
+          "home": "Vitoria Guimaraes",
+          "away": "Casa Pia AC",
+          "time": "2026-09-06T15:00:00+00:00",
+          "competition": "Portuguese Primera Liga",
+          "source": "https://sportscore.com/developers/"
+        },
+        "away": {
+          "home": "Benfica",
+          "away": "Gil Vicente",
+          "time": "2026-09-13T15:00:00+00:00",
+          "competition": "Portuguese Primera Liga",
+          "source": "https://sportscore.com/developers/"
+        }
+      }
+    },
+    "2040918": {
+      "status": "ok",
+      "fixtureId": 1492335,
+      "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1492335",
+      "league": {
+        "id": 71,
+        "name": "Serie A",
+        "country": "Brazil",
+        "logo": "https://media.api-sports.io/football/leagues/71.png",
+        "flag": "https://media.api-sports.io/flags/br.svg",
+        "season": 2026,
+        "round": "Regular Season - 23",
+        "standings": true
+      },
+      "round": "Regular Season - 23",
+      "season": 2026,
+      "teams": {
+        "home": {
+          "id": 119,
+          "name": "Internacional",
+          "logo": "https://media.api-sports.io/football/teams/119.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1198,
+          "name": "Remo",
+          "logo": "https://media.api-sports.io/football/teams/1198.png",
+          "winner": null
+        }
+      },
+      "fixture": {
+        "date": "2026-08-17T23:00:00+00:00",
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        },
+        "venue": {
+          "id": null,
+          "name": null,
+          "city": "Porto Alegre"
+        },
+        "referee": "E. Batista"
+      },
+      "injuries": [
+        {
+          "teamId": 119,
+          "team": "Internacional",
+          "playerId": 610495,
+          "player": "B. Arhin",
+          "status": "Missing Fixture",
+          "reason": "Hamstring Injury",
+          "position": "Midfielder"
+        },
+        {
+          "teamId": 119,
+          "team": "Internacional",
+          "playerId": 633284,
+          "player": "Joao Victor",
+          "status": "Missing Fixture",
+          "reason": "Muscle Injury",
+          "position": "Attacker"
+        },
+        {
+          "teamId": 119,
+          "team": "Internacional",
+          "playerId": 305819,
+          "player": "Kayky",
+          "status": "Missing Fixture",
+          "reason": "Ankle Injury",
+          "position": "Attacker"
+        },
+        {
+          "teamId": 119,
+          "team": "Internacional",
+          "playerId": 50077,
+          "player": "S. Rochet",
+          "status": "Missing Fixture",
+          "reason": "Lower Back Injury",
+          "position": "Goalkeeper"
+        },
+        {
+          "teamId": 119,
+          "team": "Internacional",
+          "playerId": 22231,
+          "player": "Thiago Maia",
+          "status": "Missing Fixture",
+          "reason": "Hamstring Injury",
+          "position": "Midfielder"
+        },
+        {
+          "teamId": 119,
+          "team": "Internacional",
+          "playerId": 6519,
+          "player": "R. Villagra",
+          "status": "Missing Fixture",
+          "reason": "Injury",
+          "position": "Midfielder"
+        },
+        {
+          "teamId": 1198,
+          "team": "Remo",
+          "playerId": 268877,
+          "player": "Marcelinho",
+          "status": "Missing Fixture",
+          "reason": "Inactive",
+          "position": "Defender"
+        },
+        {
+          "teamId": 1198,
+          "team": "Remo",
+          "playerId": 22251,
+          "player": "D. Tchamba",
+          "status": "Missing Fixture",
+          "reason": "Injury",
+          "position": "Defender"
+        },
+        {
+          "teamId": 1198,
+          "team": "Remo",
+          "playerId": 70368,
+          "player": "Joao Lucas",
+          "status": "Questionable",
+          "reason": "Knee Injury",
+          "position": "Defender"
+        },
+        {
+          "teamId": 1198,
+          "team": "Remo",
+          "playerId": 80484,
+          "player": "Mayk",
+          "status": "Questionable",
+          "reason": "Injury",
+          "position": "Defender"
+        }
+      ],
+      "injuryCount": 10,
+      "injuryApiErrors": [],
+      "marketOdds": {
+        "bookmaker": "10Bet",
+        "home": "1.52",
+        "draw": "3.95",
+        "away": "6.25"
+      },
+      "h2h": [
+        {
+          "date": "2026-08-17",
+          "home": "Internacional",
+          "away": "Remo",
+          "homeGoals": null,
+          "awayGoals": null,
+          "league": "Serie A"
+        },
+        {
+          "date": "2018-02-21",
+          "home": "Remo",
+          "away": "Internacional",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "league": "Copa Do Brasil"
+        },
+        {
+          "date": "2026-02-25",
+          "home": "Remo",
+          "away": "Internacional",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "league": "Serie A"
+        }
+      ],
+      "sportscoreNext": {
+        "home": {
+          "home": "Internacional - RS",
+          "away": "Atlético Mineiro - MG",
+          "time": "2026-08-22T21:30:00+00:00",
+          "competition": "Brazilian Serie A",
+          "source": "https://sportscore.com/developers/"
+        },
+        "away": {
+          "home": "Fluminense - RJ",
+          "away": "Remo - PA",
+          "time": "2026-08-22T19:00:00+00:00",
+          "competition": "Brazilian Serie A",
+          "source": "https://sportscore.com/developers/"
+        }
+      }
+    }
+  }
+}

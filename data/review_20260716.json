@@ -1,0 +1,24 @@
+{
+  "date": "20260716",
+  "dateBasis": "Sporttery竞彩业务日",
+  "reviewedAt": "2026-07-17T13:10:00+08:00",
+  "byCompetition": {
+    "挪超": [{"match":"瓦勒伦加 vs 奥勒松","result":"6-1","directionHit":true,"lesson":"主胜方向正确但严重低估比分扩张；强主胜且对手追分时必须保留4+球尾部。"}],
+    "欧联资格赛": [
+      {"match":"德里城 vs 索菲亚中央陆军","result":"1-2","directionHit":true,"scoreHit":true,"lesson":"客胜、3球和1-2命中。"},
+      {"match":"费伦茨瓦罗斯 vs 伏伊伏丁那","result":"3-0","directionHit":true,"lesson":"主胜与3球命中，强主队零封扩大路径有效。"},
+      {"match":"日利纳 vs 斯普利特海杜克","result":"2-1","directionHit":false,"lesson":"主队追总比分可赢下90分钟，即使最终仍可能无缘晋级；90分钟与晋级必须分开。"}
+    ],
+    "巴甲": [
+      {"match":"博塔弗戈 vs 桑托斯","result":"2-1","directionHit":true,"scoreHit":true,"lesson":"主胜和2-1命中，总进球主选偏低。"},
+      {"match":"维多利亚 vs 瓦斯科达伽马","result":"1-0","directionHit":true,"scoreHit":true,"lesson":"低比分主胜路径命中。"}
+    ],
+    "美职": [
+      {"match":"蒙特利尔CF vs 多伦多FC","result":"0-0","directionHit":false,"lesson":"德比与复赛不确定性被低估，需提高0-0与平局权重。"},
+      {"match":"芝加哥火焰 vs 温哥华白帽","result":"延期至10月6日","void":true,"lesson":"空气质量导致延期，不计模型命中率。"},
+      {"match":"圣路易斯城 vs 堪萨斯城竞技","result":"3-2","directionHit":true,"lesson":"主胜命中但总进球尾部不足。"},
+      {"match":"西雅图海湾人 vs 波特兰伐木工","result":"0-4","directionHit":false,"lesson":"德比战不能把低赔主胜当单一路径，必须保留客队反击与大比分尾部。"}
+    ]
+  },
+  "forwardRule": "按竞彩业务日复盘；延期场次剔除命中率。强主胜审计4+球尾部，德比与复赛提高0-0/平局及反向大比分保护，欧战第二回合分离90分钟赛果与最终晋级。"
+}

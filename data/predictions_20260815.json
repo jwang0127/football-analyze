@@ -1,0 +1,5868 @@
+{
+  "date": "20260815",
+  "dateBasis": "Sporttery竞彩业务日",
+  "includedBusinessDates": [
+    "2026-08-15"
+  ],
+  "modelVersion": "competition-specific-evidence-chain-20260815-v11-market-movement-public-context",
+  "contextVersion": "public-context-v1",
+  "marketMovementVersion": "opening-latest-snapshot-v1",
+  "competitionModels": {
+    "芬兰超级联赛": {
+      "version": "veikkausliiga-v8-review-0726-auto-0815",
+      "review_sample": 16,
+      "had": 0.36571428571428577,
+      "crs": 0.47285714285714286,
+      "prior": 0.16142857142857142,
+      "prior_probs": [
+        0.3631,
+        0.2794,
+        0.3575
+      ],
+      "goal_shift": -0.14285714285714285,
+      "draw_boost": 1.0685714285714287,
+      "clean_sheet_boost": 1.1714285714285715,
+      "confidence_delta": -3,
+      "lesson": "滚动16场90分钟结果：主/平/客 5/3/8；参数仅小幅收缩。",
+      "review_strength": 0.5714
+    },
+    "荷兰甲级联赛": {
+      "version": "eredivisie-v1-dedicated-0807-auto-0815",
+      "review_sample": 5,
+      "had": 0.38529411764705884,
+      "crs": 0.44411764705882356,
+      "prior": 0.15,
+      "prior_probs": [
+        0.4311,
+        0.2444,
+        0.3244
+      ],
+      "goal_shift": 0.0411764705882353,
+      "draw_boost": 1.0029411764705882,
+      "clean_sheet_boost": 1.0058823529411764,
+      "confidence_delta": -2,
+      "lesson": "滚动5场90分钟结果：主/平/客 1/1/3；参数仅小幅收缩。",
+      "review_strength": 0.2941
+    },
+    "葡萄牙超级联赛": {
+      "version": "primeira-liga-v1-dedicated-0807-auto-0815",
+      "review_sample": 5,
+      "had": 0.3823529411764706,
+      "crs": 0.4411764705882353,
+      "prior": 0.14705882352941177,
+      "prior_probs": [
+        0.4711,
+        0.2844,
+        0.2444
+      ],
+      "goal_shift": -0.0058823529411764705,
+      "draw_boost": 1.0205882352941176,
+      "clean_sheet_boost": 1.0235294117647058,
+      "confidence_delta": -2,
+      "lesson": "滚动5场90分钟结果：主/平/客 2/2/1；参数仅小幅收缩。",
+      "review_strength": 0.2941
+    },
+    "巴西甲级联赛": {
+      "version": "brasileirao-v8-review-0726-auto-0815",
+      "review_sample": 9,
+      "had": 0.3657142857142857,
+      "crs": 0.44571428571428573,
+      "prior": 0.18857142857142856,
+      "prior_probs": [
+        0.4122,
+        0.3551,
+        0.2327
+      ],
+      "goal_shift": -0.03428571428571429,
+      "draw_boost": 1.0942857142857143,
+      "clean_sheet_boost": 1.0171428571428571,
+      "confidence_delta": -3,
+      "lesson": "滚动9场90分钟结果：主/平/客 3/5/1；参数仅小幅收缩。",
+      "review_strength": 0.4286
+    },
+    "美国职业大联盟": {
+      "version": "mls-v6-review-0722-auto-0815",
+      "review_sample": 3,
+      "had": 0.402,
+      "crs": 0.45,
+      "prior": 0.148,
+      "prior_probs": [
+        0.4233,
+        0.2558,
+        0.3209
+      ],
+      "goal_shift": -0.010000000000000002,
+      "draw_boost": 0.996,
+      "clean_sheet_boost": 1.036,
+      "confidence_delta": -1,
+      "lesson": "滚动3场90分钟结果：主/平/客 1/1/1；参数仅小幅收缩。",
+      "review_strength": 0.2
+    }
+  },
+  "competitionReview": {
+    "reviewDate": "20260814",
+    "source": "LiveScore public scoreboard cross-check",
+    "settlementBasis": "90-minute result",
+    "allBoardResults": [
+      {
+        "date": "20260814",
+        "matchId": "2040843",
+        "score": "1-3",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040844",
+        "score": "1-3",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040845",
+        "score": "0-1",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040846",
+        "score": "2-2",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040847",
+        "score": "2-1",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040848",
+        "score": "3-0",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040849",
+        "score": "2-1",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040850",
+        "score": "4-2",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040858",
+        "score": "4-2",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040851",
+        "score": "1-3",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040852",
+        "score": "0-1",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040853",
+        "score": "2-0",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040854",
+        "score": "0-0",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040855",
+        "score": "1-0",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040856",
+        "score": "3-1",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040859",
+        "score": "2-2",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      },
+      {
+        "date": "20260814",
+        "matchId": "2040857",
+        "score": "1-3",
+        "source": "public scoreboard cross-check",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      }
+    ],
+    "results": [
+      {
+        "matchId": "2040843",
+        "matchNumStr": "周五001",
+        "home": "东京绿茵",
+        "away": "柏太阳神",
+        "score": "1-3",
+        "direction": "away",
+        "directionHit": true,
+        "totalGoals": "4",
+        "totalGoalsHit": false,
+        "mainScore": "0-1",
+        "mainHit": false,
+        "poolHit": true,
+        "whyMissed": "比分池覆盖"
+      },
+      {
+        "matchId": "2040844",
+        "matchNumStr": "周五002",
+        "home": "瓦萨",
+        "away": "TPS图尔库",
+        "score": "1-3",
+        "direction": "away",
+        "directionHit": false,
+        "totalGoals": "4",
+        "totalGoalsHit": false,
+        "mainScore": "2-1",
+        "mainHit": false,
+        "poolHit": false,
+        "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+      },
+      {
+        "matchId": "2040845",
+        "matchNumStr": "周五003",
+        "home": "基尔",
+        "away": "圣保利",
+        "score": "0-1",
+        "direction": "away",
+        "directionHit": false,
+        "totalGoals": "1",
+        "totalGoalsHit": false,
+        "mainScore": "2-1",
+        "mainHit": false,
+        "poolHit": false,
+        "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+      },
+      {
+        "matchId": "2040846",
+        "matchNumStr": "周五004",
+        "home": "不伦瑞克",
+        "away": "波鸿",
+        "score": "2-2",
+        "direction": "draw",
+        "directionHit": false,
+        "totalGoals": "4",
+        "totalGoalsHit": false,
+        "mainScore": "2-1",
+        "mainHit": false,
+        "poolHit": true,
+        "whyMissed": "比分池覆盖"
+      },
+      {
+        "matchId": "2040848",
+        "matchNumStr": "周五006",
+        "home": "埃尔夫斯堡",
+        "away": "韦斯特罗斯",
+        "score": "3-0",
+        "direction": "home",
+        "directionHit": true,
+        "totalGoals": "3",
+        "totalGoalsHit": true,
+        "mainScore": "2-1",
+        "mainHit": false,
+        "poolHit": false,
+        "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+      },
+      {
+        "matchId": "2040849",
+        "matchNumStr": "周五007",
+        "home": "罗森博格",
+        "away": "维京",
+        "score": "2-1",
+        "direction": "home",
+        "directionHit": true,
+        "totalGoals": "3",
+        "totalGoalsHit": true,
+        "mainScore": "2-1",
+        "mainHit": true,
+        "poolHit": true,
+        "whyMissed": "比分池覆盖"
+      },
+      {
+        "matchId": "2040851",
+        "matchNumStr": "周五010",
+        "home": "特尔斯达",
+        "away": "鹿特丹斯巴达",
+        "score": "1-3",
+        "direction": "away",
+        "directionHit": false,
+        "totalGoals": "4",
+        "totalGoalsHit": false,
+        "mainScore": "2-1",
+        "mainHit": false,
+        "poolHit": false,
+        "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+      },
+      {
+        "matchId": "2040852",
+        "matchNumStr": "周五011",
+        "home": "瓦尔韦克",
+        "away": "多德勒支",
+        "score": "0-1",
+        "direction": "away",
+        "directionHit": false,
+        "totalGoals": "1",
+        "totalGoalsHit": false,
+        "mainScore": "2-1",
+        "mainHit": false,
+        "poolHit": false,
+        "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+      },
+      {
+        "matchId": "2040853",
+        "matchNumStr": "周五012",
+        "home": "赫拉克勒斯",
+        "away": "登博思",
+        "score": "2-0",
+        "direction": "home",
+        "directionHit": true,
+        "totalGoals": "2",
+        "totalGoalsHit": false,
+        "mainScore": "2-1",
+        "mainHit": false,
+        "poolHit": false,
+        "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+      },
+      {
+        "matchId": "2040857",
+        "matchNumStr": "周五017",
+        "home": "里斯本竞技",
+        "away": "吉马良斯",
+        "score": "1-3",
+        "direction": "away",
+        "directionHit": false,
+        "totalGoals": "4",
+        "totalGoalsHit": false,
+        "mainScore": "2-0",
+        "mainHit": false,
+        "poolHit": false,
+        "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+      }
+    ],
+    "reviews": [
+      {
+        "league": "德国乙级联赛",
+        "results": [
+          {
+            "matchId": "2040845",
+            "matchNumStr": "周五003",
+            "home": "基尔",
+            "away": "圣保利",
+            "score": "0-1",
+            "direction": "away",
+            "directionHit": false,
+            "totalGoals": "1",
+            "totalGoalsHit": false,
+            "mainScore": "2-1",
+            "mainHit": false,
+            "poolHit": false,
+            "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+          },
+          {
+            "matchId": "2040846",
+            "matchNumStr": "周五004",
+            "home": "不伦瑞克",
+            "away": "波鸿",
+            "score": "2-2",
+            "direction": "draw",
+            "directionHit": false,
+            "totalGoals": "4",
+            "totalGoalsHit": false,
+            "mainScore": "2-1",
+            "mainHit": false,
+            "poolHit": true,
+            "whyMissed": "比分池覆盖"
+          }
+        ],
+        "summary": "方向 0/2；总进球 0/2；主比分 0/2；比分池 1/2",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      },
+      {
+        "league": "挪威超级联赛",
+        "results": [
+          {
+            "matchId": "2040849",
+            "matchNumStr": "周五007",
+            "home": "罗森博格",
+            "away": "维京",
+            "score": "2-1",
+            "direction": "home",
+            "directionHit": true,
+            "totalGoals": "3",
+            "totalGoalsHit": true,
+            "mainScore": "2-1",
+            "mainHit": true,
+            "poolHit": true,
+            "whyMissed": "比分池覆盖"
+          }
+        ],
+        "summary": "方向 1/1；总进球 1/1；主比分 1/1；比分池 1/1",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      },
+      {
+        "league": "日本职业联赛",
+        "results": [
+          {
+            "matchId": "2040843",
+            "matchNumStr": "周五001",
+            "home": "东京绿茵",
+            "away": "柏太阳神",
+            "score": "1-3",
+            "direction": "away",
+            "directionHit": true,
+            "totalGoals": "4",
+            "totalGoalsHit": false,
+            "mainScore": "0-1",
+            "mainHit": false,
+            "poolHit": true,
+            "whyMissed": "比分池覆盖"
+          }
+        ],
+        "summary": "方向 1/1；总进球 0/1；主比分 0/1；比分池 1/1",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      },
+      {
+        "league": "瑞典超级联赛",
+        "results": [
+          {
+            "matchId": "2040848",
+            "matchNumStr": "周五006",
+            "home": "埃尔夫斯堡",
+            "away": "韦斯特罗斯",
+            "score": "3-0",
+            "direction": "home",
+            "directionHit": true,
+            "totalGoals": "3",
+            "totalGoalsHit": true,
+            "mainScore": "2-1",
+            "mainHit": false,
+            "poolHit": false,
+            "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+          }
+        ],
+        "summary": "方向 1/1；总进球 1/1；主比分 0/1；比分池 0/1",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      },
+      {
+        "league": "芬兰超级联赛",
+        "results": [
+          {
+            "matchId": "2040844",
+            "matchNumStr": "周五002",
+            "home": "瓦萨",
+            "away": "TPS图尔库",
+            "score": "1-3",
+            "direction": "away",
+            "directionHit": false,
+            "totalGoals": "4",
+            "totalGoalsHit": false,
+            "mainScore": "2-1",
+            "mainHit": false,
+            "poolHit": false,
+            "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+          }
+        ],
+        "summary": "方向 0/1；总进球 0/1；主比分 0/1；比分池 0/1",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      },
+      {
+        "league": "荷兰乙级联赛",
+        "results": [
+          {
+            "matchId": "2040852",
+            "matchNumStr": "周五011",
+            "home": "瓦尔韦克",
+            "away": "多德勒支",
+            "score": "0-1",
+            "direction": "away",
+            "directionHit": false,
+            "totalGoals": "1",
+            "totalGoalsHit": false,
+            "mainScore": "2-1",
+            "mainHit": false,
+            "poolHit": false,
+            "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+          },
+          {
+            "matchId": "2040853",
+            "matchNumStr": "周五012",
+            "home": "赫拉克勒斯",
+            "away": "登博思",
+            "score": "2-0",
+            "direction": "home",
+            "directionHit": true,
+            "totalGoals": "2",
+            "totalGoalsHit": false,
+            "mainScore": "2-1",
+            "mainHit": false,
+            "poolHit": false,
+            "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+          }
+        ],
+        "summary": "方向 1/2；总进球 0/2；主比分 0/2；比分池 0/2",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      },
+      {
+        "league": "荷兰甲级联赛",
+        "results": [
+          {
+            "matchId": "2040851",
+            "matchNumStr": "周五010",
+            "home": "特尔斯达",
+            "away": "鹿特丹斯巴达",
+            "score": "1-3",
+            "direction": "away",
+            "directionHit": false,
+            "totalGoals": "4",
+            "totalGoalsHit": false,
+            "mainScore": "2-1",
+            "mainHit": false,
+            "poolHit": false,
+            "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+          }
+        ],
+        "summary": "方向 0/1；总进球 0/1；主比分 0/1；比分池 0/1",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      },
+      {
+        "league": "葡萄牙超级联赛",
+        "results": [
+          {
+            "matchId": "2040857",
+            "matchNumStr": "周五017",
+            "home": "里斯本竞技",
+            "away": "吉马良斯",
+            "score": "1-3",
+            "direction": "away",
+            "directionHit": false,
+            "totalGoals": "4",
+            "totalGoalsHit": false,
+            "mainScore": "2-0",
+            "mainHit": false,
+            "poolHit": false,
+            "whyMissed": "爆冷/大球或低比分尾部未进入主线"
+          }
+        ],
+        "summary": "方向 0/1；总进球 0/1；主比分 0/1；比分池 0/1",
+        "modelAdjustment": "低置信场次不再重复堆入串关；总进球主线必须保留2球/3球保护，爆冷只作独立尾部，不与多个高波动腿叠加。"
+      }
+    ],
+    "summary": "看板覆盖 10/17 场；方向 4/10；总进球 2/10；主比分 1/10；比分池 3/10。",
+    "parlayFailure": "昨日串关反复使用芬超/荷甲/瑞超等低置信总进球和半全场腿，且多腿共享同一市场偏差；证据门禁已标记blocked但未阻止展示，导致正常大球与爆冷路径同时失效。修正为按独立证据筛选，最多保留一条爆冷腿，混合串不把高赔率当作信心。",
+    "modelAdjustment": "滚动校准采用保守收缩；扩大强队小胜与2-2/1-1保护，保留大球尾部但不追随单日大球；组合选择增加evidenceGate与最低概率约束。",
+    "sources": [
+      {
+        "name": "LiveScore 2026-08-14 results",
+        "url": "https://www.livescore.mobi/football/2026-08-14/?tz=2"
+      }
+    ],
+    "generatedAt": "2026-08-15T12:07:01"
+  },
+  "generatedAt": "2026-08-15T23:41:59",
+  "oddsUpdatedAt": "2026-08-15 22:54:36",
+  "matches": [
+    {
+      "id": "2040874",
+      "matchNumStr": "周六014",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 00:00:00",
+      "league": "芬兰超级联赛",
+      "leagueStyle": {
+        "class": "fin",
+        "color": "#16766c",
+        "label": "芬超"
+      },
+      "home": "玛丽港",
+      "away": "塞伊奈约基",
+      "homeRank": "[芬超12]",
+      "awayRank": "[芬超10]",
+      "probabilities": {
+        "home": 0.2654,
+        "draw": 0.2826,
+        "away": 0.452
+      },
+      "direction": "away",
+      "directionText": "客胜",
+      "mainScore": "1-2",
+      "backupScores": [
+        "1-3",
+        "0-1"
+      ],
+      "tailRiskScores": [
+        "2-2",
+        "1-4",
+        "0-0",
+        "3-0"
+      ],
+      "totalGoals": "3",
+      "goalCandidates": [
+        "3",
+        "4",
+        "2"
+      ],
+      "confidenceScore": 62,
+      "confidence": "中",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为客胜。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "5.00",
+          "draw": "4.35",
+          "away": "1.43",
+          "updatedAt": "2026-08-15 21:30:46"
+        },
+        "ttg": {
+          "s0": "25.00",
+          "s1": "7.80",
+          "s2": "4.70",
+          "s3": "3.55",
+          "s4": "4.40",
+          "s5": "6.50",
+          "s6": "11.25",
+          "s7": "14.00",
+          "updatedAt": "2026-08-15 22:07:31"
+        },
+        "hhad": {
+          "home": "2.35",
+          "draw": "3.85",
+          "away": "2.25",
+          "handicap": null,
+          "updatedAt": "2026-08-15 21:30:52"
+        },
+        "crs": {
+          "0-0": "25.00",
+          "0-1": "11.00",
+          "0-2": "9.75",
+          "0-3": "13.00",
+          "0-4": "23.00",
+          "0-5": "45.00",
+          "1-0": "21.00",
+          "1-1": "9.50",
+          "1-2": "7.50",
+          "1-3": "10.00",
+          "1-4": "20.00",
+          "1-5": "35.00",
+          "2-0": "33.00",
+          "2-1": "14.00",
+          "2-2": "12.00",
+          "2-3": "16.00",
+          "2-4": "31.00",
+          "2-5": "60.00",
+          "3-0": "70.00",
+          "3-1": "35.00",
+          "3-2": "30.00",
+          "3-3": "40.00",
+          "4-0": "300.0",
+          "4-1": "100.0",
+          "4-2": "90.00",
+          "5-0": "700.0",
+          "5-1": "300.0",
+          "5-2": "300.0",
+          "homeOther": "80.00",
+          "drawOther": "175.0",
+          "awayOther": "20.00",
+          "updatedAt": "2026-08-15 22:07:44"
+        },
+        "hafu": {
+          "aa": "2.15",
+          "ad": "17.00",
+          "ah": "35.00",
+          "da": "4.90",
+          "dd": "8.10",
+          "dh": "11.00",
+          "ha": "19.00",
+          "hd": "17.00",
+          "hh": "8.25",
+          "updatedAt": "2026-08-15 21:32:03"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.0063,
+        "1": 0.0611,
+        "2": 0.1999,
+        "3": 0.3408,
+        "4": 0.2524,
+        "5": 0.1066,
+        "6": 0.0263,
+        "7+": 0.0065
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0299,
+        "0-1": 0.0722,
+        "0-2": 0.0818,
+        "0-3": 0.06,
+        "0-4": 0.0325,
+        "0-5": 0.0152,
+        "1-0": 0.0365,
+        "1-1": 0.0853,
+        "1-2": 0.1061,
+        "1-3": 0.0778,
+        "1-4": 0.0383,
+        "1-5": 0.0195,
+        "2-0": 0.022,
+        "2-1": 0.0543,
+        "2-2": 0.0634,
+        "2-3": 0.0465,
+        "2-4": 0.0235,
+        "2-5": 0.011,
+        "3-0": 0.0094,
+        "3-1": 0.0204,
+        "3-2": 0.0237,
+        "3-3": 0.0174,
+        "4-0": 0.0022,
+        "4-1": 0.0063,
+        "4-2": 0.0071,
+        "5-0": 0.0007,
+        "5-1": 0.0018,
+        "5-2": 0.0018
+      },
+      "halfFullProbabilities": {
+        "hh": 0.103,
+        "hd": 0.0446,
+        "ha": 0.0374,
+        "dh": 0.0691,
+        "dd": 0.1005,
+        "da": 0.1713,
+        "ah": 0.0177,
+        "ad": 0.0446,
+        "aa": 0.412
+      },
+      "scorelineFit": {
+        "lambdaHome": 1.206,
+        "lambdaAway": 2.241,
+        "rho": 0.005,
+        "klDivergence": 0.003
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.202,
+        "draw": 0.2157,
+        "away": 0.5823
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3113,
+        "draw": 0.3311,
+        "away": 0.3576
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": false,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.7356,
+        "tempoProxy": 0.7327,
+        "defensiveHoleProxy": 0.6004,
+        "viable": true,
+        "status": "big-goal conditions all supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "away",
+        "underdog": "home",
+        "scoringMass": 0.6676,
+        "twoGoalMass": 0.3075,
+        "viable": true,
+        "bigViable": true
+      },
+      "goalPrediction": {
+        "pick": "3",
+        "probability": 0.3408,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "1-2",
+        "probability": 0.1061,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "5.00",
+            "draw": "4.35",
+            "away": "1.43",
+            "updatedAt": "2026-08-15 21:30:46"
+          },
+          "ttg": {
+            "s0": "25.00",
+            "s1": "7.80",
+            "s2": "4.70",
+            "s3": "3.55",
+            "s4": "4.40",
+            "s5": "6.50",
+            "s6": "11.25",
+            "s7": "14.00",
+            "updatedAt": "2026-08-15 22:07:31"
+          },
+          "hhad": {
+            "home": "2.35",
+            "draw": "3.85",
+            "away": "2.25",
+            "handicap": null,
+            "updatedAt": "2026-08-15 21:30:52"
+          },
+          "crs": {
+            "0-0": "25.00",
+            "0-1": "11.00",
+            "0-2": "9.75",
+            "0-3": "13.00",
+            "0-4": "23.00",
+            "0-5": "45.00",
+            "1-0": "21.00",
+            "1-1": "9.50",
+            "1-2": "7.50",
+            "1-3": "10.00",
+            "1-4": "20.00",
+            "1-5": "35.00",
+            "2-0": "33.00",
+            "2-1": "14.00",
+            "2-2": "12.00",
+            "2-3": "16.00",
+            "2-4": "31.00",
+            "2-5": "60.00",
+            "3-0": "70.00",
+            "3-1": "35.00",
+            "3-2": "30.00",
+            "3-3": "40.00",
+            "4-0": "300.0",
+            "4-1": "100.0",
+            "4-2": "90.00",
+            "5-0": "700.0",
+            "5-1": "300.0",
+            "5-2": "300.0",
+            "homeOther": "80.00",
+            "drawOther": "175.0",
+            "awayOther": "20.00",
+            "updatedAt": "2026-08-15 22:07:44"
+          },
+          "hafu": {
+            "aa": "2.15",
+            "ad": "17.00",
+            "ah": "35.00",
+            "da": "4.90",
+            "dd": "8.10",
+            "dh": "11.00",
+            "ha": "19.00",
+            "hd": "17.00",
+            "hh": "8.25",
+            "updatedAt": "2026-08-15 21:32:03"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "5.00",
+            "draw": "4.35",
+            "away": "1.43",
+            "updatedAt": "2026-08-15 21:30:46"
+          },
+          "ttg": {
+            "s0": "25.00",
+            "s1": "7.80",
+            "s2": "4.70",
+            "s3": "3.55",
+            "s4": "4.40",
+            "s5": "6.50",
+            "s6": "11.25",
+            "s7": "14.00",
+            "updatedAt": "2026-08-15 22:07:31"
+          },
+          "hhad": {
+            "home": "2.35",
+            "draw": "3.85",
+            "away": "2.25",
+            "handicap": null,
+            "updatedAt": "2026-08-15 21:30:52"
+          },
+          "crs": {
+            "0-0": "25.00",
+            "0-1": "11.00",
+            "0-2": "9.75",
+            "0-3": "13.00",
+            "0-4": "23.00",
+            "0-5": "45.00",
+            "1-0": "21.00",
+            "1-1": "9.50",
+            "1-2": "7.50",
+            "1-3": "10.00",
+            "1-4": "20.00",
+            "1-5": "35.00",
+            "2-0": "33.00",
+            "2-1": "14.00",
+            "2-2": "12.00",
+            "2-3": "16.00",
+            "2-4": "31.00",
+            "2-5": "60.00",
+            "3-0": "70.00",
+            "3-1": "35.00",
+            "3-2": "30.00",
+            "3-3": "40.00",
+            "4-0": "300.0",
+            "4-1": "100.0",
+            "4-2": "90.00",
+            "5-0": "700.0",
+            "5-1": "300.0",
+            "5-2": "300.0",
+            "homeOther": "80.00",
+            "drawOther": "175.0",
+            "awayOther": "20.00",
+            "updatedAt": "2026-08-15 22:07:44"
+          },
+          "hafu": {
+            "aa": "2.15",
+            "ad": "17.00",
+            "ah": "35.00",
+            "da": "4.90",
+            "dd": "8.10",
+            "dh": "11.00",
+            "ha": "19.00",
+            "hd": "17.00",
+            "hh": "8.25",
+            "updatedAt": "2026-08-15 21:32:03"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "veikkausliiga-v8-review-0726-auto-0815",
+        "had": 0.36571428571428577,
+        "crs": 0.47285714285714286,
+        "prior": 0.16142857142857142,
+        "goal_shift": -0.14285714285714285,
+        "review_sample": 16,
+        "review_strength": 0.5714,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动16场90分钟结果：主/平/客 5/3/8；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table",
+        "recent_performance"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持客队的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定客队，主比分1-2，备选1-3/0-1；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近1场 D；客队近2场 WL",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "玛丽港 [芬超12]；塞伊奈约基 [芬超10]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "玛丽港 [芬超12]；塞伊奈约基 [芬超10]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：玛丽港 [芬超12]；塞伊奈约基 [芬超10]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "玛丽港 [芬超12]；塞伊奈约基 [芬超10]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近1场 D；客队近2场 WL",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "玛丽港 [芬超12]；塞伊奈约基 [芬超10]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "aa",
+      "halfFullText": "负/负",
+      "halfFullOdds": 2.15,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "客胜",
+          "odds": 1.43,
+          "modelProbability": 0.452,
+          "expectedValue": -0.3536
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.55,
+          "modelProbability": 0.3408,
+          "expectedValue": 0.2098
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "1-2",
+          "odds": 7.5,
+          "modelProbability": 0.1061,
+          "expectedValue": -0.2043
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 2.15,
+          "modelProbability": 0.4,
+          "expectedValue": -0.14
+        }
+      ],
+      "integratedAnalysis": "结论：客胜，总进球重点3球，比分关注1-2 / 1-3 / 0-1，半全场为负/负（2.15）；已核验ranking_table、recent_performance，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    },
+    {
+      "id": "2040877",
+      "matchNumStr": "周六017",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 00:45:00",
+      "league": "荷兰甲级联赛",
+      "leagueStyle": {
+        "class": "ned",
+        "color": "#d46d1d",
+        "label": "荷甲"
+      },
+      "home": "乌德勒支",
+      "away": "阿尔克马尔",
+      "homeRank": "[荷甲13]",
+      "awayRank": "[荷甲3]",
+      "probabilities": {
+        "home": 0.3277,
+        "draw": 0.3111,
+        "away": 0.3612
+      },
+      "direction": "away",
+      "directionText": "客胜",
+      "mainScore": "1-2",
+      "backupScores": [
+        "2-2",
+        "0-1"
+      ],
+      "tailRiskScores": [
+        "1-3",
+        "0-3",
+        "0-0",
+        "3-0",
+        "1-4"
+      ],
+      "totalGoals": "3",
+      "goalCandidates": [
+        "3",
+        "2",
+        "4"
+      ],
+      "confidenceScore": 43,
+      "confidence": "中低",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为客胜。市场与基本面存在分歧，降低信任度。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "2.58",
+          "draw": "3.53",
+          "away": "2.18",
+          "updatedAt": "2026-08-15 14:18:31"
+        },
+        "ttg": {
+          "s0": "17.00",
+          "s1": "6.45",
+          "s2": "3.85",
+          "s3": "3.50",
+          "s4": "4.80",
+          "s5": "8.20",
+          "s6": "15.00",
+          "s7": "21.00",
+          "updatedAt": "2026-08-15 22:14:39"
+        },
+        "hhad": {
+          "home": "1.51",
+          "draw": "4.00",
+          "away": "4.60",
+          "handicap": null,
+          "updatedAt": "2026-08-14 09:47:39"
+        },
+        "crs": {
+          "0-0": "17.00",
+          "0-1": "10.50",
+          "0-2": "13.00",
+          "0-3": "22.00",
+          "0-4": "50.00",
+          "0-5": "200.0",
+          "1-0": "12.50",
+          "1-1": "7.00",
+          "1-2": "8.00",
+          "1-3": "16.00",
+          "1-4": "38.00",
+          "1-5": "120.0",
+          "2-0": "16.50",
+          "2-1": "8.80",
+          "2-2": "11.00",
+          "2-3": "21.00",
+          "2-4": "50.00",
+          "2-5": "175.0",
+          "3-0": "30.00",
+          "3-1": "20.00",
+          "3-2": "22.00",
+          "3-3": "40.00",
+          "4-0": "80.00",
+          "4-1": "55.00",
+          "4-2": "65.00",
+          "5-0": "350.0",
+          "5-1": "200.0",
+          "5-2": "250.0",
+          "homeOther": "60.00",
+          "drawOther": "200.0",
+          "awayOther": "50.00",
+          "updatedAt": "2026-08-14 09:47:41"
+        },
+        "hafu": {
+          "aa": "3.70",
+          "ad": "14.00",
+          "ah": "27.00",
+          "da": "5.70",
+          "dd": "6.00",
+          "dh": "6.60",
+          "ha": "23.00",
+          "hd": "14.00",
+          "hh": "4.60",
+          "updatedAt": "2026-08-14 09:47:40"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.0116,
+        "1": 0.0851,
+        "2": 0.2572,
+        "3": 0.3426,
+        "4": 0.2123,
+        "5": 0.0725,
+        "6": 0.0155,
+        "7+": 0.0031
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0458,
+        "0-1": 0.075,
+        "0-2": 0.0601,
+        "0-3": 0.0331,
+        "0-4": 0.0134,
+        "0-5": 0.0033,
+        "1-0": 0.0633,
+        "1-1": 0.1159,
+        "1-2": 0.0975,
+        "1-3": 0.0473,
+        "1-4": 0.0184,
+        "1-5": 0.0054,
+        "2-0": 0.0466,
+        "2-1": 0.0875,
+        "2-2": 0.0689,
+        "2-3": 0.0346,
+        "2-4": 0.0135,
+        "2-5": 0.0037,
+        "3-0": 0.0235,
+        "3-1": 0.0371,
+        "3-2": 0.0323,
+        "3-3": 0.0168,
+        "4-0": 0.0081,
+        "4-1": 0.0125,
+        "4-2": 0.0103,
+        "5-0": 0.0018,
+        "5-1": 0.0032,
+        "5-2": 0.0025
+      },
+      "halfFullProbabilities": {
+        "hh": 0.1935,
+        "hd": 0.054,
+        "ha": 0.0296,
+        "dh": 0.1208,
+        "dd": 0.1359,
+        "da": 0.1424,
+        "ah": 0.0251,
+        "ad": 0.054,
+        "aa": 0.2447
+      },
+      "scorelineFit": {
+        "lambdaHome": 1.434,
+        "lambdaAway": 1.61,
+        "rho": -0.018,
+        "klDivergence": 0.0045
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.3504,
+        "draw": 0.2834,
+        "away": 0.3662
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3113,
+        "draw": 0.3311,
+        "away": 0.3576
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": true,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.6784,
+        "tempoProxy": 0.6461,
+        "defensiveHoleProxy": 0.6097,
+        "viable": true,
+        "status": "big-goal conditions all supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "away",
+        "underdog": "home",
+        "scoringMass": 0.7484,
+        "twoGoalMass": 0.4016,
+        "viable": true,
+        "bigViable": true
+      },
+      "goalPrediction": {
+        "pick": "3",
+        "probability": 0.3426,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "1-2",
+        "probability": 0.0975,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "2.58",
+            "draw": "3.53",
+            "away": "2.18",
+            "updatedAt": "2026-08-15 14:18:31"
+          },
+          "ttg": {
+            "s0": "17.00",
+            "s1": "6.45",
+            "s2": "3.85",
+            "s3": "3.50",
+            "s4": "4.80",
+            "s5": "8.20",
+            "s6": "15.00",
+            "s7": "21.00",
+            "updatedAt": "2026-08-15 22:14:39"
+          },
+          "hhad": {
+            "home": "1.51",
+            "draw": "4.00",
+            "away": "4.60",
+            "handicap": null,
+            "updatedAt": "2026-08-14 09:47:39"
+          },
+          "crs": {
+            "0-0": "17.00",
+            "0-1": "10.50",
+            "0-2": "13.00",
+            "0-3": "22.00",
+            "0-4": "50.00",
+            "0-5": "200.0",
+            "1-0": "12.50",
+            "1-1": "7.00",
+            "1-2": "8.00",
+            "1-3": "16.00",
+            "1-4": "38.00",
+            "1-5": "120.0",
+            "2-0": "16.50",
+            "2-1": "8.80",
+            "2-2": "11.00",
+            "2-3": "21.00",
+            "2-4": "50.00",
+            "2-5": "175.0",
+            "3-0": "30.00",
+            "3-1": "20.00",
+            "3-2": "22.00",
+            "3-3": "40.00",
+            "4-0": "80.00",
+            "4-1": "55.00",
+            "4-2": "65.00",
+            "5-0": "350.0",
+            "5-1": "200.0",
+            "5-2": "250.0",
+            "homeOther": "60.00",
+            "drawOther": "200.0",
+            "awayOther": "50.00",
+            "updatedAt": "2026-08-14 09:47:41"
+          },
+          "hafu": {
+            "aa": "3.70",
+            "ad": "14.00",
+            "ah": "27.00",
+            "da": "5.70",
+            "dd": "6.00",
+            "dh": "6.60",
+            "ha": "23.00",
+            "hd": "14.00",
+            "hh": "4.60",
+            "updatedAt": "2026-08-14 09:47:40"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "2.58",
+            "draw": "3.53",
+            "away": "2.18",
+            "updatedAt": "2026-08-15 14:18:31"
+          },
+          "ttg": {
+            "s0": "17.00",
+            "s1": "6.45",
+            "s2": "3.85",
+            "s3": "3.50",
+            "s4": "4.80",
+            "s5": "8.20",
+            "s6": "15.00",
+            "s7": "21.00",
+            "updatedAt": "2026-08-15 22:14:39"
+          },
+          "hhad": {
+            "home": "1.51",
+            "draw": "4.00",
+            "away": "4.60",
+            "handicap": null,
+            "updatedAt": "2026-08-14 09:47:39"
+          },
+          "crs": {
+            "0-0": "17.00",
+            "0-1": "10.50",
+            "0-2": "13.00",
+            "0-3": "22.00",
+            "0-4": "50.00",
+            "0-5": "200.0",
+            "1-0": "12.50",
+            "1-1": "7.00",
+            "1-2": "8.00",
+            "1-3": "16.00",
+            "1-4": "38.00",
+            "1-5": "120.0",
+            "2-0": "16.50",
+            "2-1": "8.80",
+            "2-2": "11.00",
+            "2-3": "21.00",
+            "2-4": "50.00",
+            "2-5": "175.0",
+            "3-0": "30.00",
+            "3-1": "20.00",
+            "3-2": "22.00",
+            "3-3": "40.00",
+            "4-0": "80.00",
+            "4-1": "55.00",
+            "4-2": "65.00",
+            "5-0": "350.0",
+            "5-1": "200.0",
+            "5-2": "250.0",
+            "homeOther": "60.00",
+            "drawOther": "200.0",
+            "awayOther": "50.00",
+            "updatedAt": "2026-08-14 09:47:41"
+          },
+          "hafu": {
+            "aa": "3.70",
+            "ad": "14.00",
+            "ah": "27.00",
+            "da": "5.70",
+            "dd": "6.00",
+            "dh": "6.60",
+            "ha": "23.00",
+            "hd": "14.00",
+            "hh": "4.60",
+            "updatedAt": "2026-08-14 09:47:40"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "eredivisie-v1-dedicated-0807-auto-0815",
+        "had": 0.38529411764705884,
+        "crs": 0.44411764705882356,
+        "prior": 0.15,
+        "goal_shift": 0.0411764705882353,
+        "review_sample": 5,
+        "review_strength": 0.2941,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动5场90分钟结果：主/平/客 1/1/3；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持客队的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定客队，主比分1-2，备选2-2/0-1；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近1场 W；客队近0场 暂无已核验赛果",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "乌德勒支 [荷甲13]；阿尔克马尔 [荷甲3]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "乌德勒支 [荷甲13]；阿尔克马尔 [荷甲3]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：乌德勒支 [荷甲13]；阿尔克马尔 [荷甲3]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "乌德勒支 [荷甲13]；阿尔克马尔 [荷甲3]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近1场 W；客队近0场 暂无已核验赛果",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "乌德勒支 [荷甲13]；阿尔克马尔 [荷甲3]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "aa",
+      "halfFullText": "负/负",
+      "halfFullOdds": 3.7,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "客胜",
+          "odds": 2.18,
+          "modelProbability": 0.3612,
+          "expectedValue": -0.2126
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "modelProbability": 0.3426,
+          "expectedValue": 0.1991
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "1-2",
+          "odds": 8.0,
+          "modelProbability": 0.0975,
+          "expectedValue": -0.22
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 3.7,
+          "modelProbability": 0.2447,
+          "expectedValue": -0.0946
+        }
+      ],
+      "integratedAnalysis": "结论：客胜，总进球重点3球，比分关注1-2 / 2-2 / 0-1，半全场为负/负（3.70）；已核验ranking_table，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    },
+    {
+      "id": "2040878",
+      "matchNumStr": "周六018",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 01:00:00",
+      "league": "葡萄牙超级联赛",
+      "leagueStyle": {
+        "class": "por",
+        "color": "#1e7d52",
+        "label": "葡超"
+      },
+      "home": "维塞乌",
+      "away": "圣克拉拉",
+      "homeRank": "[葡超6]",
+      "awayRank": "[葡超10]",
+      "probabilities": {
+        "home": 0.3407,
+        "draw": 0.3333,
+        "away": 0.326
+      },
+      "direction": "home",
+      "directionText": "主胜",
+      "mainScore": "1-0",
+      "backupScores": [
+        "2-1",
+        "2-2"
+      ],
+      "tailRiskScores": [
+        "0-0",
+        "0-3",
+        "1-3",
+        "3-0",
+        "1-4"
+      ],
+      "totalGoals": "2",
+      "goalCandidates": [
+        "2",
+        "3",
+        "1"
+      ],
+      "confidenceScore": 38,
+      "confidence": "中低",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。市场与基本面存在分歧，降低信任度。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "2.95",
+          "draw": "2.85",
+          "away": "2.28",
+          "updatedAt": "2026-08-15 21:39:26"
+        },
+        "ttg": {
+          "s0": "8.50",
+          "s1": "3.45",
+          "s2": "3.40",
+          "s3": "3.65",
+          "s4": "7.60",
+          "s5": "17.00",
+          "s6": "40.00",
+          "s7": "72.00",
+          "updatedAt": "2026-08-15 16:18:35"
+        },
+        "hhad": {
+          "home": "1.46",
+          "draw": "3.78",
+          "away": "5.60",
+          "handicap": null,
+          "updatedAt": "2026-08-15 21:39:38"
+        },
+        "crs": {
+          "0-0": "8.50",
+          "0-1": "6.00",
+          "0-2": "10.00",
+          "0-3": "21.00",
+          "0-4": "70.00",
+          "0-5": "250.0",
+          "1-0": "7.75",
+          "1-1": "6.00",
+          "1-2": "8.00",
+          "1-3": "22.00",
+          "1-4": "70.00",
+          "1-5": "250.0",
+          "2-0": "14.00",
+          "2-1": "10.00",
+          "2-2": "16.00",
+          "2-3": "35.00",
+          "2-4": "120.0",
+          "2-5": "400.0",
+          "3-0": "36.00",
+          "3-1": "27.00",
+          "3-2": "50.00",
+          "3-3": "100.0",
+          "4-0": "175.0",
+          "4-1": "120.0",
+          "4-2": "200.0",
+          "5-0": "550.0",
+          "5-1": "550.0",
+          "5-2": "550.0",
+          "homeOther": "250.0",
+          "drawOther": "650.0",
+          "awayOther": "175.0",
+          "updatedAt": "2026-08-15 16:19:02"
+        },
+        "hafu": {
+          "aa": "4.10",
+          "ad": "15.00",
+          "ah": "38.00",
+          "da": "5.30",
+          "dd": "4.20",
+          "dh": "6.50",
+          "ha": "32.00",
+          "hd": "15.00",
+          "hh": "5.30",
+          "updatedAt": "2026-08-15 21:41:30"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.0499,
+        "1": 0.2467,
+        "2": 0.336,
+        "3": 0.2688,
+        "4": 0.0814,
+        "5": 0.0153,
+        "6": 0.0018,
+        "7+": 0.0002
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0938,
+        "0-1": 0.1338,
+        "0-2": 0.0774,
+        "0-3": 0.0333,
+        "0-4": 0.0092,
+        "0-5": 0.0022,
+        "1-0": 0.1035,
+        "1-1": 0.1332,
+        "1-2": 0.0933,
+        "1-3": 0.0324,
+        "1-4": 0.0093,
+        "1-5": 0.0023,
+        "2-0": 0.0529,
+        "2-1": 0.0738,
+        "2-2": 0.0443,
+        "2-3": 0.0185,
+        "2-4": 0.005,
+        "2-5": 0.0013,
+        "3-0": 0.0183,
+        "3-1": 0.0246,
+        "3-2": 0.0132,
+        "3-3": 0.0059,
+        "4-0": 0.0036,
+        "4-1": 0.0051,
+        "4-2": 0.003,
+        "5-0": 0.0009,
+        "5-1": 0.001,
+        "5-2": 0.0008
+      },
+      "halfFullProbabilities": {
+        "hh": 0.1646,
+        "hd": 0.0492,
+        "ha": 0.0205,
+        "dh": 0.1224,
+        "dd": 0.1958,
+        "da": 0.1558,
+        "ah": 0.0166,
+        "ad": 0.0492,
+        "aa": 0.2258
+      },
+      "scorelineFit": {
+        "lambdaHome": 1.031,
+        "lambdaAway": 1.252,
+        "rho": 0.022,
+        "klDivergence": 0.0048
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.3174,
+        "draw": 0.3363,
+        "away": 0.3463
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3576,
+        "draw": 0.3311,
+        "away": 0.3113
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": true,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.5323,
+        "tempoProxy": 0.3674,
+        "defensiveHoleProxy": 0.4727,
+        "viable": false,
+        "status": "attack/tempo/defensive-hole gate not fully supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "home",
+        "underdog": "away",
+        "scoringMass": 0.7274,
+        "twoGoalMass": 0.3513,
+        "viable": true,
+        "bigViable": true
+      },
+      "goalPrediction": {
+        "pick": "2",
+        "probability": 0.336,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "1-0",
+        "probability": 0.1035,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "2.95",
+            "draw": "2.85",
+            "away": "2.28",
+            "updatedAt": "2026-08-15 21:39:26"
+          },
+          "ttg": {
+            "s0": "8.50",
+            "s1": "3.45",
+            "s2": "3.40",
+            "s3": "3.65",
+            "s4": "7.60",
+            "s5": "17.00",
+            "s6": "40.00",
+            "s7": "72.00",
+            "updatedAt": "2026-08-15 16:18:35"
+          },
+          "hhad": {
+            "home": "1.46",
+            "draw": "3.78",
+            "away": "5.60",
+            "handicap": null,
+            "updatedAt": "2026-08-15 21:39:38"
+          },
+          "crs": {
+            "0-0": "8.50",
+            "0-1": "6.00",
+            "0-2": "10.00",
+            "0-3": "21.00",
+            "0-4": "70.00",
+            "0-5": "250.0",
+            "1-0": "7.75",
+            "1-1": "6.00",
+            "1-2": "8.00",
+            "1-3": "22.00",
+            "1-4": "70.00",
+            "1-5": "250.0",
+            "2-0": "14.00",
+            "2-1": "10.00",
+            "2-2": "16.00",
+            "2-3": "35.00",
+            "2-4": "120.0",
+            "2-5": "400.0",
+            "3-0": "36.00",
+            "3-1": "27.00",
+            "3-2": "50.00",
+            "3-3": "100.0",
+            "4-0": "175.0",
+            "4-1": "120.0",
+            "4-2": "200.0",
+            "5-0": "550.0",
+            "5-1": "550.0",
+            "5-2": "550.0",
+            "homeOther": "250.0",
+            "drawOther": "650.0",
+            "awayOther": "175.0",
+            "updatedAt": "2026-08-15 16:19:02"
+          },
+          "hafu": {
+            "aa": "4.10",
+            "ad": "15.00",
+            "ah": "38.00",
+            "da": "5.30",
+            "dd": "4.20",
+            "dh": "6.50",
+            "ha": "32.00",
+            "hd": "15.00",
+            "hh": "5.30",
+            "updatedAt": "2026-08-15 21:41:30"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "2.95",
+            "draw": "2.85",
+            "away": "2.28",
+            "updatedAt": "2026-08-15 21:39:26"
+          },
+          "ttg": {
+            "s0": "8.50",
+            "s1": "3.45",
+            "s2": "3.40",
+            "s3": "3.65",
+            "s4": "7.60",
+            "s5": "17.00",
+            "s6": "40.00",
+            "s7": "72.00",
+            "updatedAt": "2026-08-15 16:18:35"
+          },
+          "hhad": {
+            "home": "1.46",
+            "draw": "3.78",
+            "away": "5.60",
+            "handicap": null,
+            "updatedAt": "2026-08-15 21:39:38"
+          },
+          "crs": {
+            "0-0": "8.50",
+            "0-1": "6.00",
+            "0-2": "10.00",
+            "0-3": "21.00",
+            "0-4": "70.00",
+            "0-5": "250.0",
+            "1-0": "7.75",
+            "1-1": "6.00",
+            "1-2": "8.00",
+            "1-3": "22.00",
+            "1-4": "70.00",
+            "1-5": "250.0",
+            "2-0": "14.00",
+            "2-1": "10.00",
+            "2-2": "16.00",
+            "2-3": "35.00",
+            "2-4": "120.0",
+            "2-5": "400.0",
+            "3-0": "36.00",
+            "3-1": "27.00",
+            "3-2": "50.00",
+            "3-3": "100.0",
+            "4-0": "175.0",
+            "4-1": "120.0",
+            "4-2": "200.0",
+            "5-0": "550.0",
+            "5-1": "550.0",
+            "5-2": "550.0",
+            "homeOther": "250.0",
+            "drawOther": "650.0",
+            "awayOther": "175.0",
+            "updatedAt": "2026-08-15 16:19:02"
+          },
+          "hafu": {
+            "aa": "4.10",
+            "ad": "15.00",
+            "ah": "38.00",
+            "da": "5.30",
+            "dd": "4.20",
+            "dh": "6.50",
+            "ha": "32.00",
+            "hd": "15.00",
+            "hh": "5.30",
+            "updatedAt": "2026-08-15 21:41:30"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "primeira-liga-v1-dedicated-0807-auto-0815",
+        "had": 0.3823529411764706,
+        "crs": 0.4411764705882353,
+        "prior": 0.14705882352941177,
+        "goal_shift": -0.0058823529411764705,
+        "review_sample": 5,
+        "review_strength": 0.2941,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动5场90分钟结果：主/平/客 2/2/1；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持主队的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定主队，主比分1-0，备选2-1/2-2；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近1场 D；客队近0场 暂无已核验赛果",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "维塞乌 [葡超6]；圣克拉拉 [葡超10]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "维塞乌 [葡超6]；圣克拉拉 [葡超10]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：维塞乌 [葡超6]；圣克拉拉 [葡超10]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "维塞乌 [葡超6]；圣克拉拉 [葡超10]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近1场 D；客队近0场 暂无已核验赛果",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "维塞乌 [葡超6]；圣克拉拉 [葡超10]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "hh",
+      "halfFullText": "胜/胜",
+      "halfFullOdds": 5.3,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "主胜",
+          "odds": 2.95,
+          "modelProbability": 0.3407,
+          "expectedValue": 0.0051
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "2",
+          "odds": 3.4,
+          "modelProbability": 0.336,
+          "expectedValue": 0.1424
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "1-0",
+          "odds": 7.75,
+          "modelProbability": 0.1035,
+          "expectedValue": -0.1979
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 5.3,
+          "modelProbability": 0.1646,
+          "expectedValue": -0.1276
+        }
+      ],
+      "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注1-0 / 2-1 / 2-2，半全场为胜/胜（5.30）；已核验ranking_table，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    },
+    {
+      "id": "2040882",
+      "matchNumStr": "周六022",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 02:00:00",
+      "league": "荷兰甲级联赛",
+      "leagueStyle": {
+        "class": "ned",
+        "color": "#d46d1d",
+        "label": "荷甲"
+      },
+      "home": "SBV精英",
+      "away": "PSV埃因霍温",
+      "homeRank": "[荷甲1]",
+      "awayRank": "[荷甲11]",
+      "probabilities": {
+        "home": 0.2867,
+        "draw": 0.2688,
+        "away": 0.4445
+      },
+      "direction": "away",
+      "directionText": "客胜",
+      "mainScore": "1-2",
+      "backupScores": [
+        "1-3",
+        "0-1"
+      ],
+      "tailRiskScores": [
+        "1-4",
+        "0-0",
+        "3-0"
+      ],
+      "totalGoals": "3",
+      "goalCandidates": [
+        "3",
+        "4",
+        "5"
+      ],
+      "confidenceScore": 67,
+      "confidence": "高",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为客胜。市场与基本面存在分歧，降低信任度。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "5.72",
+          "draw": "4.80",
+          "away": "1.34",
+          "updatedAt": "2026-08-15 22:24:09"
+        },
+        "ttg": {
+          "s0": "31.00",
+          "s1": "9.50",
+          "s2": "5.30",
+          "s3": "3.85",
+          "s4": "4.25",
+          "s5": "5.80",
+          "s6": "9.00",
+          "s7": "10.00",
+          "updatedAt": "2026-08-15 22:40:08"
+        },
+        "hhad": {
+          "home": "2.65",
+          "draw": "4.05",
+          "away": "1.98",
+          "handicap": null,
+          "updatedAt": "2026-08-15 22:24:14"
+        },
+        "crs": {
+          "0-0": "31.00",
+          "0-1": "12.50",
+          "0-2": "10.00",
+          "0-3": "13.00",
+          "0-4": "20.00",
+          "0-5": "36.00",
+          "1-0": "25.00",
+          "1-1": "10.50",
+          "1-2": "8.00",
+          "1-3": "9.50",
+          "1-4": "16.00",
+          "1-5": "30.00",
+          "2-0": "40.00",
+          "2-1": "17.00",
+          "2-2": "12.50",
+          "2-3": "14.00",
+          "2-4": "24.00",
+          "2-5": "50.00",
+          "3-0": "100.0",
+          "3-1": "36.00",
+          "3-2": "33.00",
+          "3-3": "35.00",
+          "4-0": "350.0",
+          "4-1": "120.0",
+          "4-2": "120.0",
+          "5-0": "650.0",
+          "5-1": "550.0",
+          "5-2": "400.0",
+          "homeOther": "80.00",
+          "drawOther": "175.0",
+          "awayOther": "13.50",
+          "updatedAt": "2026-08-15 22:26:27"
+        },
+        "hafu": {
+          "aa": "1.90",
+          "ad": "18.00",
+          "ah": "40.00",
+          "da": "4.90",
+          "dd": "9.30",
+          "dh": "15.00",
+          "ha": "19.00",
+          "hd": "18.00",
+          "hh": "9.00",
+          "updatedAt": "2026-08-15 22:10:57"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.0029,
+        "1": 0.0345,
+        "2": 0.1433,
+        "3": 0.3013,
+        "4": 0.2929,
+        "5": 0.1577,
+        "6": 0.0508,
+        "7+": 0.0166
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0237,
+        "0-1": 0.0631,
+        "0-2": 0.0799,
+        "0-3": 0.0618,
+        "0-4": 0.0384,
+        "0-5": 0.0197,
+        "1-0": 0.0298,
+        "1-1": 0.0761,
+        "1-2": 0.1004,
+        "1-3": 0.083,
+        "1-4": 0.0481,
+        "1-5": 0.024,
+        "2-0": 0.0177,
+        "2-1": 0.0452,
+        "2-2": 0.0611,
+        "2-3": 0.0529,
+        "2-4": 0.0302,
+        "2-5": 0.0139,
+        "3-0": 0.0067,
+        "3-1": 0.0192,
+        "3-2": 0.022,
+        "3-3": 0.0198,
+        "4-0": 0.0018,
+        "4-1": 0.0053,
+        "4-2": 0.0057,
+        "5-0": 0.0007,
+        "5-1": 0.0011,
+        "5-2": 0.0015
+      },
+      "halfFullProbabilities": {
+        "hh": 0.0899,
+        "hd": 0.0414,
+        "ha": 0.0383,
+        "dh": 0.0533,
+        "dd": 0.0864,
+        "da": 0.1712,
+        "ah": 0.0155,
+        "ad": 0.0414,
+        "aa": 0.4625
+      },
+      "scorelineFit": {
+        "lambdaHome": 1.206,
+        "lambdaAway": 2.484,
+        "rho": 0.006,
+        "klDivergence": 0.003
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.1887,
+        "draw": 0.1828,
+        "away": 0.6285
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3576,
+        "draw": 0.3311,
+        "away": 0.3113
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": true,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.7458,
+        "tempoProxy": 0.8193,
+        "defensiveHoleProxy": 0.602,
+        "viable": true,
+        "status": "big-goal conditions all supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "away",
+        "underdog": "home",
+        "scoringMass": 0.6559,
+        "twoGoalMass": 0.2996,
+        "viable": true,
+        "bigViable": true
+      },
+      "goalPrediction": {
+        "pick": "3",
+        "probability": 0.3013,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "1-2",
+        "probability": 0.1004,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "5.72",
+            "draw": "4.80",
+            "away": "1.34",
+            "updatedAt": "2026-08-15 22:24:09"
+          },
+          "ttg": {
+            "s0": "31.00",
+            "s1": "9.50",
+            "s2": "5.30",
+            "s3": "3.85",
+            "s4": "4.25",
+            "s5": "5.80",
+            "s6": "9.00",
+            "s7": "10.00",
+            "updatedAt": "2026-08-15 22:40:08"
+          },
+          "hhad": {
+            "home": "2.65",
+            "draw": "4.05",
+            "away": "1.98",
+            "handicap": null,
+            "updatedAt": "2026-08-15 22:24:14"
+          },
+          "crs": {
+            "0-0": "31.00",
+            "0-1": "12.50",
+            "0-2": "10.00",
+            "0-3": "13.00",
+            "0-4": "20.00",
+            "0-5": "36.00",
+            "1-0": "25.00",
+            "1-1": "10.50",
+            "1-2": "8.00",
+            "1-3": "9.50",
+            "1-4": "16.00",
+            "1-5": "30.00",
+            "2-0": "40.00",
+            "2-1": "17.00",
+            "2-2": "12.50",
+            "2-3": "14.00",
+            "2-4": "24.00",
+            "2-5": "50.00",
+            "3-0": "100.0",
+            "3-1": "36.00",
+            "3-2": "33.00",
+            "3-3": "35.00",
+            "4-0": "350.0",
+            "4-1": "120.0",
+            "4-2": "120.0",
+            "5-0": "650.0",
+            "5-1": "550.0",
+            "5-2": "400.0",
+            "homeOther": "80.00",
+            "drawOther": "175.0",
+            "awayOther": "13.50",
+            "updatedAt": "2026-08-15 22:26:27"
+          },
+          "hafu": {
+            "aa": "1.90",
+            "ad": "18.00",
+            "ah": "40.00",
+            "da": "4.90",
+            "dd": "9.30",
+            "dh": "15.00",
+            "ha": "19.00",
+            "hd": "18.00",
+            "hh": "9.00",
+            "updatedAt": "2026-08-15 22:10:57"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "5.72",
+            "draw": "4.80",
+            "away": "1.34",
+            "updatedAt": "2026-08-15 22:24:09"
+          },
+          "ttg": {
+            "s0": "31.00",
+            "s1": "9.50",
+            "s2": "5.30",
+            "s3": "3.85",
+            "s4": "4.25",
+            "s5": "5.80",
+            "s6": "9.00",
+            "s7": "10.00",
+            "updatedAt": "2026-08-15 22:40:08"
+          },
+          "hhad": {
+            "home": "2.65",
+            "draw": "4.05",
+            "away": "1.98",
+            "handicap": null,
+            "updatedAt": "2026-08-15 22:24:14"
+          },
+          "crs": {
+            "0-0": "31.00",
+            "0-1": "12.50",
+            "0-2": "10.00",
+            "0-3": "13.00",
+            "0-4": "20.00",
+            "0-5": "36.00",
+            "1-0": "25.00",
+            "1-1": "10.50",
+            "1-2": "8.00",
+            "1-3": "9.50",
+            "1-4": "16.00",
+            "1-5": "30.00",
+            "2-0": "40.00",
+            "2-1": "17.00",
+            "2-2": "12.50",
+            "2-3": "14.00",
+            "2-4": "24.00",
+            "2-5": "50.00",
+            "3-0": "100.0",
+            "3-1": "36.00",
+            "3-2": "33.00",
+            "3-3": "35.00",
+            "4-0": "350.0",
+            "4-1": "120.0",
+            "4-2": "120.0",
+            "5-0": "650.0",
+            "5-1": "550.0",
+            "5-2": "400.0",
+            "homeOther": "80.00",
+            "drawOther": "175.0",
+            "awayOther": "13.50",
+            "updatedAt": "2026-08-15 22:26:27"
+          },
+          "hafu": {
+            "aa": "1.90",
+            "ad": "18.00",
+            "ah": "40.00",
+            "da": "4.90",
+            "dd": "9.30",
+            "dh": "15.00",
+            "ha": "19.00",
+            "hd": "18.00",
+            "hh": "9.00",
+            "updatedAt": "2026-08-15 22:10:57"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "eredivisie-v1-dedicated-0807-auto-0815",
+        "had": 0.38529411764705884,
+        "crs": 0.44411764705882356,
+        "prior": 0.15,
+        "goal_shift": 0.0411764705882353,
+        "review_sample": 5,
+        "review_strength": 0.2941,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动5场90分钟结果：主/平/客 1/1/3；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持客队的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定客队，主比分1-2，备选1-3/0-1；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "SBV精英 [荷甲1]；PSV埃因霍温 [荷甲11]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "SBV精英 [荷甲1]；PSV埃因霍温 [荷甲11]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：SBV精英 [荷甲1]；PSV埃因霍温 [荷甲11]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "SBV精英 [荷甲1]；PSV埃因霍温 [荷甲11]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "SBV精英 [荷甲1]；PSV埃因霍温 [荷甲11]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "aa",
+      "halfFullText": "负/负",
+      "halfFullOdds": 1.9,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "客胜",
+          "odds": 1.34,
+          "modelProbability": 0.4445,
+          "expectedValue": -0.4044
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.85,
+          "modelProbability": 0.3013,
+          "expectedValue": 0.16
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "1-2",
+          "odds": 8.0,
+          "modelProbability": 0.1004,
+          "expectedValue": -0.1968
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 1.9,
+          "modelProbability": 0.4,
+          "expectedValue": -0.24
+        }
+      ],
+      "integratedAnalysis": "结论：客胜，总进球重点3球，比分关注1-2 / 1-3 / 0-1，半全场为负/负（1.90）；已核验ranking_table，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    },
+    {
+      "id": "2040883",
+      "matchNumStr": "周六023",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 03:00:00",
+      "league": "荷兰甲级联赛",
+      "leagueStyle": {
+        "class": "ned",
+        "color": "#d46d1d",
+        "label": "荷甲"
+      },
+      "home": "福图纳锡塔德",
+      "away": "坎布尔",
+      "homeRank": "[荷甲10]",
+      "awayRank": "[荷甲18]",
+      "probabilities": {
+        "home": 0.4272,
+        "draw": 0.2994,
+        "away": 0.2734
+      },
+      "direction": "home",
+      "directionText": "主胜",
+      "mainScore": "2-1",
+      "backupScores": [
+        "3-1",
+        "1-0"
+      ],
+      "tailRiskScores": [
+        "2-2",
+        "0-0",
+        "1-3",
+        "0-3",
+        "1-4"
+      ],
+      "totalGoals": "3",
+      "goalCandidates": [
+        "3",
+        "4",
+        "2"
+      ],
+      "confidenceScore": 60,
+      "confidence": "中",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。市场与基本面存在分歧，降低信任度。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "1.52",
+          "draw": "4.10",
+          "away": "4.40",
+          "updatedAt": "2026-08-15 21:31:27"
+        },
+        "ttg": {
+          "s0": "20.00",
+          "s1": "7.50",
+          "s2": "4.40",
+          "s3": "3.50",
+          "s4": "4.25",
+          "s5": "7.25",
+          "s6": "13.50",
+          "s7": "17.00",
+          "updatedAt": "2026-08-15 21:52:16"
+        },
+        "hhad": {
+          "home": "2.65",
+          "draw": "3.42",
+          "away": "2.18",
+          "handicap": null,
+          "updatedAt": "2026-08-15 21:31:34"
+        },
+        "crs": {
+          "0-0": "20.00",
+          "0-1": "16.00",
+          "0-2": "25.00",
+          "0-3": "65.00",
+          "0-4": "250.0",
+          "0-5": "550.0",
+          "1-0": "10.00",
+          "1-1": "7.50",
+          "1-2": "12.50",
+          "1-3": "30.00",
+          "1-4": "120.0",
+          "1-5": "400.0",
+          "2-0": "9.50",
+          "2-1": "7.50",
+          "2-2": "12.00",
+          "2-3": "29.00",
+          "2-4": "120.0",
+          "2-5": "400.0",
+          "3-0": "14.00",
+          "3-1": "12.50",
+          "3-2": "18.00",
+          "3-3": "45.00",
+          "4-0": "26.00",
+          "4-1": "22.00",
+          "4-2": "36.00",
+          "5-0": "65.00",
+          "5-1": "50.00",
+          "5-2": "100.0",
+          "homeOther": "25.00",
+          "drawOther": "200.0",
+          "awayOther": "100.0",
+          "updatedAt": "2026-08-14 09:47:41"
+        },
+        "hafu": {
+          "aa": "7.25",
+          "ad": "15.00",
+          "ah": "20.00",
+          "da": "10.50",
+          "dd": "7.20",
+          "dh": "4.60",
+          "ha": "32.00",
+          "hd": "15.00",
+          "hh": "2.50",
+          "updatedAt": "2026-08-15 21:31:45"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.008,
+        "1": 0.0648,
+        "2": 0.2137,
+        "3": 0.3417,
+        "4": 0.2522,
+        "5": 0.0932,
+        "6": 0.0213,
+        "7+": 0.005
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0387,
+        "0-1": 0.0474,
+        "0-2": 0.0289,
+        "0-3": 0.0104,
+        "0-4": 0.0026,
+        "0-5": 0.0009,
+        "1-0": 0.0801,
+        "1-1": 0.1062,
+        "1-2": 0.0608,
+        "1-3": 0.0233,
+        "1-4": 0.0056,
+        "1-5": 0.0014,
+        "2-0": 0.0837,
+        "2-1": 0.1058,
+        "2-2": 0.0628,
+        "2-3": 0.024,
+        "2-4": 0.0056,
+        "2-5": 0.0014,
+        "3-0": 0.0549,
+        "3-1": 0.0632,
+        "3-2": 0.0406,
+        "3-3": 0.0151,
+        "4-0": 0.0276,
+        "4-1": 0.0331,
+        "4-2": 0.0193,
+        "5-0": 0.0103,
+        "5-1": 0.0133,
+        "5-2": 0.0067
+      },
+      "halfFullProbabilities": {
+        "hh": 0.361,
+        "hd": 0.0491,
+        "ha": 0.0192,
+        "dh": 0.1769,
+        "dd": 0.1151,
+        "da": 0.0765,
+        "ah": 0.0348,
+        "ad": 0.0491,
+        "aa": 0.1182
+      },
+      "scorelineFit": {
+        "lambdaHome": 2.003,
+        "lambdaAway": 1.184,
+        "rho": -0.013,
+        "klDivergence": 0.0033
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.5233,
+        "draw": 0.2556,
+        "away": 0.2211
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3576,
+        "draw": 0.3311,
+        "away": 0.3113
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": true,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.6944,
+        "tempoProxy": 0.7134,
+        "defensiveHoleProxy": 0.587,
+        "viable": true,
+        "status": "big-goal conditions all supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "home",
+        "underdog": "away",
+        "scoringMass": 0.6748,
+        "twoGoalMass": 0.3066,
+        "viable": true,
+        "bigViable": true
+      },
+      "goalPrediction": {
+        "pick": "3",
+        "probability": 0.3417,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "2-1",
+        "probability": 0.1058,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "1.52",
+            "draw": "4.10",
+            "away": "4.40",
+            "updatedAt": "2026-08-15 21:31:27"
+          },
+          "ttg": {
+            "s0": "20.00",
+            "s1": "7.50",
+            "s2": "4.40",
+            "s3": "3.50",
+            "s4": "4.25",
+            "s5": "7.25",
+            "s6": "13.50",
+            "s7": "17.00",
+            "updatedAt": "2026-08-15 21:52:16"
+          },
+          "hhad": {
+            "home": "2.65",
+            "draw": "3.42",
+            "away": "2.18",
+            "handicap": null,
+            "updatedAt": "2026-08-15 21:31:34"
+          },
+          "crs": {
+            "0-0": "20.00",
+            "0-1": "16.00",
+            "0-2": "25.00",
+            "0-3": "65.00",
+            "0-4": "250.0",
+            "0-5": "550.0",
+            "1-0": "10.00",
+            "1-1": "7.50",
+            "1-2": "12.50",
+            "1-3": "30.00",
+            "1-4": "120.0",
+            "1-5": "400.0",
+            "2-0": "9.50",
+            "2-1": "7.50",
+            "2-2": "12.00",
+            "2-3": "29.00",
+            "2-4": "120.0",
+            "2-5": "400.0",
+            "3-0": "14.00",
+            "3-1": "12.50",
+            "3-2": "18.00",
+            "3-3": "45.00",
+            "4-0": "26.00",
+            "4-1": "22.00",
+            "4-2": "36.00",
+            "5-0": "65.00",
+            "5-1": "50.00",
+            "5-2": "100.0",
+            "homeOther": "25.00",
+            "drawOther": "200.0",
+            "awayOther": "100.0",
+            "updatedAt": "2026-08-14 09:47:41"
+          },
+          "hafu": {
+            "aa": "7.25",
+            "ad": "15.00",
+            "ah": "20.00",
+            "da": "10.50",
+            "dd": "7.20",
+            "dh": "4.60",
+            "ha": "32.00",
+            "hd": "15.00",
+            "hh": "2.50",
+            "updatedAt": "2026-08-15 21:31:45"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "1.52",
+            "draw": "4.10",
+            "away": "4.40",
+            "updatedAt": "2026-08-15 21:31:27"
+          },
+          "ttg": {
+            "s0": "20.00",
+            "s1": "7.50",
+            "s2": "4.40",
+            "s3": "3.50",
+            "s4": "4.25",
+            "s5": "7.25",
+            "s6": "13.50",
+            "s7": "17.00",
+            "updatedAt": "2026-08-15 21:52:16"
+          },
+          "hhad": {
+            "home": "2.65",
+            "draw": "3.42",
+            "away": "2.18",
+            "handicap": null,
+            "updatedAt": "2026-08-15 21:31:34"
+          },
+          "crs": {
+            "0-0": "20.00",
+            "0-1": "16.00",
+            "0-2": "25.00",
+            "0-3": "65.00",
+            "0-4": "250.0",
+            "0-5": "550.0",
+            "1-0": "10.00",
+            "1-1": "7.50",
+            "1-2": "12.50",
+            "1-3": "30.00",
+            "1-4": "120.0",
+            "1-5": "400.0",
+            "2-0": "9.50",
+            "2-1": "7.50",
+            "2-2": "12.00",
+            "2-3": "29.00",
+            "2-4": "120.0",
+            "2-5": "400.0",
+            "3-0": "14.00",
+            "3-1": "12.50",
+            "3-2": "18.00",
+            "3-3": "45.00",
+            "4-0": "26.00",
+            "4-1": "22.00",
+            "4-2": "36.00",
+            "5-0": "65.00",
+            "5-1": "50.00",
+            "5-2": "100.0",
+            "homeOther": "25.00",
+            "drawOther": "200.0",
+            "awayOther": "100.0",
+            "updatedAt": "2026-08-14 09:47:41"
+          },
+          "hafu": {
+            "aa": "7.25",
+            "ad": "15.00",
+            "ah": "20.00",
+            "da": "10.50",
+            "dd": "7.20",
+            "dh": "4.60",
+            "ha": "32.00",
+            "hd": "15.00",
+            "hh": "2.50",
+            "updatedAt": "2026-08-15 21:31:45"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "eredivisie-v1-dedicated-0807-auto-0815",
+        "had": 0.38529411764705884,
+        "crs": 0.44411764705882356,
+        "prior": 0.15,
+        "goal_shift": 0.0411764705882353,
+        "review_sample": 5,
+        "review_strength": 0.2941,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动5场90分钟结果：主/平/客 1/1/3；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持主队的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定主队，主比分2-1，备选3-1/1-0；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "福图纳锡塔德 [荷甲10]；坎布尔 [荷甲18]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "福图纳锡塔德 [荷甲10]；坎布尔 [荷甲18]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：福图纳锡塔德 [荷甲10]；坎布尔 [荷甲18]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "福图纳锡塔德 [荷甲10]；坎布尔 [荷甲18]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "福图纳锡塔德 [荷甲10]；坎布尔 [荷甲18]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "hh",
+      "halfFullText": "胜/胜",
+      "halfFullOdds": 2.5,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "主胜",
+          "odds": 1.52,
+          "modelProbability": 0.4272,
+          "expectedValue": -0.3507
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "modelProbability": 0.3417,
+          "expectedValue": 0.196
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "2-1",
+          "odds": 7.5,
+          "modelProbability": 0.1058,
+          "expectedValue": -0.2065
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.5,
+          "modelProbability": 0.361,
+          "expectedValue": -0.0975
+        }
+      ],
+      "integratedAnalysis": "结论：主胜，总进球重点3球，比分关注2-1 / 3-1 / 1-0，半全场为胜/胜（2.50）；已核验ranking_table，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    },
+    {
+      "id": "2040885",
+      "matchNumStr": "周六025",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 03:30:00",
+      "league": "葡萄牙超级联赛",
+      "leagueStyle": {
+        "class": "por",
+        "color": "#1e7d52",
+        "label": "葡超"
+      },
+      "home": "里奥阿维",
+      "away": "波尔图",
+      "homeRank": "[葡超16]",
+      "awayRank": "[葡超2]",
+      "probabilities": {
+        "home": 0.2436,
+        "draw": 0.2719,
+        "away": 0.4845
+      },
+      "direction": "away",
+      "directionText": "客胜",
+      "mainScore": "0-2",
+      "backupScores": [
+        "0-1",
+        "1-3"
+      ],
+      "tailRiskScores": [
+        "0-0",
+        "1-4",
+        "2-2"
+      ],
+      "totalGoals": "3",
+      "goalCandidates": [
+        "3",
+        "2",
+        "4"
+      ],
+      "confidenceScore": 71,
+      "confidence": "高",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为客胜。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "8.55",
+          "draw": "4.70",
+          "away": "1.25",
+          "updatedAt": "2026-08-15 22:54:23"
+        },
+        "ttg": {
+          "s0": "14.50",
+          "s1": "5.50",
+          "s2": "3.65",
+          "s3": "3.30",
+          "s4": "5.15",
+          "s5": "10.00",
+          "s6": "20.00",
+          "s7": "31.00",
+          "updatedAt": "2026-08-15 21:54:44"
+        },
+        "hhad": {
+          "home": "3.10",
+          "draw": "3.56",
+          "away": "1.90",
+          "handicap": null,
+          "updatedAt": "2026-08-15 22:54:29"
+        },
+        "crs": {
+          "0-0": "14.50",
+          "0-1": "6.75",
+          "0-2": "6.20",
+          "0-3": "8.00",
+          "0-4": "15.00",
+          "0-5": "33.00",
+          "1-0": "19.00",
+          "1-1": "9.00",
+          "1-2": "7.75",
+          "1-3": "10.50",
+          "1-4": "20.00",
+          "1-5": "41.00",
+          "2-0": "55.00",
+          "2-1": "20.00",
+          "2-2": "20.00",
+          "2-3": "29.00",
+          "2-4": "50.00",
+          "2-5": "120.0",
+          "3-0": "200.0",
+          "3-1": "80.00",
+          "3-2": "80.00",
+          "3-3": "90.00",
+          "4-0": "650.0",
+          "4-1": "450.0",
+          "4-2": "450.0",
+          "5-0": "800.0",
+          "5-1": "800.0",
+          "5-2": "800.0",
+          "homeOther": "450.0",
+          "drawOther": "400.0",
+          "awayOther": "25.00",
+          "updatedAt": "2026-08-15 21:54:51"
+        },
+        "hafu": {
+          "aa": "1.78",
+          "ad": "23.00",
+          "ah": "90.00",
+          "da": "3.90",
+          "dd": "7.20",
+          "dh": "20.00",
+          "ha": "28.00",
+          "hd": "23.00",
+          "hh": "16.00",
+          "updatedAt": "2026-08-15 22:54:36"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.0169,
+        "1": 0.1151,
+        "2": 0.2861,
+        "3": 0.3473,
+        "4": 0.1753,
+        "5": 0.049,
+        "6": 0.0088,
+        "7+": 0.0015
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0523,
+        "0-1": 0.1201,
+        "0-2": 0.1316,
+        "0-3": 0.0979,
+        "0-4": 0.05,
+        "0-5": 0.0211,
+        "1-0": 0.0387,
+        "1-1": 0.0872,
+        "1-2": 0.1006,
+        "1-3": 0.0721,
+        "1-4": 0.0364,
+        "1-5": 0.0162,
+        "2-0": 0.0125,
+        "2-1": 0.0346,
+        "2-2": 0.0355,
+        "2-3": 0.0242,
+        "2-4": 0.0132,
+        "2-5": 0.0052,
+        "3-0": 0.003,
+        "3-1": 0.0077,
+        "3-2": 0.0079,
+        "3-3": 0.0065,
+        "4-0": 0.0007,
+        "4-1": 0.0012,
+        "4-2": 0.0012,
+        "5-0": 0.0004,
+        "5-1": 0.0005,
+        "5-2": 0.0005
+      },
+      "halfFullProbabilities": {
+        "hh": 0.051,
+        "hd": 0.0315,
+        "ha": 0.0256,
+        "dh": 0.0393,
+        "dd": 0.1099,
+        "da": 0.2093,
+        "ah": 0.0066,
+        "ad": 0.0315,
+        "aa": 0.4954
+      },
+      "scorelineFit": {
+        "lambdaHome": 0.732,
+        "lambdaAway": 2.178,
+        "rho": 0.003,
+        "klDivergence": 0.0033
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.1502,
+        "draw": 0.1901,
+        "away": 0.6597
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3113,
+        "draw": 0.3311,
+        "away": 0.3576
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": false,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.6766,
+        "tempoProxy": 0.5819,
+        "defensiveHoleProxy": 0.4491,
+        "viable": true,
+        "status": "big-goal conditions all supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "away",
+        "underdog": "home",
+        "scoringMass": 0.5021,
+        "twoGoalMass": 0.1524,
+        "viable": true,
+        "bigViable": false
+      },
+      "goalPrediction": {
+        "pick": "3",
+        "probability": 0.3473,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "0-2",
+        "probability": 0.1316,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "8.55",
+            "draw": "4.70",
+            "away": "1.25",
+            "updatedAt": "2026-08-15 22:54:23"
+          },
+          "ttg": {
+            "s0": "14.50",
+            "s1": "5.50",
+            "s2": "3.65",
+            "s3": "3.30",
+            "s4": "5.15",
+            "s5": "10.00",
+            "s6": "20.00",
+            "s7": "31.00",
+            "updatedAt": "2026-08-15 21:54:44"
+          },
+          "hhad": {
+            "home": "3.10",
+            "draw": "3.56",
+            "away": "1.90",
+            "handicap": null,
+            "updatedAt": "2026-08-15 22:54:29"
+          },
+          "crs": {
+            "0-0": "14.50",
+            "0-1": "6.75",
+            "0-2": "6.20",
+            "0-3": "8.00",
+            "0-4": "15.00",
+            "0-5": "33.00",
+            "1-0": "19.00",
+            "1-1": "9.00",
+            "1-2": "7.75",
+            "1-3": "10.50",
+            "1-4": "20.00",
+            "1-5": "41.00",
+            "2-0": "55.00",
+            "2-1": "20.00",
+            "2-2": "20.00",
+            "2-3": "29.00",
+            "2-4": "50.00",
+            "2-5": "120.0",
+            "3-0": "200.0",
+            "3-1": "80.00",
+            "3-2": "80.00",
+            "3-3": "90.00",
+            "4-0": "650.0",
+            "4-1": "450.0",
+            "4-2": "450.0",
+            "5-0": "800.0",
+            "5-1": "800.0",
+            "5-2": "800.0",
+            "homeOther": "450.0",
+            "drawOther": "400.0",
+            "awayOther": "25.00",
+            "updatedAt": "2026-08-15 21:54:51"
+          },
+          "hafu": {
+            "aa": "1.78",
+            "ad": "23.00",
+            "ah": "90.00",
+            "da": "3.90",
+            "dd": "7.20",
+            "dh": "20.00",
+            "ha": "28.00",
+            "hd": "23.00",
+            "hh": "16.00",
+            "updatedAt": "2026-08-15 22:54:36"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "8.55",
+            "draw": "4.70",
+            "away": "1.25",
+            "updatedAt": "2026-08-15 22:54:23"
+          },
+          "ttg": {
+            "s0": "14.50",
+            "s1": "5.50",
+            "s2": "3.65",
+            "s3": "3.30",
+            "s4": "5.15",
+            "s5": "10.00",
+            "s6": "20.00",
+            "s7": "31.00",
+            "updatedAt": "2026-08-15 21:54:44"
+          },
+          "hhad": {
+            "home": "3.10",
+            "draw": "3.56",
+            "away": "1.90",
+            "handicap": null,
+            "updatedAt": "2026-08-15 22:54:29"
+          },
+          "crs": {
+            "0-0": "14.50",
+            "0-1": "6.75",
+            "0-2": "6.20",
+            "0-3": "8.00",
+            "0-4": "15.00",
+            "0-5": "33.00",
+            "1-0": "19.00",
+            "1-1": "9.00",
+            "1-2": "7.75",
+            "1-3": "10.50",
+            "1-4": "20.00",
+            "1-5": "41.00",
+            "2-0": "55.00",
+            "2-1": "20.00",
+            "2-2": "20.00",
+            "2-3": "29.00",
+            "2-4": "50.00",
+            "2-5": "120.0",
+            "3-0": "200.0",
+            "3-1": "80.00",
+            "3-2": "80.00",
+            "3-3": "90.00",
+            "4-0": "650.0",
+            "4-1": "450.0",
+            "4-2": "450.0",
+            "5-0": "800.0",
+            "5-1": "800.0",
+            "5-2": "800.0",
+            "homeOther": "450.0",
+            "drawOther": "400.0",
+            "awayOther": "25.00",
+            "updatedAt": "2026-08-15 21:54:51"
+          },
+          "hafu": {
+            "aa": "1.78",
+            "ad": "23.00",
+            "ah": "90.00",
+            "da": "3.90",
+            "dd": "7.20",
+            "dh": "20.00",
+            "ha": "28.00",
+            "hd": "23.00",
+            "hh": "16.00",
+            "updatedAt": "2026-08-15 22:54:36"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "primeira-liga-v1-dedicated-0807-auto-0815",
+        "had": 0.3823529411764706,
+        "crs": 0.4411764705882353,
+        "prior": 0.14705882352941177,
+        "goal_shift": -0.0058823529411764705,
+        "review_sample": 5,
+        "review_strength": 0.2941,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动5场90分钟结果：主/平/客 2/2/1；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table",
+        "recent_performance"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持客队的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定客队，主比分0-2，备选0-1/1-3；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近1场 L；客队近1场 W",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "里奥阿维 [葡超16]；波尔图 [葡超2]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "里奥阿维 [葡超16]；波尔图 [葡超2]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：里奥阿维 [葡超16]；波尔图 [葡超2]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "里奥阿维 [葡超16]；波尔图 [葡超2]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近1场 L；客队近1场 W",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "里奥阿维 [葡超16]；波尔图 [葡超2]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "aa",
+      "halfFullText": "负/负",
+      "halfFullOdds": 1.78,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "客胜",
+          "odds": 1.25,
+          "modelProbability": 0.4845,
+          "expectedValue": -0.3944
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.3,
+          "modelProbability": 0.3473,
+          "expectedValue": 0.1461
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "0-2",
+          "odds": 6.2,
+          "modelProbability": 0.1316,
+          "expectedValue": -0.1841
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 1.78,
+          "modelProbability": 0.4,
+          "expectedValue": -0.288
+        }
+      ],
+      "integratedAnalysis": "结论：客胜，总进球重点3球，比分关注0-2 / 0-1 / 1-3，半全场为负/负（1.78）；已核验ranking_table、recent_performance，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    },
+    {
+      "id": "2040886",
+      "matchNumStr": "周六026",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 03:30:00",
+      "league": "巴西甲级联赛",
+      "leagueStyle": {
+        "class": "bra",
+        "color": "#17854b",
+        "label": "巴甲"
+      },
+      "home": "弗鲁米嫩塞",
+      "away": "帕尔梅拉斯",
+      "homeRank": "[巴甲4]",
+      "awayRank": "[巴甲1]",
+      "probabilities": {
+        "home": 0.319,
+        "draw": 0.354,
+        "away": 0.3271
+      },
+      "direction": "draw",
+      "directionText": "平",
+      "mainScore": "1-1",
+      "backupScores": [
+        "0-0",
+        "2-2"
+      ],
+      "tailRiskScores": [
+        "0-3",
+        "1-3",
+        "3-0",
+        "1-4"
+      ],
+      "totalGoals": "2",
+      "goalCandidates": [
+        "2",
+        "3",
+        "1"
+      ],
+      "confidenceScore": 30,
+      "confidence": "中低",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为平。市场与基本面存在分歧，降低信任度。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "2.77",
+          "draw": "2.65",
+          "away": "2.57",
+          "updatedAt": "2026-08-15 18:59:53"
+        },
+        "ttg": {
+          "s0": "8.00",
+          "s1": "3.95",
+          "s2": "3.10",
+          "s3": "4.00",
+          "s4": "7.50",
+          "s5": "16.00",
+          "s6": "28.00",
+          "s7": "45.00",
+          "updatedAt": "2026-08-15 09:46:12"
+        },
+        "hhad": {
+          "home": "1.38",
+          "draw": "4.10",
+          "away": "6.20",
+          "handicap": null,
+          "updatedAt": "2026-08-15 09:45:57"
+        },
+        "crs": {
+          "0-0": "8.00",
+          "0-1": "7.50",
+          "0-2": "12.00",
+          "0-3": "28.00",
+          "0-4": "80.00",
+          "0-5": "300.0",
+          "1-0": "7.50",
+          "1-1": "5.60",
+          "1-2": "9.00",
+          "1-3": "23.00",
+          "1-4": "80.00",
+          "1-5": "300.0",
+          "2-0": "12.00",
+          "2-1": "9.00",
+          "2-2": "16.00",
+          "2-3": "36.00",
+          "2-4": "120.0",
+          "2-5": "350.0",
+          "3-0": "30.00",
+          "3-1": "24.00",
+          "3-2": "38.00",
+          "3-3": "80.00",
+          "4-0": "90.00",
+          "4-1": "80.00",
+          "4-2": "120.0",
+          "5-0": "300.0",
+          "5-1": "300.0",
+          "5-2": "450.0",
+          "homeOther": "175.0",
+          "drawOther": "550.0",
+          "awayOther": "175.0",
+          "updatedAt": "2026-08-15 09:45:56"
+        },
+        "hafu": {
+          "aa": "4.35",
+          "ad": "15.00",
+          "ah": "33.00",
+          "da": "5.90",
+          "dd": "3.90",
+          "dh": "6.55",
+          "ha": "31.00",
+          "hd": "15.00",
+          "hh": "5.00",
+          "updatedAt": "2026-08-15 19:00:14"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.0521,
+        "1": 0.2132,
+        "2": 0.369,
+        "3": 0.2581,
+        "4": 0.0871,
+        "5": 0.0174,
+        "6": 0.0027,
+        "7+": 0.0003
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0999,
+        "0-1": 0.1058,
+        "0-2": 0.0638,
+        "0-3": 0.0249,
+        "0-4": 0.0076,
+        "0-5": 0.0017,
+        "1-0": 0.1054,
+        "1-1": 0.1443,
+        "1-2": 0.0837,
+        "1-3": 0.0303,
+        "1-4": 0.008,
+        "1-5": 0.0018,
+        "2-0": 0.0633,
+        "2-1": 0.0834,
+        "2-2": 0.0453,
+        "2-3": 0.0182,
+        "2-4": 0.0049,
+        "2-5": 0.0014,
+        "3-0": 0.0233,
+        "3-1": 0.0291,
+        "3-2": 0.0173,
+        "3-3": 0.0073,
+        "4-0": 0.0068,
+        "4-1": 0.0079,
+        "4-2": 0.0049,
+        "5-0": 0.0017,
+        "5-1": 0.0018,
+        "5-2": 0.0011
+      },
+      "halfFullProbabilities": {
+        "hh": 0.1868,
+        "hd": 0.0498,
+        "ha": 0.0204,
+        "dh": 0.1298,
+        "dd": 0.2024,
+        "da": 0.1386,
+        "ah": 0.0195,
+        "ad": 0.0498,
+        "aa": 0.2031
+      },
+      "scorelineFit": {
+        "lambdaHome": 1.164,
+        "lambdaAway": 1.178,
+        "rho": -0.054,
+        "klDivergence": 0.0024
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.3296,
+        "draw": 0.3855,
+        "away": 0.2849
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3113,
+        "draw": 0.3311,
+        "away": 0.3576
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": true,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.5381,
+        "tempoProxy": 0.3656,
+        "defensiveHoleProxy": 0.4954,
+        "viable": false,
+        "status": "attack/tempo/defensive-hole gate not fully supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "away",
+        "underdog": "home",
+        "scoringMass": 0.6938,
+        "twoGoalMass": 0.3171,
+        "viable": true,
+        "bigViable": true
+      },
+      "goalPrediction": {
+        "pick": "2",
+        "probability": 0.369,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "1-1",
+        "probability": 0.1443,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "2.77",
+            "draw": "2.65",
+            "away": "2.57",
+            "updatedAt": "2026-08-15 18:59:53"
+          },
+          "ttg": {
+            "s0": "8.00",
+            "s1": "3.95",
+            "s2": "3.10",
+            "s3": "4.00",
+            "s4": "7.50",
+            "s5": "16.00",
+            "s6": "28.00",
+            "s7": "45.00",
+            "updatedAt": "2026-08-15 09:46:12"
+          },
+          "hhad": {
+            "home": "1.38",
+            "draw": "4.10",
+            "away": "6.20",
+            "handicap": null,
+            "updatedAt": "2026-08-15 09:45:57"
+          },
+          "crs": {
+            "0-0": "8.00",
+            "0-1": "7.50",
+            "0-2": "12.00",
+            "0-3": "28.00",
+            "0-4": "80.00",
+            "0-5": "300.0",
+            "1-0": "7.50",
+            "1-1": "5.60",
+            "1-2": "9.00",
+            "1-3": "23.00",
+            "1-4": "80.00",
+            "1-5": "300.0",
+            "2-0": "12.00",
+            "2-1": "9.00",
+            "2-2": "16.00",
+            "2-3": "36.00",
+            "2-4": "120.0",
+            "2-5": "350.0",
+            "3-0": "30.00",
+            "3-1": "24.00",
+            "3-2": "38.00",
+            "3-3": "80.00",
+            "4-0": "90.00",
+            "4-1": "80.00",
+            "4-2": "120.0",
+            "5-0": "300.0",
+            "5-1": "300.0",
+            "5-2": "450.0",
+            "homeOther": "175.0",
+            "drawOther": "550.0",
+            "awayOther": "175.0",
+            "updatedAt": "2026-08-15 09:45:56"
+          },
+          "hafu": {
+            "aa": "4.35",
+            "ad": "15.00",
+            "ah": "33.00",
+            "da": "5.90",
+            "dd": "3.90",
+            "dh": "6.55",
+            "ha": "31.00",
+            "hd": "15.00",
+            "hh": "5.00",
+            "updatedAt": "2026-08-15 19:00:14"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "2.77",
+            "draw": "2.65",
+            "away": "2.57",
+            "updatedAt": "2026-08-15 18:59:53"
+          },
+          "ttg": {
+            "s0": "8.00",
+            "s1": "3.95",
+            "s2": "3.10",
+            "s3": "4.00",
+            "s4": "7.50",
+            "s5": "16.00",
+            "s6": "28.00",
+            "s7": "45.00",
+            "updatedAt": "2026-08-15 09:46:12"
+          },
+          "hhad": {
+            "home": "1.38",
+            "draw": "4.10",
+            "away": "6.20",
+            "handicap": null,
+            "updatedAt": "2026-08-15 09:45:57"
+          },
+          "crs": {
+            "0-0": "8.00",
+            "0-1": "7.50",
+            "0-2": "12.00",
+            "0-3": "28.00",
+            "0-4": "80.00",
+            "0-5": "300.0",
+            "1-0": "7.50",
+            "1-1": "5.60",
+            "1-2": "9.00",
+            "1-3": "23.00",
+            "1-4": "80.00",
+            "1-5": "300.0",
+            "2-0": "12.00",
+            "2-1": "9.00",
+            "2-2": "16.00",
+            "2-3": "36.00",
+            "2-4": "120.0",
+            "2-5": "350.0",
+            "3-0": "30.00",
+            "3-1": "24.00",
+            "3-2": "38.00",
+            "3-3": "80.00",
+            "4-0": "90.00",
+            "4-1": "80.00",
+            "4-2": "120.0",
+            "5-0": "300.0",
+            "5-1": "300.0",
+            "5-2": "450.0",
+            "homeOther": "175.0",
+            "drawOther": "550.0",
+            "awayOther": "175.0",
+            "updatedAt": "2026-08-15 09:45:56"
+          },
+          "hafu": {
+            "aa": "4.35",
+            "ad": "15.00",
+            "ah": "33.00",
+            "da": "5.90",
+            "dd": "3.90",
+            "dh": "6.55",
+            "ha": "31.00",
+            "hd": "15.00",
+            "hh": "5.00",
+            "updatedAt": "2026-08-15 19:00:14"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "brasileirao-v8-review-0726-auto-0815",
+        "had": 0.3657142857142857,
+        "crs": 0.44571428571428573,
+        "prior": 0.18857142857142856,
+        "goal_shift": -0.03428571428571429,
+        "review_sample": 9,
+        "review_strength": 0.4286,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动9场90分钟结果：主/平/客 3/5/1；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持平局的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定平局，主比分1-1，备选0-0/2-2；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近2场 DD；客队近0场 暂无已核验赛果",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "弗鲁米嫩塞 [巴甲4]；帕尔梅拉斯 [巴甲1]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "弗鲁米嫩塞 [巴甲4]；帕尔梅拉斯 [巴甲1]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：弗鲁米嫩塞 [巴甲4]；帕尔梅拉斯 [巴甲1]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "弗鲁米嫩塞 [巴甲4]；帕尔梅拉斯 [巴甲1]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近2场 DD；客队近0场 暂无已核验赛果",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "弗鲁米嫩塞 [巴甲4]；帕尔梅拉斯 [巴甲1]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "dd",
+      "halfFullText": "平/平",
+      "halfFullOdds": 3.9,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "平",
+          "odds": 2.65,
+          "modelProbability": 0.354,
+          "expectedValue": -0.0619
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "2",
+          "odds": 3.1,
+          "modelProbability": 0.369,
+          "expectedValue": 0.1439
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "1-1",
+          "odds": 5.6,
+          "modelProbability": 0.1443,
+          "expectedValue": -0.1919
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "平/平",
+          "odds": 3.9,
+          "modelProbability": 0.2024,
+          "expectedValue": -0.2106
+        }
+      ],
+      "integratedAnalysis": "结论：平，总进球重点2球，比分关注1-1 / 0-0 / 2-2，半全场为平/平（3.90）；已核验ranking_table，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    },
+    {
+      "id": "2040887",
+      "matchNumStr": "周六027",
+      "matchDate": "2026-08-16",
+      "kickoff": "2026-08-16 09:30:00",
+      "league": "美国职业大联盟",
+      "leagueStyle": {
+        "class": "mls",
+        "color": "#d56b18",
+        "label": "美职"
+      },
+      "home": "皇家盐湖城",
+      "away": "明尼苏达联",
+      "homeRank": "[美职5]",
+      "awayRank": "[美职10]",
+      "probabilities": {
+        "home": 0.4188,
+        "draw": 0.3049,
+        "away": 0.2763
+      },
+      "direction": "home",
+      "directionText": "主胜",
+      "mainScore": "2-1",
+      "backupScores": [
+        "1-0",
+        "3-1"
+      ],
+      "tailRiskScores": [
+        "2-2",
+        "0-0",
+        "1-3",
+        "0-3",
+        "1-4"
+      ],
+      "totalGoals": "3",
+      "goalCandidates": [
+        "3",
+        "2",
+        "4"
+      ],
+      "confidenceScore": 53,
+      "confidence": "中",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。市场与基本面存在分歧，降低信任度。",
+      "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
+      "odds": {
+        "had": {
+          "home": "1.63",
+          "draw": "3.72",
+          "away": "4.05",
+          "updatedAt": "2026-08-15 09:45:59"
+        },
+        "ttg": {
+          "s0": "18.00",
+          "s1": "6.75",
+          "s2": "4.35",
+          "s3": "3.45",
+          "s4": "4.50",
+          "s5": "7.55",
+          "s6": "13.50",
+          "s7": "19.00",
+          "updatedAt": "2026-08-15 21:15:03"
+        },
+        "hhad": {
+          "home": "2.90",
+          "draw": "3.60",
+          "away": "1.99",
+          "handicap": null,
+          "updatedAt": "2026-08-15 09:45:57"
+        },
+        "crs": {
+          "0-0": "18.00",
+          "0-1": "16.00",
+          "0-2": "26.00",
+          "0-3": "65.00",
+          "0-4": "200.0",
+          "0-5": "450.0",
+          "1-0": "9.00",
+          "1-1": "7.50",
+          "1-2": "12.00",
+          "1-3": "32.00",
+          "1-4": "110.0",
+          "1-5": "350.0",
+          "2-0": "9.50",
+          "2-1": "7.00",
+          "2-2": "12.00",
+          "2-3": "30.00",
+          "2-4": "100.0",
+          "2-5": "400.0",
+          "3-0": "14.50",
+          "3-1": "12.00",
+          "3-2": "19.00",
+          "3-3": "45.00",
+          "4-0": "30.00",
+          "4-1": "25.00",
+          "4-2": "40.00",
+          "5-0": "75.00",
+          "5-1": "60.00",
+          "5-2": "100.0",
+          "homeOther": "31.00",
+          "drawOther": "250.0",
+          "awayOther": "100.0",
+          "updatedAt": "2026-08-15 09:45:56"
+        },
+        "hafu": {
+          "aa": "7.15",
+          "ad": "15.00",
+          "ah": "20.50",
+          "da": "9.50",
+          "dd": "6.85",
+          "dh": "4.70",
+          "ha": "30.00",
+          "hd": "15.00",
+          "hh": "2.60",
+          "updatedAt": "2026-08-15 09:45:59"
+        }
+      },
+      "goalProbabilities": {
+        "0": 0.0104,
+        "1": 0.0795,
+        "2": 0.2302,
+        "3": 0.3481,
+        "4": 0.2291,
+        "5": 0.0809,
+        "6": 0.018,
+        "7+": 0.0037
+      },
+      "scorePoolProbabilities": {
+        "0-0": 0.0429,
+        "0-1": 0.0485,
+        "0-2": 0.0286,
+        "0-3": 0.0106,
+        "0-4": 0.0031,
+        "0-5": 0.0011,
+        "1-0": 0.088,
+        "1-1": 0.1071,
+        "1-2": 0.0631,
+        "1-3": 0.0223,
+        "1-4": 0.0059,
+        "1-5": 0.0016,
+        "2-0": 0.0838,
+        "2-1": 0.1115,
+        "2-2": 0.0624,
+        "2-3": 0.0231,
+        "2-4": 0.0063,
+        "2-5": 0.0014,
+        "3-0": 0.0529,
+        "3-1": 0.0642,
+        "3-2": 0.0383,
+        "3-3": 0.0148,
+        "4-0": 0.0242,
+        "4-1": 0.0292,
+        "4-2": 0.0173,
+        "5-0": 0.009,
+        "5-1": 0.0111,
+        "5-2": 0.0064
+      },
+      "halfFullProbabilities": {
+        "hh": 0.3478,
+        "hd": 0.0493,
+        "ha": 0.02,
+        "dh": 0.1746,
+        "dd": 0.1211,
+        "da": 0.0827,
+        "ah": 0.0338,
+        "ad": 0.0493,
+        "aa": 0.1213
+      },
+      "scorelineFit": {
+        "lambdaHome": 1.926,
+        "lambdaAway": 1.17,
+        "rho": -0.012,
+        "klDivergence": 0.0043
+      },
+      "marketBaselineProbabilities": {
+        "home": 0.5033,
+        "draw": 0.2686,
+        "away": 0.2281
+      },
+      "fundamentalProbabilities": {
+        "home": 0.3576,
+        "draw": 0.3311,
+        "away": 0.3113
+      },
+      "fundamentalFirst": true,
+      "marketContradiction": true,
+      "goalSelectionGate": {
+        "attackEfficiencyProxy": 0.6875,
+        "tempoProxy": 0.6799,
+        "defensiveHoleProxy": 0.5882,
+        "viable": true,
+        "status": "big-goal conditions all supported"
+      },
+      "upsetAttackCapability": {
+        "favourite": "home",
+        "underdog": "away",
+        "scoringMass": 0.6754,
+        "twoGoalMass": 0.3032,
+        "viable": true,
+        "bigViable": true
+      },
+      "goalPrediction": {
+        "pick": "3",
+        "probability": 0.3481,
+        "type": "total_goals"
+      },
+      "scorePrediction": {
+        "pick": "2-1",
+        "probability": 0.1115,
+        "type": "exact_score"
+      },
+      "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
+      "marketMovement": {
+        "opening": {
+          "had": {
+            "home": "1.63",
+            "draw": "3.72",
+            "away": "4.05",
+            "updatedAt": "2026-08-15 09:45:59"
+          },
+          "ttg": {
+            "s0": "18.00",
+            "s1": "6.75",
+            "s2": "4.35",
+            "s3": "3.45",
+            "s4": "4.50",
+            "s5": "7.55",
+            "s6": "13.50",
+            "s7": "19.00",
+            "updatedAt": "2026-08-15 21:15:03"
+          },
+          "hhad": {
+            "home": "2.90",
+            "draw": "3.60",
+            "away": "1.99",
+            "handicap": null,
+            "updatedAt": "2026-08-15 09:45:57"
+          },
+          "crs": {
+            "0-0": "18.00",
+            "0-1": "16.00",
+            "0-2": "26.00",
+            "0-3": "65.00",
+            "0-4": "200.0",
+            "0-5": "450.0",
+            "1-0": "9.00",
+            "1-1": "7.50",
+            "1-2": "12.00",
+            "1-3": "32.00",
+            "1-4": "110.0",
+            "1-5": "350.0",
+            "2-0": "9.50",
+            "2-1": "7.00",
+            "2-2": "12.00",
+            "2-3": "30.00",
+            "2-4": "100.0",
+            "2-5": "400.0",
+            "3-0": "14.50",
+            "3-1": "12.00",
+            "3-2": "19.00",
+            "3-3": "45.00",
+            "4-0": "30.00",
+            "4-1": "25.00",
+            "4-2": "40.00",
+            "5-0": "75.00",
+            "5-1": "60.00",
+            "5-2": "100.0",
+            "homeOther": "31.00",
+            "drawOther": "250.0",
+            "awayOther": "100.0",
+            "updatedAt": "2026-08-15 09:45:56"
+          },
+          "hafu": {
+            "aa": "7.15",
+            "ad": "15.00",
+            "ah": "20.50",
+            "da": "9.50",
+            "dd": "6.85",
+            "dh": "4.70",
+            "ha": "30.00",
+            "hd": "15.00",
+            "hh": "2.60",
+            "updatedAt": "2026-08-15 09:45:59"
+          }
+        },
+        "latest": {
+          "had": {
+            "home": "1.63",
+            "draw": "3.72",
+            "away": "4.05",
+            "updatedAt": "2026-08-15 09:45:59"
+          },
+          "ttg": {
+            "s0": "18.00",
+            "s1": "6.75",
+            "s2": "4.35",
+            "s3": "3.45",
+            "s4": "4.50",
+            "s5": "7.55",
+            "s6": "13.50",
+            "s7": "19.00",
+            "updatedAt": "2026-08-15 21:15:03"
+          },
+          "hhad": {
+            "home": "2.90",
+            "draw": "3.60",
+            "away": "1.99",
+            "handicap": null,
+            "updatedAt": "2026-08-15 09:45:57"
+          },
+          "crs": {
+            "0-0": "18.00",
+            "0-1": "16.00",
+            "0-2": "26.00",
+            "0-3": "65.00",
+            "0-4": "200.0",
+            "0-5": "450.0",
+            "1-0": "9.00",
+            "1-1": "7.50",
+            "1-2": "12.00",
+            "1-3": "32.00",
+            "1-4": "110.0",
+            "1-5": "350.0",
+            "2-0": "9.50",
+            "2-1": "7.00",
+            "2-2": "12.00",
+            "2-3": "30.00",
+            "2-4": "100.0",
+            "2-5": "400.0",
+            "3-0": "14.50",
+            "3-1": "12.00",
+            "3-2": "19.00",
+            "3-3": "45.00",
+            "4-0": "30.00",
+            "4-1": "25.00",
+            "4-2": "40.00",
+            "5-0": "75.00",
+            "5-1": "60.00",
+            "5-2": "100.0",
+            "homeOther": "31.00",
+            "drawOther": "250.0",
+            "awayOther": "100.0",
+            "updatedAt": "2026-08-15 09:45:56"
+          },
+          "hafu": {
+            "aa": "7.15",
+            "ad": "15.00",
+            "ah": "20.50",
+            "da": "9.50",
+            "dd": "6.85",
+            "dh": "4.70",
+            "ha": "30.00",
+            "hd": "15.00",
+            "hh": "2.60",
+            "updatedAt": "2026-08-15 09:45:59"
+          }
+        },
+        "delta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "hhad": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "probabilityDelta": {
+          "had": {
+            "home": 0.0,
+            "away": 0.0,
+            "draw": 0.0
+          },
+          "ttg": {
+            "s3": 0.0,
+            "s6": 0.0,
+            "s0": 0.0,
+            "s7": 0.0,
+            "s5": 0.0,
+            "s2": 0.0,
+            "s1": 0.0,
+            "s4": 0.0
+          }
+        },
+        "openingDefinition": "同日最早已观测快照，不等同于真实开盘；需从开售前持续采样才能确认初盘",
+        "openingIsActual": false,
+        "directionalSignal": "home",
+        "interpretation": "变盘不足以形成方向信号",
+        "snapshotCount": 2,
+        "openingCapturedAt": "2026-08-15T23:41:36.4272145+08:00",
+        "latestCapturedAt": "2026-08-15T23:41:58.9271646+08:00"
+      },
+      "modelProfile": {
+        "version": "mls-v6-review-0722-auto-0815",
+        "had": 0.402,
+        "crs": 0.45,
+        "prior": 0.148,
+        "goal_shift": -0.010000000000000002,
+        "review_sample": 3,
+        "review_strength": 0.2,
+        "scorelineWeight": 0.3,
+        "sampleControl": {
+          "active": false,
+          "penalty": 0,
+          "cap": 82,
+          "status": "有复盘样本或杯赛专属收缩"
+        },
+        "contextLayer": "fundamental-first-v3",
+        "scorelineLayer": "dixon-coles-market-blend-v1"
+      },
+      "modelLesson": "滚动3场90分钟结果：主/平/客 1/1/1；参数仅小幅收缩。",
+      "contextFactors": {
+        "stage": "资料不足，保持中性",
+        "schedule": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "motivation": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather": "资料不足，保持中性",
+        "teamNews": "资料不足，保持中性",
+        "coach": "资料不足，保持中性",
+        "upsetPath": "资料不足，保持中性"
+      },
+      "contextSources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+        }
+      ],
+      "evidenceStatus": "已接入公开赛果与竞彩赛程字段；伤停、轮次/战意缺少可核验来源时保持中性",
+      "verifiedFactors": [
+        "ranking_table"
+      ],
+      "reasoningMethod": "fundamental-first-v3",
+      "reasoningContract": {
+        "whyWin": "支持主队的可核验逻辑：积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyMustWin": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "whyLose": "若对手先取得进球、比赛节奏被拉高或已核验的阵容因素失效，主方向会进入输球路径。",
+        "whyNotLose": "保留主方向不败的一球差和低比分路径，但不把保护路径当成事实。",
+        "whyDraw": "平局机制：积分/晋级战意未从公开积分榜核验，不作方向性修正；对应比分池保留低比分平局。",
+        "decision": "综合证据后暂定主队，主比分2-1，备选1-0/3-1；同时保留反向路径。",
+        "dimensionReport": {
+          "dimensions": {
+            "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+            "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+            "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+            "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+            "recent_performance": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+            "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+            "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+            "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+            "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+            "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+            "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+            "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+            "ranking_table": "皇家盐湖城 [美职5]；明尼苏达联 [美职10]",
+            "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+            "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+            "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+          },
+          "missingDimensions": [
+            "rest_fatigue",
+            "travel_home_advantage",
+            "coach_tactics",
+            "weather_pitch",
+            "set_piece_transition",
+            "market_contradiction",
+            "previous_match",
+            "next_match",
+            "promotion_relegation",
+            "cover_risk",
+            "upset_risk"
+          ],
+          "completeness": 0.31,
+          "adjustmentGate": "passed"
+        },
+        "evidenceGate": "passed"
+      },
+      "matchBrief": {
+        "previousMatch": "未核验",
+        "nextMatch": "未核验",
+        "ranking": "皇家盐湖城 [美职5]；明尼苏达联 [美职10]",
+        "promotionRelegation": "未核验",
+        "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+        "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+        "scheduleLoad": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "coachTactics": "未核验",
+        "weatherPitch": "未核验",
+        "completeness": 0.3,
+        "brief": "上一场：未核验；下一场：未核验；排名：皇家盐湖城 [美职5]；明尼苏达联 [美职10]；升级/保级/晋级动机：未核验；穿盘/大比分风险：未核验；需结合实际让球、首发和比赛节奏判断；爆冷路径：未核验；保留市场反向和阵容突变路径；赛程与阵容：已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认 / 未找到可核验的官方伤停或首发来源，不作方向性修正。"
+      },
+      "previousMatch": "未核验",
+      "nextMatch": "未核验",
+      "rankingBrief": "皇家盐湖城 [美职5]；明尼苏达联 [美职10]",
+      "promotionRelegationBrief": "未核验",
+      "coverRisk": "未核验；需结合实际让球、首发和比赛节奏判断",
+      "upsetRisk": "未核验；保留市场反向和阵容突变路径",
+      "analysisDimensions": {
+        "schedule_load": "已检查公开历史赛果；具体联赛轮次与下一场优先级仍需官方赛程确认",
+        "rest_fatigue": "未核验双方实际休息天数、加时赛和高强度出场时间。",
+        "travel_home_advantage": "未核验旅行距离、时区、主客场连续性与场地适应。",
+        "squad_availability": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+        "recent_performance": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+        "coach_tactics": "未核验教练近期阵型、压迫/退防和针对性部署。",
+        "motivation_competition": "积分/晋级战意未从公开积分榜核验，不作方向性修正",
+        "weather_pitch": "未核验当地天气、草皮和比赛时段对节奏的影响。",
+        "set_piece_transition": "未核验定位球、反击、边路防守和转换攻防的具体相克关系。",
+        "market_contradiction": "未核验市场方向与球队真实表现是否冲突；不把低赔当作因果。",
+        "previous_match": "未核验双方上一场正式比赛赛果、对手强弱与消耗情况。",
+        "next_match": "未核验双方赛后下一场对手、间隔和赛程优先级。",
+        "ranking_table": "皇家盐湖城 [美职5]；明尼苏达联 [美职10]",
+        "promotion_relegation": "未核验升级、保级、欧战资格或杯赛晋级的实际压力。",
+        "cover_risk": "未核验让球穿盘条件；比分预测不等同于盘口必然穿盘。",
+        "upset_risk": "未核验爆冷路径；保留为市场与阵容不确定性审计。"
+      },
+      "missingAnalysisDimensions": [
+        "rest_fatigue",
+        "travel_home_advantage",
+        "coach_tactics",
+        "weather_pitch",
+        "set_piece_transition",
+        "market_contradiction",
+        "previous_match",
+        "next_match",
+        "promotion_relegation",
+        "cover_risk",
+        "upset_risk"
+      ],
+      "analysisCompleteness": 0.31,
+      "marketRiskLevel": "常规",
+      "marketRiskFactors": [
+        "联赛模型按常规盘口与比分矩阵校准"
+      ],
+      "marketRiskNote": "未触发杯赛高波动附加层。",
+      "businessDate": "2026-08-15",
+      "halfFullKey": "hh",
+      "halfFullText": "胜/胜",
+      "halfFullOdds": 2.6,
+      "valueAudit": [
+        {
+          "market": "had",
+          "marketText": "胜平负",
+          "pick": "主胜",
+          "odds": 1.63,
+          "modelProbability": 0.4188,
+          "expectedValue": -0.3174
+        },
+        {
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.45,
+          "modelProbability": 0.3481,
+          "expectedValue": 0.2009
+        },
+        {
+          "market": "crs",
+          "marketText": "比分",
+          "pick": "2-1",
+          "odds": 7.0,
+          "modelProbability": 0.1115,
+          "expectedValue": -0.2195
+        },
+        {
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.6,
+          "modelProbability": 0.3478,
+          "expectedValue": -0.0957
+        }
+      ],
+      "integratedAnalysis": "结论：主胜，总进球重点3球，比分关注2-1 / 1-0 / 3-1，半全场为胜/胜（2.60）；已核验ranking_table，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "analysisBasis": "Sporttery赔率与比分矩阵为市场基线；赛程、积分动机、状态、伤停或战术因素仅在公开来源可核验时进入情境层。",
+      "marketBasis": "官方胜平负赔率"
+    }
+  ],
+  "combos": [
+    {
+      "name": "混合3串一",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040886",
+          "league": "巴西甲级联赛",
+          "match": "周六026 弗鲁米嫩塞 vs 帕尔梅拉斯",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "2",
+          "odds": 3.1,
+          "probability": 0.369,
+          "confidenceScore": 30,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040882",
+          "league": "荷兰甲级联赛",
+          "match": "周六022 SBV精英 vs PSV埃因霍温",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 1.9,
+          "probability": 0.4,
+          "confidenceScore": 67,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040887",
+          "league": "美国职业大联盟",
+          "match": "周六027 皇家盐湖城 vs 明尼苏达联",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.6,
+          "probability": 0.3478,
+          "confidenceScore": 53,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 15.31,
+      "trustScore": 33,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 1
+    },
+    {
+      "name": "混合3串一",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040887",
+          "league": "美国职业大联盟",
+          "match": "周六027 皇家盐湖城 vs 明尼苏达联",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.45,
+          "probability": 0.3481,
+          "confidenceScore": 53,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.5,
+          "probability": 0.361,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040885",
+          "league": "葡萄牙超级联赛",
+          "match": "周六025 里奥阿维 vs 波尔图",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 1.78,
+          "probability": 0.4,
+          "confidenceScore": 71,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 15.35,
+      "trustScore": 33,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 2
+    },
+    {
+      "name": "混合3串一",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040885",
+          "league": "葡萄牙超级联赛",
+          "match": "周六025 里奥阿维 vs 波尔图",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.3,
+          "probability": 0.3473,
+          "confidenceScore": 71,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040882",
+          "league": "荷兰甲级联赛",
+          "match": "周六022 SBV精英 vs PSV埃因霍温",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 1.9,
+          "probability": 0.4,
+          "confidenceScore": 67,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.5,
+          "probability": 0.361,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 15.67,
+      "trustScore": 33,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 3
+    },
+    {
+      "name": "混合3串一",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040887",
+          "league": "美国职业大联盟",
+          "match": "周六027 皇家盐湖城 vs 明尼苏达联",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.45,
+          "probability": 0.3481,
+          "confidenceScore": 53,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040882",
+          "league": "荷兰甲级联赛",
+          "match": "周六022 SBV精英 vs PSV埃因霍温",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 1.9,
+          "probability": 0.4,
+          "confidenceScore": 67,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.5,
+          "probability": 0.361,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 16.39,
+      "trustScore": 33,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 4
+    },
+    {
+      "name": "混合3串一",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040886",
+          "league": "巴西甲级联赛",
+          "match": "周六026 弗鲁米嫩塞 vs 帕尔梅拉斯",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "2",
+          "odds": 3.1,
+          "probability": 0.369,
+          "confidenceScore": 30,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040874",
+          "league": "芬兰超级联赛",
+          "match": "周六014 玛丽港 vs 塞伊奈约基",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 2.15,
+          "probability": 0.4,
+          "confidenceScore": 62,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.5,
+          "probability": 0.361,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 16.66,
+      "trustScore": 33,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 5
+    },
+    {
+      "name": "混合3串一",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040886",
+          "league": "巴西甲级联赛",
+          "match": "周六026 弗鲁米嫩塞 vs 帕尔梅拉斯",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "2",
+          "odds": 3.1,
+          "probability": 0.369,
+          "confidenceScore": 30,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040874",
+          "league": "芬兰超级联赛",
+          "match": "周六014 玛丽港 vs 塞伊奈约基",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 2.15,
+          "probability": 0.4,
+          "confidenceScore": 62,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040887",
+          "league": "美国职业大联盟",
+          "match": "周六027 皇家盐湖城 vs 明尼苏达联",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.6,
+          "probability": 0.3478,
+          "confidenceScore": 53,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 17.33,
+      "trustScore": 33,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 6
+    },
+    {
+      "name": "混合3串一",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040885",
+          "league": "葡萄牙超级联赛",
+          "match": "周六025 里奥阿维 vs 波尔图",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.3,
+          "probability": 0.3473,
+          "confidenceScore": 71,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040874",
+          "league": "芬兰超级联赛",
+          "match": "周六014 玛丽港 vs 塞伊奈约基",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "负/负",
+          "odds": 2.15,
+          "probability": 0.4,
+          "confidenceScore": 62,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "hafu",
+          "marketText": "半全场",
+          "pick": "胜/胜",
+          "odds": 2.5,
+          "probability": 0.361,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 17.74,
+      "trustScore": 33,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 7
+    },
+    {
+      "name": "总进球3串一",
+      "category": "ttg",
+      "legs": [
+        {
+          "matchId": "2040877",
+          "league": "荷兰甲级联赛",
+          "match": "周六017 乌德勒支 vs 阿尔克马尔",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "probability": 0.3426,
+          "confidenceScore": 43,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040882",
+          "league": "荷兰甲级联赛",
+          "match": "周六022 SBV精英 vs PSV埃因霍温",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.85,
+          "probability": 0.3013,
+          "confidenceScore": 67,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "probability": 0.3417,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 47.16,
+      "trustScore": 29,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 8
+    },
+    {
+      "name": "大串5串（进球主导）",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040886",
+          "league": "巴西甲级联赛",
+          "match": "周六026 弗鲁米嫩塞 vs 帕尔梅拉斯",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "2",
+          "odds": 3.1,
+          "probability": 0.369,
+          "confidenceScore": 30,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040887",
+          "league": "美国职业大联盟",
+          "match": "周六027 皇家盐湖城 vs 明尼苏达联",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.45,
+          "probability": 0.3481,
+          "confidenceScore": 53,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040885",
+          "league": "葡萄牙超级联赛",
+          "match": "周六025 里奥阿维 vs 波尔图",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.3,
+          "probability": 0.3473,
+          "confidenceScore": 71,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040877",
+          "league": "荷兰甲级联赛",
+          "match": "周六017 乌德勒支 vs 阿尔克马尔",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "probability": 0.3426,
+          "confidenceScore": 43,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "probability": 0.3417,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 432.35,
+      "trustScore": 27,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 9
+    },
+    {
+      "name": "大串6串（进球主导）",
+      "category": "mixed",
+      "legs": [
+        {
+          "matchId": "2040886",
+          "league": "巴西甲级联赛",
+          "match": "周六026 弗鲁米嫩塞 vs 帕尔梅拉斯",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "2",
+          "odds": 3.1,
+          "probability": 0.369,
+          "confidenceScore": 30,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040887",
+          "league": "美国职业大联盟",
+          "match": "周六027 皇家盐湖城 vs 明尼苏达联",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.45,
+          "probability": 0.3481,
+          "confidenceScore": 53,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040885",
+          "league": "葡萄牙超级联赛",
+          "match": "周六025 里奥阿维 vs 波尔图",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.3,
+          "probability": 0.3473,
+          "confidenceScore": 71,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040877",
+          "league": "荷兰甲级联赛",
+          "match": "周六017 乌德勒支 vs 阿尔克马尔",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "probability": 0.3426,
+          "confidenceScore": 43,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040883",
+          "league": "荷兰甲级联赛",
+          "match": "周六023 福图纳锡塔德 vs 坎布尔",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.5,
+          "probability": 0.3417,
+          "confidenceScore": 60,
+          "evidenceGate": "passed"
+        },
+        {
+          "matchId": "2040874",
+          "league": "芬兰超级联赛",
+          "match": "周六014 玛丽港 vs 塞伊奈约基",
+          "market": "ttg",
+          "marketText": "总进球",
+          "pick": "3",
+          "odds": 3.55,
+          "probability": 0.3408,
+          "confidenceScore": 62,
+          "evidenceGate": "passed"
+        }
+      ],
+      "productOdds": 1534.83,
+      "trustScore": 26,
+      "exactScoreLegs": 0,
+      "settlementRisk": "常规但不代表稳中",
+      "selectionRule": "方向/进球分开评估；赔率仅作市场基线",
+      "rank": 10
+    }
+  ],
+  "scheduleWarnings": [],
+  "sources": [
+    {
+      "name": "Sporttery官方接口",
+      "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhad,crs,hafu"
+    },
+    {
+      "name": "UEFA欧联资格赛官方赛程",
+      "url": "https://www.uefa.com/uefaeuropaleague/accesslist/"
+    },
+    {
+      "name": "挪威足协赛程",
+      "url": "https://www.fotball.no/eliteserien/"
+    },
+    {
+      "name": "巴西足协第19轮官方赛程",
+      "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-a/a/brasileirao-de-volta-confira-o-retrospecto-dos-confrontos-da-19-rodada"
+    },
+    {
+      "name": "MLS官方7月16日赛程",
+      "url": "https://www.mlssoccer.com/news/mls-anuncia-el-calendario-completo-de-la-temporada-regular-2026"
+    },
+    {
+      "name": "MLS官方复赛前瞻",
+      "url": "https://www.mlssoccer.com/news/matchday-16-watch-guide-what-to-know-as-mls-returns"
+    },
+    {
+      "name": "瑞超官方赛程",
+      "url": "https://allsvenskan.se/nyheter/sa-spelas-omgang-11-17-av-allsvenskan/"
+    },
+    {
+      "name": "挪威足协赛程",
+      "url": "https://www.fotball.no/eliteserien/"
+    },
+    {
+      "name": "巴西足协赛程",
+      "url": "https://www.cbf.com.br/futebol-brasileiro/jogos/campeonato-brasileiro/serie-a/2026"
+    },
+    {
+      "name": "MLS官方赛程",
+      "url": "https://www.mlssoccer.com/news/mls-unveils-2026-regular-season-schedule"
+    },
+    {
+      "name": "K League官方赛程",
+      "url": "https://tv.kleague.com/en-int/schedule"
+    }
+  ],
+  "disclaimer": "以上仅为公开信息整理后的娱乐分析，不构成任何购彩建议，请理性参考。"
+}

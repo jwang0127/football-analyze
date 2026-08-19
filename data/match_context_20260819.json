@@ -1,0 +1,1114 @@
+{
+  "version": "public-context-v1",
+  "generatedAt": "2026-08-19T10:08:05",
+  "matches": {
+    "wed001": {
+      "ranking": "安养FC 未提供；济州SK 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "away": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "homeHome": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "awayAway": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        }
+      },
+      "fundamentalSummary": "主队暂无已核验样本；客队暂无已核验样本；主队主场暂无已核验样本；客队客场暂无已核验样本",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": 0.0,
+      "scoreBoosts": {},
+      "restDays": {
+        "home": null,
+        "away": null
+      },
+      "cupModelInputs": {
+        "ninetyMinuteSettlementSeparate": true,
+        "extraTimePenaltyPath": "需与90分钟赛果分开记录",
+        "rotationRisk": "未取得官方首发/轮换名单，赛前必须复核",
+        "tieFormat": "当前数据未核验单回合/两回合及首回合比分",
+        "varianceRule": "双方进球率、追分和首发确认后再放大4+球或爆冷尾部"
+      },
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.zucaijia.cn/zcj/matchinfo/info?matchid=502929679&type=0"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://m.webjx.com/live/zuqiu/2929688.html"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true,
+        "tacticalMatchup": {
+          "home": {
+            "headToHead": {
+              "score": 58,
+              "evidence": "公开交锋页列出近年安养对济州多次取胜",
+              "source": "zucaijia/webjx",
+              "analysis": "历史对赛对主队略有支持"
+            }
+          },
+          "away": {
+            "headToHead": {
+              "score": 42,
+              "evidence": "公开交锋页列出近年安养对济州多次取胜",
+              "source": "zucaijia/webjx",
+              "analysis": "客队交锋处于被动，分数仅反映历史维度"
+            }
+          }
+        }
+      }
+    },
+    "wed002": {
+      "ranking": "马竞 未提供；马拉加 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "away": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "homeHome": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "awayAway": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        }
+      },
+      "fundamentalSummary": "主队暂无已核验样本；客队暂无已核验样本；主队主场暂无已核验样本；客队客场暂无已核验样本",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": 0.0,
+      "scoreBoosts": {},
+      "restDays": {
+        "home": null,
+        "away": null
+      },
+      "cupModelInputs": null,
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.laliga.com/es-GB/partido/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-malaga-cf-1"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://as.com/futbol/primera/a-que-hora-es-el-atletico-malaga-tv-horario-y-como-ver-laliga-ea-sports-en-vivo-f202608-n/"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.oddschecker.com/es/futbol/espana/primera-division/atletico-madrid-v-malaga"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true,
+        "hardStrength": {
+          "home": {
+            "leagueRanking": {
+              "score": 86,
+              "evidence": "LaLiga官方赛程确认马竞为西甲主队，公开赛季目标与阵容投入明显更高",
+              "source": "LaLiga/AS",
+              "analysis": "顶级联赛竞争层级和阵容深度明显占优"
+            }
+          },
+          "away": {
+            "leagueRanking": {
+              "score": 42,
+              "evidence": "AS报道马拉加重返西甲，赛季目标以保级为主",
+              "source": "AS",
+              "analysis": "升班马级别与整体实力处于下风"
+            }
+          }
+        },
+        "tacticalMatchup": {
+          "home": {
+            "coreAvailability": {
+              "score": 62,
+              "evidence": "AS报道索尔洛特因肌肉问题缺席，部分世界杯球员仍在调整",
+              "source": "AS",
+              "analysis": "主队有锋线缺口，但整体替补深度仍足"
+            }
+          },
+          "away": {
+            "coreAvailability": {
+              "score": 48,
+              "evidence": "AS报道马拉加卡莱罗、多托和阿德里安·尼诺缺席",
+              "source": "AS",
+              "analysis": "客队伤停对首轮客场作战影响更大"
+            }
+          }
+        },
+        "psychologicalState": {
+          "home": {
+            "motivation": {
+              "score": 78,
+              "evidence": "LaLiga官方确认新赛季首轮，主场揭幕战且目标为争冠",
+              "source": "LaLiga/AS",
+              "analysis": "主场揭幕与争冠目标提高战意"
+            }
+          },
+          "away": {
+            "motivation": {
+              "score": 72,
+              "evidence": "AS报道马拉加重返西甲，首轮面对强队有明确抢分动机",
+              "source": "AS",
+              "analysis": "升班马战意强但压力和实力不对称"
+            }
+          }
+        }
+      }
+    },
+    "wed003": {
+      "ranking": "波特诺 未提供；帕梅拉斯 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "away": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "homeHome": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "awayAway": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        }
+      },
+      "fundamentalSummary": "主队暂无已核验样本；客队暂无已核验样本；主队主场暂无已核验样本；客队客场暂无已核验样本",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": 0.0,
+      "scoreBoosts": {},
+      "restDays": {
+        "home": null,
+        "away": null
+      },
+      "cupModelInputs": {
+        "ninetyMinuteSettlementSeparate": true,
+        "extraTimePenaltyPath": "需与90分钟赛果分开记录",
+        "rotationRisk": "未取得官方首发/轮换名单，赛前必须复核",
+        "tieFormat": "当前数据未核验单回合/两回合及首回合比分",
+        "varianceRule": "双方进球率、追分和首发确认后再放大4+球或爆冷尾部"
+      },
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.livescore.com/zh/zuqiu/nan-mei-jie-fang-zhe-bei/copa-libertadores-2026/cerro-porteno-vs-palmeiras/1756066/"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://as.com/futbol/internacional/tiron-de-orejas-a-palmeiras-f202608-n/"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true
+      }
+    },
+    "wed004": {
+      "ranking": "纽约红牛 未提供；纳什维尔 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "away": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "homeHome": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "awayAway": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        }
+      },
+      "fundamentalSummary": "主队暂无已核验样本；客队暂无已核验样本；主队主场暂无已核验样本；客队客场暂无已核验样本",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": 0.0,
+      "scoreBoosts": {},
+      "restDays": {
+        "home": null,
+        "away": null
+      },
+      "cupModelInputs": null,
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.qiumiwu.com/team/niuyuehongniu/game"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.oursportscentral.com/services/schedule/red-bull-new-york/t-123"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true,
+        "hardStrength": {
+          "home": {
+            "leagueRanking": {
+              "score": 46,
+              "evidence": "公开MLS排名页显示纽约红牛处于东部附加赛区附近",
+              "source": "Qiumiwu",
+              "analysis": "主队排名竞争力中等"
+            }
+          },
+          "away": {
+            "leagueRanking": {
+              "score": 70,
+              "evidence": "公开MLS排名页显示纳什维尔处于东部前列",
+              "source": "Qiumiwu",
+              "analysis": "客队常规赛排名优势明显"
+            }
+          }
+        },
+        "psychologicalState": {
+          "home": {
+            "scheduleFitness": {
+              "score": 55,
+              "evidence": "公开赛程显示纽约红牛连续处于常规赛密集期",
+              "source": "OurSportsCentral",
+              "analysis": "主队有主场但赛程压力不低"
+            }
+          },
+          "away": {
+            "scheduleFitness": {
+              "score": 55,
+              "evidence": "公开赛程显示纳什维尔同处常规赛密集期",
+              "source": "Qiumiwu",
+              "analysis": "客队体能没有明确优势"
+            }
+          }
+        }
+      }
+    },
+    "wed005": {
+      "ranking": "科罗拉多 未提供；洛杉矶FC 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近3场 DDW；客队近0场 暂无已核验赛果",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.04,
+        "draw": 1.0,
+        "away": 0.96
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 3,
+          "gf": 1.0,
+          "ga": 0.0,
+          "points": 1.667,
+          "scoringRate": 0.333,
+          "cleanSheetRate": 1.0,
+          "bttsRate": 0.0,
+          "over25Rate": 0.333,
+          "lastDate": "2026-08-14"
+        },
+        "away": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "homeHome": {
+          "sample": 2,
+          "gf": 1.5,
+          "ga": 0.0,
+          "points": 2.0,
+          "scoringRate": 0.5,
+          "cleanSheetRate": 1.0,
+          "bttsRate": 0.0,
+          "over25Rate": 0.5,
+          "lastDate": "2026-07-31"
+        },
+        "awayAway": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        }
+      },
+      "fundamentalSummary": "主队近3场1.00进/0.00失，积分1.67/场，进球率33%，零封率100%，双方进球率0%，大于2.5球率33%；客队暂无已核验样本；主队主场近2场1.50进/0.00失，积分2.00/场，进球率50%，零封率100%，双方进球率0%，大于2.5球率50%；客队客场暂无已核验样本",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": -0.22,
+      "scoreBoosts": {},
+      "restDays": {
+        "home": 5,
+        "away": null
+      },
+      "cupModelInputs": null,
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [
+        "schedule_load"
+      ],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.365scores.com/en-us/football/match/mls-104/colorado-rapids-los-angeles-fc-1340-51178-104"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://as.com/us/futbol/lafc-pone-el-freno-con-son-ante-el-riesgo-de-una-lesion-f202608-n/"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true,
+        "tacticalMatchup": {
+          "home": {
+            "coreAvailability": {
+              "score": 55,
+              "evidence": "公开前瞻未显示科罗拉多重大核心缺席",
+              "source": "365Scores",
+              "analysis": "主队阵容信息不完整，保持接近中性"
+            }
+          },
+          "away": {
+            "coreAvailability": {
+              "score": 48,
+              "evidence": "AS报道孙兴慜连续出场后存在轮休可能",
+              "source": "AS",
+              "analysis": "客队头号进攻点存在出场时间不确定性"
+            }
+          }
+        },
+        "psychologicalState": {
+          "home": {
+            "motivation": {
+              "score": 64,
+              "evidence": "MLS常规赛主场比赛",
+              "source": "365Scores",
+              "analysis": "主场抢分动机正常"
+            }
+          },
+          "away": {
+            "motivation": {
+              "score": 68,
+              "evidence": "LAFC处于季后赛竞争阶段，前锋轮休需平衡赛程",
+              "source": "AS/MLS",
+              "analysis": "客队战意强但轮换风险抑制稳定性"
+            }
+          }
+        }
+      }
+    },
+    "wed006": {
+      "ranking": "凯尔特人 未提供；LASK林茨 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "away": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "homeHome": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "awayAway": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        }
+      },
+      "fundamentalSummary": "主队暂无已核验样本；客队暂无已核验样本；主队主场暂无已核验样本；客队客场暂无已核验样本",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": 0.0,
+      "scoreBoosts": {},
+      "restDays": {
+        "home": null,
+        "away": null
+      },
+      "cupModelInputs": null,
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.777empirelottocenter.com/matches?c=World&league=3&name=UEFA+Europa+League"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.reddit.com/r/CelticFC/comments/1vqzuch/next_match_lask_h_19_aug/"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true,
+        "psychologicalState": {
+          "home": {
+            "motivation": {
+              "score": 72,
+              "evidence": "公开赛程确认欧战资格赛主场，凯尔特人有晋级目标",
+              "source": "777 Empire/Celtic community",
+              "analysis": "主场欧战战意明确"
+            }
+          },
+          "away": {
+            "motivation": {
+              "score": 70,
+              "evidence": "公开赛程确认LASK参加欧战资格赛",
+              "source": "777 Empire/Celtic community",
+              "analysis": "客队同样有晋级目标"
+            }
+          }
+        }
+      }
+    },
+    "wed007": {
+      "ranking": "奈梅亨 未提供；博德闪耀 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近2场 WD；客队近5场 WDWLW",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.076375,
+        "draw": 1.0,
+        "away": 0.9618749999999999
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 2,
+          "gf": 1.0,
+          "ga": 0.5,
+          "points": 2.0,
+          "scoringRate": 0.5,
+          "cleanSheetRate": 0.5,
+          "bttsRate": 0.5,
+          "over25Rate": 0.5,
+          "lastDate": "2026-08-12"
+        },
+        "away": {
+          "sample": 5,
+          "gf": 2.6,
+          "ga": 1.6,
+          "points": 2.0,
+          "scoringRate": 0.8,
+          "cleanSheetRate": 0.4,
+          "bttsRate": 0.4,
+          "over25Rate": 1.0,
+          "lastDate": "2026-08-12"
+        },
+        "homeHome": {
+          "sample": 1,
+          "gf": 2.0,
+          "ga": 1.0,
+          "points": 3.0,
+          "scoringRate": 1.0,
+          "cleanSheetRate": 0.0,
+          "bttsRate": 1.0,
+          "over25Rate": 1.0,
+          "lastDate": "2026-08-12"
+        },
+        "awayAway": {
+          "sample": 2,
+          "gf": 1.5,
+          "ga": 3.0,
+          "points": 0.5,
+          "scoringRate": 0.5,
+          "cleanSheetRate": 0.0,
+          "bttsRate": 0.5,
+          "over25Rate": 1.0,
+          "lastDate": "2026-08-05"
+        }
+      },
+      "fundamentalSummary": "主队近2场1.00进/0.50失，积分2.00/场，进球率50%，零封率50%，双方进球率50%，大于2.5球率50%；客队近5场2.60进/1.60失，积分2.00/场，进球率80%，零封率40%，双方进球率40%，大于2.5球率100%；主队主场近1场2.00进/1.00失，积分3.00/场，进球率100%，零封率0%，双方进球率100%，大于2.5球率100%；客队客场近2场1.50进/3.00失，积分0.50/场，进球率50%，零封率0%，双方进球率50%，大于2.5球率100%",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": 0.22,
+      "scoreBoosts": {
+        "2-1": 1.12,
+        "1-2": 1.12,
+        "2-2": 1.1,
+        "3-1": 1.08,
+        "1-3": 1.08
+      },
+      "restDays": {
+        "home": 7,
+        "away": 7
+      },
+      "cupModelInputs": null,
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [
+        "recent_performance",
+        "home_away",
+        "schedule_load"
+      ],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.reddit.com/r/Eredivisie/comments/1volg3d/bod%C3%B8_kiest_voor_lange_voorbereiding_in_nederland/"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://www.sansabet.com/content/Documents/SansaBetLista036-2026.pdf"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true,
+        "psychologicalState": {
+          "home": {
+            "scheduleFitness": {
+              "score": 52,
+              "evidence": "公开赛程显示NEC主场迎战欧战资格赛对手",
+              "source": "NEC/public schedule",
+              "analysis": "主队有主场适应优势但缺乏体能量化资料"
+            }
+          },
+          "away": {
+            "scheduleFitness": {
+              "score": 66,
+              "evidence": "公开报道博德闪耀提前前往荷兰备战",
+              "source": "Reddit/Eredivisie",
+              "analysis": "客队提前适应客场，体能准备略占优"
+            }
+          }
+        }
+      }
+    },
+    "wed008": {
+      "ranking": "布拉迪斯 未提供；采列 未提供",
+      "homeRank": null,
+      "awayRank": null,
+      "recentForm": "主队近0场 暂无已核验赛果；客队近0场 暂无已核验赛果",
+      "motivation": "积分/晋级战意与杯赛轮次未从官方竞赛文件完整核验，不作硬性方向修正",
+      "injuries": "未找到可核验的官方伤停或首发来源，不作方向性修正",
+      "schedule": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
+      "weather": "暂无场地坐标，天气接口未能建立比赛场地映射，不作方向性修正",
+      "outcomeMultipliers": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "confidenceDelta": -2,
+      "fundamentalProbabilities": {
+        "home": 1.0,
+        "draw": 1.0,
+        "away": 1.0
+      },
+      "fundamentalStats": {
+        "home": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "away": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "homeHome": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        },
+        "awayAway": {
+          "sample": 0,
+          "gf": null,
+          "ga": null,
+          "points": null,
+          "scoringRate": null,
+          "cleanSheetRate": null,
+          "bttsRate": null,
+          "over25Rate": null,
+          "lastDate": null
+        }
+      },
+      "fundamentalSummary": "主队暂无已核验样本；客队暂无已核验样本；主队主场暂无已核验样本；客队客场暂无已核验样本",
+      "upsetTriggers": "若弱侧近况与主客场进球率不弱，保留弱侧先入球/平局路径；若弱侧进球率低于50%且强侧零封率高，爆冷大球不主动放大；若双方双方进球率和大于2.5球率同时偏高，保留2-2、1-3或3-1追分路径",
+      "goalShift": 0.0,
+      "scoreBoosts": {},
+      "restDays": {
+        "home": null,
+        "away": null
+      },
+      "cupModelInputs": null,
+      "headToHead": {
+        "sample": 0,
+        "status": "no_verified_meetings",
+        "summary": "暂无可核验的双方历史交手"
+      },
+      "headToHeadSummary": "暂无可核验的双方历史交手",
+      "verifiedFactors": [],
+      "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
+      "externalEvidence": {
+        "scheduleResults": [],
+        "weather": null,
+        "providerStatus": {},
+        "missing": []
+      },
+      "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
+      "sources": [
+        {
+          "name": "Sporttery公开赛程/赔率接口",
+          "url": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchCalculatorV1.qry?channel=c&poolCode=ttg,had,hhd,crs,hafu"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://en.skslovan.com/zapasy/gamecenter.php?gameID=21248&type=stars"
+        },
+        {
+          "name": "外部公开赛果/赛程接口",
+          "url": "https://vstupenky.skslovan.com/event/SK-SLOVAN-BRATISLAVA-vs-NK-CELJE"
+        }
+      ],
+      "threeLayer": {
+        "enabled": true,
+        "hardStrength": {
+          "home": {
+            "venueAttribute": {
+              "score": 66,
+              "evidence": "斯洛万官方确认在Tehelné Pole主场进行欧冠附加赛",
+              "source": "Slovan official",
+              "analysis": "明确主场和欧战环境提供主场加成"
+            }
+          },
+          "away": {
+            "venueAttribute": {
+              "score": 48,
+              "evidence": "采列为客场参赛，未找到客场专项优势证据",
+              "source": "Slovan official",
+              "analysis": "客队客场维度保持偏中性"
+            }
+          }
+        },
+        "psychologicalState": {
+          "home": {
+            "motivation": {
+              "score": 78,
+              "evidence": "斯洛万官方将比赛标为欧冠附加赛",
+              "source": "Slovan official",
+              "analysis": "晋级目标清晰，主队战意高"
+            }
+          },
+          "away": {
+            "motivation": {
+              "score": 76,
+              "evidence": "俱乐部售票页确认比赛为欧冠附加赛",
+              "source": "Slovan official",
+              "analysis": "客队同样有明确晋级战意"
+            }
+          }
+        }
+      }
+    }
+  }
+}
