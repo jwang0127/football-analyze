@@ -1025,8 +1025,10 @@ def hafu_pick(match: dict[str, Any]) -> tuple[str, float | None, float]:
     if table:
         # Pick the most likely half/full path consistent with the published
         # full-time direction, using the blended model/market distribution.
-        aligned = {key: value for key, value in table.items() if key[1] == final and num(hafu_odds.get(key))}
-        pool = aligned or {key: value for key, value in table.items() if num(hafu_odds.get(key))}
+        # Public half/full odds may be absent; that must not force every match
+        # into the old low-goal default "平/平" path.
+        aligned = {key: value for key, value in table.items() if key[1] == final}
+        pool = aligned or table
         if pool:
             key = max(pool, key=pool.get)
             return key, num(hafu_odds.get(key)), min(0.40, table.get(key, 0.0))
