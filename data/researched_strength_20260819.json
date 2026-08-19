@@ -1,0 +1,13 @@
+{
+  "source": "Transfermarkt 2026 team profile and competition value tables",
+  "matches": {
+    "wed001": {"homeValueM": 7.9, "awayValueM": 8.8, "homeRank": 2, "awayRank": 8, "url": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige"},
+    "wed002": {"homeValueM": 576.1, "awayValueM": 30.93, "url": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4909441"},
+    "wed003": {"homeValueM": 26.85, "awayValueM": 229.48, "homeRank": 3, "awayRank": 1, "url": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025"},
+    "wed004": {"homeValueM": 47.60, "awayValueM": 43.98, "url": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025"},
+    "wed005": {"homeValueM": 44.95, "awayValueM": 66.18, "homeRank": 20, "awayRank": 8, "url": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025"},
+    "wed006": {"homeValueM": 146.75, "awayValueM": 48.65, "homeRank": 3, "awayRank": 1, "url": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371"},
+    "wed007": {"homeValueM": 56.38, "awayValueM": 82.55, "awayRank": 6, "url": "https://www.transfermarkt.com/bodo-glimt/startseite/verein/501/sort/marketValueRaw.desc"},
+    "wed008": {"homeValueM": 34.15, "awayValueM": 13.93, "homeRank": 1, "awayRank": 1, "url": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540"}
+  }
+}

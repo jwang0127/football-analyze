@@ -1,7 +1,7 @@
 """Build conservative, source-linked team context from retained public feeds."""
 from __future__ import annotations
 
-import argparse, json, re
+import argparse, json, re, math
 from datetime import datetime, date
 from pathlib import Path
 from collections import defaultdict
@@ -311,7 +311,40 @@ def api_three_layer(match, api_row):
             "home": {"score": home_score, "evidence": f"API-Football近{total}次交锋：当前主队{home_wins}胜、{home_losses}负", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"},
             "away": {"score": round(100 - home_score, 2), "evidence": f"API-Football近{total}次交锋：当前客队{home_losses}胜、{home_wins}负", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"},
         }
-    return {"enabled": True, "tacticalMatchup": {"home": {"coreAvailability": availability(home_id)}, "away": {"coreAvailability": availability(away_id)}, **({"home": {"coreAvailability": availability(home_id), "headToHead": h2h["home"]}, "away": {"coreAvailability": availability(away_id), "headToHead": h2h["away"]}} if h2h else {})}}
+    recent = api_row.get("recentFixtures") or {"home": [], "away": []}
+    fixture_date = parse_date((api_row.get("fixture") or {}).get("date"))
+    def recent_items(side):
+        rows = recent.get(side) or []
+        if not rows:
+            return {}
+        points = sum(3 if x.get("result") == "W" else 1 if x.get("result") == "D" else 0 for x in rows) / len(rows)
+        gd = sum((x.get("gf") or 0) - (x.get("ga") or 0) for x in rows) / len(rows)
+        score = round(clamp(50 + (points - 1.2) * 16 + gd * 8, 30, 80), 2)
+        last = rows[0]
+        rest = (fixture_date - parse_date(last.get("date"))).days if fixture_date and parse_date(last.get("date")) else None
+        return {
+            "recentForm": {"score": score, "evidence": f"API-Football近{len(rows)}场：{''.join(x.get('result','') for x in rows)}，场均积分{points:.2f}、净胜球{gd:+.2f}", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "近五场积分与净胜球共同量化近期状态"},
+            "lastResult": {"score": 70 if last.get("result") == "W" else 52 if last.get("result") == "D" else 35, "evidence": f"最近一场 {last.get('date')} {last.get('result')}，{last.get('gf')}-{last.get('ga')} 对 {last.get('opponent')}", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "上轮赛果只作短期情绪修正，不覆盖五场样本"},
+            "scheduleFitness": {"score": clamp(42 + min(max(rest or 4, 1), 9) * 3, 42, 69), "evidence": f"最近已赛日期 {last.get('date')}，赛前休息 {rest if rest is not None else '未能计算'} 天", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "休息天数用于体能基线；旅行与轮换另行核验"},
+            "styleMatchup": {"score": round(clamp(50 + gd * 7, 35, 70), 2), "evidence": f"近五场场均进{sum((x.get('gf') or 0) for x in rows)/len(rows):.2f}、失{sum((x.get('ga') or 0) for x in rows)/len(rows):.2f}", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "以近期进失球结构作为打法强弱代理，不把它等同于战术阵型"},
+        }
+    home_recent, away_recent = recent_items("home"), recent_items("away")
+    standings = api_row.get("standings") or {}
+    def ranking(side):
+        row = standings.get(side) or {}
+        if not row.get("rank"):
+            return None
+        return {"score": round(clamp(86 - (int(row["rank"]) - 1) * 3, 35, 85), 2), "evidence": f"API-Football积分榜：第{row.get('rank')}位，{row.get('points','-')}分，近况{row.get('form','-')}", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "积分榜仅在本赛事有可用排名时采用；杯赛无积分榜不强行映射"}
+    round_name = str(api_row.get("round") or "")
+    motivation_score = 78 if any(x in round_name.lower() for x in ("play", "round of 16", "knockout")) else 66
+    motivation = {"score": motivation_score, "evidence": f"官方赛程字段：{round_name or '赛事阶段已确认'}", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"}
+    hard_home = {**({"leagueRanking": ranking("home")} if ranking("home") else {}), **({"recentForm": home_recent["recentForm"]} if home_recent else {})}
+    hard_away = {**({"leagueRanking": ranking("away")} if ranking("away") else {}), **({"recentForm": away_recent["recentForm"]} if away_recent else {})}
+    tactical_home = {"coreAvailability": availability(home_id), **({"headToHead": h2h["home"]} if h2h else {}), **({"styleMatchup": home_recent["styleMatchup"]} if home_recent else {})}
+    tactical_away = {"coreAvailability": availability(away_id), **({"headToHead": h2h["away"]} if h2h else {}), **({"styleMatchup": away_recent["styleMatchup"]} if away_recent else {})}
+    psychological_home = {"motivation": motivation, **({"lastResult": home_recent["lastResult"], "scheduleFitness": home_recent["scheduleFitness"]} if home_recent else {})}
+    psychological_away = {"motivation": motivation, **({"lastResult": away_recent["lastResult"], "scheduleFitness": away_recent["scheduleFitness"]} if away_recent else {})}
+    return {"enabled": True, "hardStrength": {"home": hard_home, "away": hard_away}, "tacticalMatchup": {"home": tactical_home, "away": tactical_away}, "psychologicalState": {"home": psychological_home, "away": psychological_away}}
 
 
 def merge_three_layer(primary, supplement):
@@ -323,6 +356,51 @@ def merge_three_layer(primary, supplement):
             for item, value in ((supplement.get(layer) or {}).get(side) or {}).items():
                 target.setdefault(item, value)
     return result
+
+
+def public_form_three_layer(match, form_row):
+    """Map public team result lists to form, venue, style, last-result and rest evidence."""
+    if not isinstance(form_row, dict):
+        return {"enabled": True}
+    target = parse_date(match.get("matchDate") or match.get("kickoff"))
+    def side_items(side):
+        rows = form_row.get(side) or []
+        if not rows:
+            return {}, {}, {}
+        sample = rows[:5]
+        points = sum(3 if x.get("result") == "W" else 1 if x.get("result") == "D" else 0 for x in sample) / len(sample)
+        gd = sum((x.get("gf") or 0) - (x.get("ga") or 0) for x in sample) / len(sample)
+        venue_rows = [x for x in sample if x.get("venue") == ("home" if side == "home" else "away")]
+        venue_points = sum(3 if x.get("result") == "W" else 1 if x.get("result") == "D" else 0 for x in venue_rows) / len(venue_rows) if venue_rows else points
+        latest = sample[0]
+        rest = (target - parse_date(latest.get("date"))).days if target and parse_date(latest.get("date")) else None
+        source = "https://sportscore.com/developers/"
+        hard = {"recentForm": {"score": round(clamp(50 + (points - 1.2) * 16 + gd * 8, 30, 80), 2), "evidence": f"公开赛果近{len(sample)}场：{''.join(x.get('result','') for x in sample)}，场均积分{points:.2f}、净胜球{gd:+.2f}", "source": source, "analysis": "近五场积分与净胜球量化近期状态"}, "venueAttribute": {"score": round(clamp(50 + (venue_points - 1.2) * 17, 32, 78), 2), "evidence": f"近五场中对应{('主场' if side == 'home' else '客场')}样本{len(venue_rows)}场，场均积分{venue_points:.2f}", "source": source, "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"}}
+        tactical = {"styleMatchup": {"score": round(clamp(50 + gd * 7, 35, 70), 2), "evidence": f"近五场场均进{sum((x.get('gf') or 0) for x in sample)/len(sample):.2f}、失{sum((x.get('ga') or 0) for x in sample)/len(sample):.2f}", "source": source, "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"}}
+        psycho = {"lastResult": {"score": 70 if latest.get("result") == "W" else 52 if latest.get("result") == "D" else 35, "evidence": f"上轮 {latest.get('date')} {latest.get('result')}，{latest.get('gf')}-{latest.get('ga')} 对 {latest.get('opponent')}", "source": source, "analysis": "上轮赛果只作短期心理修正"}, "scheduleFitness": {"score": round(clamp(42 + min(max(rest or 4, 1), 9) * 3, 42, 69), 2), "evidence": f"最近已赛日 {latest.get('date')}，赛前休息{rest if rest is not None else '未能计算'}天", "source": source, "analysis": "休息天数作为体能基线，旅行与轮换单独处理"}}
+        return hard, tactical, psycho
+    hh, ht, hp = side_items("home")
+    ah, at, ap = side_items("away")
+    return {"enabled": True, "hardStrength": {"home": hh, "away": ah}, "tacticalMatchup": {"home": ht, "away": at}, "psychologicalState": {"home": hp, "away": ap}}
+
+
+def researched_strength_three_layer(row):
+    """Use separately cited public squad values and domestic table positions."""
+    if not isinstance(row, dict):
+        return {"enabled": True}
+    hv, av = row.get("homeValueM"), row.get("awayValueM")
+    source = row.get("url", "Transfermarkt")
+    hard_home, hard_away = {}, {}
+    if isinstance(hv, (int, float)) and isinstance(av, (int, float)) and hv > 0 and av > 0:
+        ratio = clamp(math.log(hv / av), -1.25, 1.25)
+        hard_home["squadValue"] = {"score": round(50 + ratio * 20, 2), "evidence": f"公开阵容总身价：€{hv:.2f}m vs €{av:.2f}m", "source": source, "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"}
+        hard_away["squadValue"] = {"score": round(50 - ratio * 20, 2), "evidence": f"公开阵容总身价：€{av:.2f}m vs €{hv:.2f}m", "source": source, "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"}
+    hr, ar = row.get("homeRank"), row.get("awayRank")
+    if isinstance(hr, int) and isinstance(ar, int):
+        gap = clamp(ar - hr, -12, 12)
+        hard_home["leagueRanking"] = {"score": round(50 + gap * 2.5, 2), "evidence": f"公开联赛表位置：第{hr}位 vs 第{ar}位", "source": source, "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"}
+        hard_away["leagueRanking"] = {"score": round(50 - gap * 2.5, 2), "evidence": f"公开联赛表位置：第{ar}位 vs 第{hr}位", "source": source, "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"}
+    return {"enabled": True, "hardStrength": {"home": hard_home, "away": hard_away}}
 
 def main():
     parser = argparse.ArgumentParser()
@@ -345,6 +423,20 @@ def main():
             enrichment = read(enrichment_path).get("matches", {})
         except (OSError, json.JSONDecodeError):
             enrichment = {}
+    public_forms = {}
+    public_form_path = DATA / f"public_team_form_{args.date}.json"
+    if public_form_path.exists():
+        try:
+            public_forms = read(public_form_path).get("matches", {})
+        except (OSError, json.JSONDecodeError):
+            public_forms = {}
+    researched_strength = {}
+    strength_path = DATA / f"researched_strength_{args.date}.json"
+    if strength_path.exists():
+        try:
+            researched_strength = read(strength_path).get("matches", {})
+        except (OSError, json.JSONDecodeError):
+            researched_strength = {}
     history = []
     for path in sorted(DATA.glob("sporttery_*_latest.json")) + sorted(DATA.glob("20????????.json")):
         try:
@@ -442,6 +534,8 @@ def main():
         # unknown items remain neutral inside the model.
         base_three_layer = external.get("threeLayer") if isinstance(external.get("threeLayer"), dict) else three_layer_from_verified_data(match, fundamental, h2h)
         context["threeLayer"] = merge_three_layer(base_three_layer, api_three_layer(match, api_row))
+        context["threeLayer"] = merge_three_layer(context["threeLayer"], public_form_three_layer(match, public_forms.get(key)))
+        context["threeLayer"] = merge_three_layer(context["threeLayer"], researched_strength_three_layer(researched_strength.get(key)))
         context["apiFootball"] = api_row
         if api_row.get("sourceUrl"):
             context["sources"].append({"name": "API-Football比赛、伤停与交锋", "url": api_row["sourceUrl"]})

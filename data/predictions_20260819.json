@@ -731,7 +731,7 @@
     ],
     "generatedAt": "2026-08-15T12:07:01"
   },
-  "generatedAt": "2026-08-19T10:58:21",
+  "generatedAt": "2026-08-19T11:34:44",
   "oddsUpdatedAt": "",
   "matches": [
     {
@@ -750,9 +750,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.4464,
-        "draw": 0.2786,
-        "away": 0.2751
+        "home": 0.4193,
+        "draw": 0.285,
+        "away": 0.2957
       },
       "direction": "home",
       "directionText": "主胜",
@@ -762,6 +762,7 @@
         "3-1"
       ],
       "tailRiskScores": [
+        "3-0",
         "2-2"
       ],
       "totalGoals": "2",
@@ -770,7 +771,7 @@
         "3",
         "1"
       ],
-      "confidenceScore": 26,
+      "confidenceScore": 35,
       "confidence": "中低",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
@@ -788,12 +789,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.4464
+          "probability": 0.4193
         },
         {
-          "key": "draw",
-          "text": "平",
-          "probability": 0.2786
+          "key": "away",
+          "text": "客胜",
+          "probability": 0.2957
         }
       ],
       "goalProbabilities": {
@@ -880,9 +881,9 @@
         "away": 0.2752
       },
       "fundamentalProbabilities": {
-        "home": 0.4485,
-        "draw": 0.2765,
-        "away": 0.275
+        "home": 0.4018,
+        "draw": 0.2876,
+        "away": 0.3105
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -973,39 +974,39 @@
         "itemScores": {
           "hardStrength": {
             "home": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 65.0,
+              "squadValue": 47.84,
+              "recentForm": 46.8,
+              "venueAttribute": 55.1
             },
             "away": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 35.0,
+              "squadValue": 52.16,
+              "recentForm": 48.4,
+              "venueAttribute": 63.6
             }
           },
           "tacticalMatchup": {
             "home": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 47.2,
               "headToHead": 58.0,
               "coreAvailability": 50.0
             },
             "away": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 48.6,
               "headToHead": 42.0,
               "coreAvailability": 50.0
             }
           },
           "psychologicalState": {
             "home": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
+              "lastResult": 35.0,
+              "scheduleFitness": 54.0,
               "motivation": 50.0
             },
             "away": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
+              "lastResult": 70.0,
+              "scheduleFitness": 69.0,
               "motivation": 50.0
             }
           }
@@ -1015,69 +1016,69 @@
             "home": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 65.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第2位 vs 第8位",
+                "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 47.84,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€7.90m vs €8.80m",
+                "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 46.8,
+                "status": "verified",
+                "evidence": "公开赛果近5场：LLLWW，场均积分1.20、净胜球-0.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 55.1,
+                "status": "verified",
+                "evidence": "近五场中对应主场样本2场，场均积分1.50",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             },
             "away": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 35.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第8位 vs 第2位",
+                "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 52.16,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€8.80m vs €7.90m",
+                "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 48.4,
+                "status": "verified",
+                "evidence": "公开赛果近5场：WLDDD，场均积分1.20、净胜球-0.20",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 63.6,
+                "status": "verified",
+                "evidence": "近五场中对应客场样本2场，场均积分2.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             }
           },
@@ -1085,11 +1086,11 @@
             "home": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 47.2,
+                "status": "verified",
+                "evidence": "近五场场均进1.40、失1.80",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -1111,11 +1112,11 @@
             "away": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 48.6,
+                "status": "verified",
+                "evidence": "近五场场均进0.80、失1.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -1139,19 +1140,19 @@
             "home": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 35.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-15 L，0-2 对 Jeju SK FC",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 54.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-15，赛前休息4天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
@@ -1165,19 +1166,19 @@
             "away": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "上轮 2014-09-27 W，2-1 对 Gwangju Football Club U18",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 69.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2014-09-27，赛前休息4344天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
@@ -1192,47 +1193,33 @@
         },
         "layerScores": {
           "hardStrength": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 53.69,
+            "away": 49.79
           },
           "tacticalMatchup": {
-            "home": 52.67,
-            "away": 47.33
+            "home": 51.73,
+            "away": 46.87
           },
           "psychologicalState": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 46.33,
+            "away": 63.0
           }
         },
         "totalScores": {
-          "home": 50.93,
-          "away": 49.07
+          "home": 51.16,
+          "away": 52.07
         },
         "probabilities": {
-          "home": 0.4485,
-          "draw": 0.2765,
-          "away": 0.275
+          "home": 0.4018,
+          "draw": 0.2876,
+          "away": 0.3105
         },
-        "dataCompleteness": 0.1,
-        "confidencePenalty": -11,
+        "dataCompleteness": 0.8,
+        "confidencePenalty": -2,
         "missingItems": [
-          "hardStrength.home.leagueRanking",
-          "hardStrength.home.squadValue",
-          "hardStrength.home.recentForm",
-          "hardStrength.home.venueAttribute",
-          "hardStrength.away.leagueRanking",
-          "hardStrength.away.squadValue",
-          "hardStrength.away.recentForm",
-          "hardStrength.away.venueAttribute",
-          "tacticalMatchup.home.styleMatchup",
           "tacticalMatchup.home.coreAvailability",
-          "tacticalMatchup.away.styleMatchup",
           "tacticalMatchup.away.coreAvailability",
-          "psychologicalState.home.lastResult",
-          "psychologicalState.home.scheduleFitness",
           "psychologicalState.home.motivation",
-          "psychologicalState.away.lastResult",
-          "psychologicalState.away.scheduleFitness",
           "psychologicalState.away.motivation"
         ],
         "drawCaution": 0.0,
@@ -1456,8 +1443,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 2.63,
-          "modelProbability": 0.4464,
-          "expectedValue": 0.174
+          "modelProbability": 0.4193,
+          "expectedValue": 0.1028
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注1-0 / 2-1 / 3-1，半全场为胜/胜；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
@@ -1480,9 +1467,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.6131,
-        "draw": 0.2299,
-        "away": 0.157
+        "home": 0.6501,
+        "draw": 0.2183,
+        "away": 0.1316
       },
       "direction": "home",
       "directionText": "主胜",
@@ -1518,12 +1505,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.6131
+          "probability": 0.6501
         },
         {
           "key": "draw",
           "text": "平",
-          "probability": 0.2299
+          "probability": 0.2183
         }
       ],
       "goalProbabilities": {
@@ -1610,9 +1597,9 @@
         "away": 0.1507
       },
       "fundamentalProbabilities": {
-        "home": 0.6017,
-        "draw": 0.2369,
-        "away": 0.1615
+        "home": 0.6654,
+        "draw": 0.2169,
+        "away": 0.1177
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -1698,13 +1685,13 @@
           "hardStrength": {
             "home": {
               "leagueRanking": 86.0,
-              "squadValue": 50.0,
+              "squadValue": 75.0,
               "recentForm": 50.0,
               "venueAttribute": 50.0
             },
             "away": {
               "leagueRanking": 42.0,
-              "squadValue": 50.0,
+              "squadValue": 25.0,
               "recentForm": 50.0,
               "venueAttribute": 50.0
             }
@@ -1747,11 +1734,11 @@
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 75.0,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€576.10m vs €30.93m",
+                "source": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4909441",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
@@ -1781,11 +1768,11 @@
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 25.0,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€30.93m vs €576.10m",
+                "source": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4909441",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
@@ -1916,8 +1903,8 @@
         },
         "layerScores": {
           "hardStrength": {
-            "home": 59.0,
-            "away": 48.0
+            "home": 65.25,
+            "away": 41.75
           },
           "tacticalMatchup": {
             "home": 61.5,
@@ -1929,21 +1916,19 @@
           }
         },
         "totalScores": {
-          "home": 59.96,
-          "away": 48.17
+          "home": 62.46,
+          "away": 45.67
         },
         "probabilities": {
-          "home": 0.6017,
-          "draw": 0.2369,
-          "away": 0.1615
+          "home": 0.6654,
+          "draw": 0.2169,
+          "away": 0.1177
         },
-        "dataCompleteness": 0.4,
-        "confidencePenalty": -7,
+        "dataCompleteness": 0.5,
+        "confidencePenalty": -6,
         "missingItems": [
-          "hardStrength.home.squadValue",
           "hardStrength.home.recentForm",
           "hardStrength.home.venueAttribute",
-          "hardStrength.away.squadValue",
           "hardStrength.away.recentForm",
           "hardStrength.away.venueAttribute",
           "tacticalMatchup.home.styleMatchup",
@@ -2182,8 +2167,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 1.2,
-          "modelProbability": 0.6131,
-          "expectedValue": -0.2643
+          "modelProbability": 0.6501,
+          "expectedValue": -0.2199
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注1-0 / 2-1 / 3-1，半全场为胜/胜；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
@@ -2206,15 +2191,15 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.3355,
-        "draw": 0.3048,
-        "away": 0.3597
+        "home": 0.3535,
+        "draw": 0.3082,
+        "away": 0.3383
       },
-      "direction": "away",
-      "directionText": "客胜",
-      "mainScore": "0-1",
+      "direction": "home",
+      "directionText": "主胜",
+      "mainScore": "1-0",
       "backupScores": [
-        "1-2",
+        "2-1",
         "3-1"
       ],
       "tailRiskScores": [
@@ -2230,9 +2215,9 @@
         "1",
         "3"
       ],
-      "confidenceScore": 46,
-      "confidence": "中低",
-      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为客胜。",
+      "confidenceScore": 56,
+      "confidence": "中",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
       "odds": {
         "had": {
@@ -2246,14 +2231,14 @@
       },
       "directionOptions": [
         {
-          "key": "away",
-          "text": "客胜",
-          "probability": 0.3597
-        },
-        {
           "key": "home",
           "text": "主胜",
-          "probability": 0.3355
+          "probability": 0.3535
+        },
+        {
+          "key": "away",
+          "text": "客胜",
+          "probability": 0.3383
         }
       ],
       "goalProbabilities": {
@@ -2340,9 +2325,9 @@
         "away": 0.3283
       },
       "fundamentalProbabilities": {
-        "home": 0.3267,
-        "draw": 0.2927,
-        "away": 0.3806
+        "home": 0.3566,
+        "draw": 0.2984,
+        "away": 0.345
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -2354,10 +2339,10 @@
         "status": "attack/tempo/defensive-hole gate not fully supported"
       },
       "upsetAttackCapability": {
-        "favourite": "away",
-        "underdog": "home",
-        "scoringMass": 0.7711,
-        "twoGoalMass": 0.4334,
+        "favourite": "home",
+        "underdog": "away",
+        "scoringMass": 0.5231,
+        "twoGoalMass": 0.17,
         "viable": true,
         "bigViable": true
       },
@@ -2433,40 +2418,40 @@
         "itemScores": {
           "hardStrength": {
             "home": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 45.0,
+              "squadValue": 25.0,
+              "recentForm": 56.4,
+              "venueAttribute": 78.0
             },
             "away": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 55.0,
+              "squadValue": 75.0,
+              "recentForm": 48.4,
+              "venueAttribute": 32.0
             }
           },
           "tacticalMatchup": {
             "home": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 52.8,
               "headToHead": 25.0,
               "coreAvailability": 68.0
             },
             "away": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 51.4,
               "headToHead": 75.0,
               "coreAvailability": 68.0
             }
           },
           "psychologicalState": {
             "home": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
-              "motivation": 50.0
+              "lastResult": 70.0,
+              "scheduleFitness": 54.0,
+              "motivation": 78.0
             },
             "away": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
-              "motivation": 50.0
+              "lastResult": 35.0,
+              "scheduleFitness": 57.0,
+              "motivation": 78.0
             }
           }
         },
@@ -2475,69 +2460,69 @@
             "home": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 45.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第3位 vs 第1位",
+                "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 25.0,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€26.85m vs €229.48m",
+                "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 56.4,
+                "status": "verified",
+                "evidence": "公开赛果近5场：WDLWL，场均积分1.40、净胜球+0.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 78.0,
+                "status": "verified",
+                "evidence": "近五场中对应主场样本2场，场均积分3.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             },
             "away": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 55.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第1位 vs 第3位",
+                "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 75.0,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€229.48m vs €26.85m",
+                "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 48.4,
+                "status": "verified",
+                "evidence": "公开赛果近5场：LDDLW，场均积分1.00、净胜球+0.20",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 32.0,
+                "status": "verified",
+                "evidence": "近五场中对应客场样本2场，场均积分0.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             }
           },
@@ -2545,11 +2530,11 @@
             "home": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 52.8,
+                "status": "verified",
+                "evidence": "近五场场均进1.20、失0.80",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -2571,11 +2556,11 @@
             "away": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 51.4,
+                "status": "verified",
+                "evidence": "近五场场均进1.60、失1.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -2599,100 +2584,83 @@
             "home": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-16 W，1-0 对 Sportivo San Lorenzo",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 54.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-16，赛前休息4天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 78.0,
+                "status": "verified",
+                "evidence": "官方赛程字段：Round of 16",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+                "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
               }
             },
             "away": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 35.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-15 L，2-3 对 Fluminense - RJ",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 57.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-15，赛前休息5天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 78.0,
+                "status": "verified",
+                "evidence": "官方赛程字段：Round of 16",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+                "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
               }
             }
           }
         },
         "layerScores": {
           "hardStrength": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 51.1,
+            "away": 52.6
           },
           "tacticalMatchup": {
-            "home": 47.67,
-            "away": 64.33
+            "home": 48.6,
+            "away": 64.8
           },
           "psychologicalState": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 67.33,
+            "away": 56.67
           }
         },
         "totalScores": {
-          "home": 49.18,
-          "away": 55.02
+          "home": 54.28,
+          "away": 57.89
         },
         "probabilities": {
-          "home": 0.3267,
-          "draw": 0.2927,
-          "away": 0.3806
+          "home": 0.3566,
+          "draw": 0.2984,
+          "away": 0.345
         },
-        "dataCompleteness": 0.2,
-        "confidencePenalty": -10,
-        "missingItems": [
-          "hardStrength.home.leagueRanking",
-          "hardStrength.home.squadValue",
-          "hardStrength.home.recentForm",
-          "hardStrength.home.venueAttribute",
-          "hardStrength.away.leagueRanking",
-          "hardStrength.away.squadValue",
-          "hardStrength.away.recentForm",
-          "hardStrength.away.venueAttribute",
-          "tacticalMatchup.home.styleMatchup",
-          "tacticalMatchup.away.styleMatchup",
-          "psychologicalState.home.lastResult",
-          "psychologicalState.home.scheduleFitness",
-          "psychologicalState.home.motivation",
-          "psychologicalState.away.lastResult",
-          "psychologicalState.away.scheduleFitness",
-          "psychologicalState.away.motivation"
-        ],
+        "dataCompleteness": 1.0,
+        "confidencePenalty": 0,
+        "missingItems": [],
         "drawCaution": 0.0,
         "method": "hard strength 40% + tactical matchup 35% + psychological state 25%; missing items use neutral 50"
       },
@@ -2712,8 +2680,8 @@
         "type": "total_goals"
       },
       "scorePrediction": {
-        "pick": "0-1",
-        "probability": 0.0809,
+        "pick": "1-0",
+        "probability": 0.1611,
         "type": "exact_score"
       },
       "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
@@ -2780,7 +2748,7 @@
         "whyLose": "未知；没有足够的球队、教练、阵容和比赛计划证据支持具体输球叙事。",
         "whyNotLose": "仅保留比分矩阵中的低比分、平局和一球差保护，不把它们宣称为已验证事实。",
         "whyDraw": "未知；平局只作为结构性保护路径，不是由赔率低赔直接推导。",
-        "decision": "客队为市场与联赛基线下的暂定方向，主比分0-1，备选1-2/3-1；证据不足，置信度下调。",
+        "decision": "主队为市场与联赛基线下的暂定方向，主比分1-0，备选2-1/3-1；证据不足，置信度下调。",
         "dimensionReport": {
           "dimensions": {
             "schedule_load": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
@@ -2879,20 +2847,20 @@
       "marketRiskNote": "未触发杯赛高波动附加层。",
       "marketDataStatus": "仅有公开胜平负赔率；总进球/比分/半全场为模型输出，无公开赔率",
       "businessDate": "2026-08-19",
-      "halfFullKey": "aa",
-      "halfFullText": "负/负",
+      "halfFullKey": "hh",
+      "halfFullText": "胜/胜",
       "halfFullOdds": null,
       "valueAudit": [
         {
           "market": "had",
           "marketText": "胜平负",
-          "pick": "客胜",
-          "odds": 1.66,
-          "modelProbability": 0.3597,
-          "expectedValue": -0.4029
+          "pick": "主胜",
+          "odds": 5.05,
+          "modelProbability": 0.3535,
+          "expectedValue": 0.7852
         }
       ],
-      "integratedAnalysis": "结论：客胜，总进球重点2球，比分关注0-1 / 1-2 / 3-1，半全场为负/负；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注1-0 / 2-1 / 3-1，半全场为胜/胜；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
       "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
       "marketBasis": "官方胜平负赔率"
     },
@@ -2912,9 +2880,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.4041,
-        "draw": 0.2956,
-        "away": 0.3003
+        "home": 0.3747,
+        "draw": 0.295,
+        "away": 0.3303
       },
       "direction": "home",
       "directionText": "主胜",
@@ -2933,9 +2901,9 @@
         "3",
         "1"
       ],
-      "confidenceScore": 27,
+      "confidenceScore": 34,
       "confidence": "中低",
-      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。 官方胜平负、比分、总进球和半全场赔率均未取得；方向与比分由对应赛事模型先验生成，不参与赔率价值审计或胜平负串关。",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。市场与基本面存在分歧，降低信任度。 官方胜平负、比分、总进球和半全场赔率均未取得；方向与比分由对应赛事模型先验生成，不参与赔率价值审计或胜平负串关。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
       "odds": {
         "crs": {},
@@ -2947,12 +2915,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.4041
+          "probability": 0.3747
         },
         {
           "key": "away",
           "text": "客胜",
-          "probability": 0.3003
+          "probability": 0.3303
         }
       ],
       "goalProbabilities": {
@@ -3039,12 +3007,12 @@
         "away": 0.2597
       },
       "fundamentalProbabilities": {
-        "home": 0.3767,
-        "draw": 0.2936,
-        "away": 0.3297
+        "home": 0.3261,
+        "draw": 0.2925,
+        "away": 0.3815
       },
       "fundamentalFirst": true,
-      "marketContradiction": false,
+      "marketContradiction": true,
       "goalSelectionGate": {
         "attackEfficiencyProxy": 0.5421,
         "tempoProxy": 0.3476,
@@ -3127,39 +3095,39 @@
           "hardStrength": {
             "home": {
               "leagueRanking": 46.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "squadValue": 51.58,
+              "recentForm": 45.2,
+              "venueAttribute": 55.1
             },
             "away": {
               "leagueRanking": 70.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "squadValue": 48.42,
+              "recentForm": 59.6,
+              "venueAttribute": 38.1
             }
           },
           "tacticalMatchup": {
             "home": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 45.8,
               "headToHead": 50.0,
               "coreAvailability": 58.0
             },
             "away": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 55.6,
               "headToHead": 50.0,
               "coreAvailability": 58.0
             }
           },
           "psychologicalState": {
             "home": {
-              "lastResult": 50.0,
+              "lastResult": 35.0,
               "scheduleFitness": 55.0,
-              "motivation": 50.0
+              "motivation": 66.0
             },
             "away": {
-              "lastResult": 50.0,
+              "lastResult": 70.0,
               "scheduleFitness": 55.0,
-              "motivation": 50.0
+              "motivation": 66.0
             }
           }
         },
@@ -3176,27 +3144,27 @@
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 51.58,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€47.60m vs €43.98m",
+                "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 45.2,
+                "status": "verified",
+                "evidence": "公开赛果近5场：LWLLW，场均积分1.20、净胜球-0.60",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 55.1,
+                "status": "verified",
+                "evidence": "近五场中对应主场样本2场，场均积分1.50",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             },
             "away": {
@@ -3210,27 +3178,27 @@
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 48.42,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€43.98m vs €47.60m",
+                "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 59.6,
+                "status": "verified",
+                "evidence": "公开赛果近5场：WLWLD，场均积分1.40、净胜球+0.80",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 38.1,
+                "status": "verified",
+                "evidence": "近五场中对应客场样本2场，场均积分0.50",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             }
           },
@@ -3238,11 +3206,11 @@
             "home": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 45.8,
+                "status": "verified",
+                "evidence": "近五场场均进1.40、失2.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -3264,11 +3232,11 @@
             "away": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 55.6,
+                "status": "verified",
+                "evidence": "近五场场均进2.20、失1.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -3292,11 +3260,11 @@
             "home": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 35.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-15 L，1-2 对 Atlanta United",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
@@ -3308,21 +3276,21 @@
               },
               "motivation": {
                 "label": "战意",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 66.0,
+                "status": "verified",
+                "evidence": "官方赛程字段：Regular Season - 20",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+                "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
               }
             },
             "away": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-16 W，4-1 对 Inter Miami CF",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
@@ -3334,55 +3302,43 @@
               },
               "motivation": {
                 "label": "战意",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 66.0,
+                "status": "verified",
+                "evidence": "官方赛程字段：Regular Season - 20",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+                "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
               }
             }
           }
         },
         "layerScores": {
           "hardStrength": {
-            "home": 49.0,
-            "away": 55.0
+            "home": 49.47,
+            "away": 54.03
           },
           "tacticalMatchup": {
-            "home": 52.67,
-            "away": 52.67
+            "home": 51.27,
+            "away": 54.53
           },
           "psychologicalState": {
-            "home": 51.67,
-            "away": 51.67
+            "home": 52.0,
+            "away": 63.67
           }
         },
         "totalScores": {
-          "home": 50.95,
-          "away": 53.35
+          "home": 50.73,
+          "away": 56.62
         },
         "probabilities": {
-          "home": 0.3767,
-          "draw": 0.2936,
-          "away": 0.3297
+          "home": 0.3261,
+          "draw": 0.2925,
+          "away": 0.3815
         },
-        "dataCompleteness": 0.3,
-        "confidencePenalty": -8,
+        "dataCompleteness": 0.9,
+        "confidencePenalty": -1,
         "missingItems": [
-          "hardStrength.home.squadValue",
-          "hardStrength.home.recentForm",
-          "hardStrength.home.venueAttribute",
-          "hardStrength.away.squadValue",
-          "hardStrength.away.recentForm",
-          "hardStrength.away.venueAttribute",
-          "tacticalMatchup.home.styleMatchup",
           "tacticalMatchup.home.headToHead",
-          "tacticalMatchup.away.styleMatchup",
-          "tacticalMatchup.away.headToHead",
-          "psychologicalState.home.lastResult",
-          "psychologicalState.home.motivation",
-          "psychologicalState.away.lastResult",
-          "psychologicalState.away.motivation"
+          "tacticalMatchup.away.headToHead"
         ],
         "drawCaution": 0.0,
         "method": "hard strength 40% + tactical matchup 35% + psychological state 25%; missing items use neutral 50"
@@ -3642,9 +3598,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.4038,
-        "draw": 0.2957,
-        "away": 0.3005
+        "home": 0.3723,
+        "draw": 0.2942,
+        "away": 0.3335
       },
       "direction": "home",
       "directionText": "主胜",
@@ -3663,9 +3619,9 @@
         "1",
         "3"
       ],
-      "confidenceScore": 27,
+      "confidenceScore": 35,
       "confidence": "中低",
-      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。 官方胜平负、比分、总进球和半全场赔率均未取得；方向与比分由对应赛事模型先验生成，不参与赔率价值审计或胜平负串关。",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。市场与基本面存在分歧，降低信任度。 官方胜平负、比分、总进球和半全场赔率均未取得；方向与比分由对应赛事模型先验生成，不参与赔率价值审计或胜平负串关。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
       "odds": {
         "crs": {},
@@ -3677,12 +3633,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.4038
+          "probability": 0.3723
         },
         {
           "key": "away",
           "text": "客胜",
-          "probability": 0.3005
+          "probability": 0.3335
         }
       ],
       "goalProbabilities": {
@@ -3769,12 +3725,12 @@
         "away": 0.2597
       },
       "fundamentalProbabilities": {
-        "home": 0.3762,
-        "draw": 0.2937,
-        "away": 0.3301
+        "home": 0.3219,
+        "draw": 0.2912,
+        "away": 0.387
       },
       "fundamentalFirst": true,
-      "marketContradiction": false,
+      "marketContradiction": true,
       "goalSelectionGate": {
         "attackEfficiencyProxy": 0.5421,
         "tempoProxy": 0.3141,
@@ -3856,39 +3812,39 @@
         "itemScores": {
           "hardStrength": {
             "home": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 20.0,
+              "squadValue": 42.26,
+              "recentForm": 67.6,
+              "venueAttribute": 72.1
             },
             "away": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 80.0,
+              "squadValue": 57.74,
+              "recentForm": 67.6,
+              "venueAttribute": 63.6
             }
           },
           "tacticalMatchup": {
             "home": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 54.2,
               "headToHead": 37.5,
               "coreAvailability": 55.0
             },
             "away": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 54.2,
               "headToHead": 62.5,
               "coreAvailability": 48.0
             }
           },
           "psychologicalState": {
             "home": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
+              "lastResult": 70.0,
+              "scheduleFitness": 54.0,
               "motivation": 64.0
             },
             "away": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
+              "lastResult": 35.0,
+              "scheduleFitness": 54.0,
               "motivation": 68.0
             }
           }
@@ -3898,69 +3854,69 @@
             "home": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 20.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第20位 vs 第8位",
+                "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 42.26,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€44.95m vs €66.18m",
+                "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 67.6,
+                "status": "verified",
+                "evidence": "公开赛果近5场：WWLWD，场均积分2.00、净胜球+0.60",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 72.1,
+                "status": "verified",
+                "evidence": "近五场中对应主场样本4场，场均积分2.50",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             },
             "away": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 80.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第8位 vs 第20位",
+                "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 57.74,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€66.18m vs €44.95m",
+                "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 67.6,
+                "status": "verified",
+                "evidence": "公开赛果近5场：LWWWD，场均积分2.00、净胜球+0.60",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 63.6,
+                "status": "verified",
+                "evidence": "近五场中对应客场样本2场，场均积分2.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             }
           },
@@ -3968,11 +3924,11 @@
             "home": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 54.2,
+                "status": "verified",
+                "evidence": "近五场场均进1.00、失0.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -3994,11 +3950,11 @@
             "away": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 54.2,
+                "status": "verified",
+                "evidence": "近五场场均进2.80、失2.20",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -4022,19 +3978,19 @@
             "home": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-16 W，2-0 对 Sporting Kansas City",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 54.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-16，赛前休息4天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
@@ -4048,19 +4004,19 @@
             "away": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 35.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-16 L，0-1 对 San Diego FC",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 54.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-16，赛前休息4天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
@@ -4075,45 +4031,30 @@
         },
         "layerScores": {
           "hardStrength": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 50.49,
+            "away": 67.23
           },
           "tacticalMatchup": {
-            "home": 47.5,
-            "away": 53.5
+            "home": 48.9,
+            "away": 54.9
           },
           "psychologicalState": {
-            "home": 54.67,
-            "away": 56.0
+            "home": 62.67,
+            "away": 52.33
           }
         },
         "totalScores": {
-          "home": 50.29,
-          "away": 52.72
+          "home": 52.98,
+          "away": 59.19
         },
         "probabilities": {
-          "home": 0.3762,
-          "draw": 0.2937,
-          "away": 0.3301
+          "home": 0.3219,
+          "draw": 0.2912,
+          "away": 0.387
         },
-        "dataCompleteness": 0.3,
-        "confidencePenalty": -8,
-        "missingItems": [
-          "hardStrength.home.leagueRanking",
-          "hardStrength.home.squadValue",
-          "hardStrength.home.recentForm",
-          "hardStrength.home.venueAttribute",
-          "hardStrength.away.leagueRanking",
-          "hardStrength.away.squadValue",
-          "hardStrength.away.recentForm",
-          "hardStrength.away.venueAttribute",
-          "tacticalMatchup.home.styleMatchup",
-          "tacticalMatchup.away.styleMatchup",
-          "psychologicalState.home.lastResult",
-          "psychologicalState.home.scheduleFitness",
-          "psychologicalState.away.lastResult",
-          "psychologicalState.away.scheduleFitness"
-        ],
+        "dataCompleteness": 1.0,
+        "confidencePenalty": 0,
+        "missingItems": [],
         "drawCaution": 0.0,
         "method": "hard strength 40% + tactical matchup 35% + psychological state 25%; missing items use neutral 50"
       },
@@ -4374,9 +4315,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.5038,
-        "draw": 0.258,
-        "away": 0.2382
+        "home": 0.5186,
+        "draw": 0.2545,
+        "away": 0.2269
       },
       "direction": "home",
       "directionText": "主胜",
@@ -4394,8 +4335,8 @@
         "3",
         "1"
       ],
-      "confidenceScore": 47,
-      "confidence": "中低",
+      "confidenceScore": 56,
+      "confidence": "中",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
       "odds": {
@@ -4412,12 +4353,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.5038
+          "probability": 0.5186
         },
         {
           "key": "draw",
           "text": "平",
-          "probability": 0.258
+          "probability": 0.2545
         }
       ],
       "goalProbabilities": {
@@ -4504,9 +4445,9 @@
         "away": 0.1572
       },
       "fundamentalProbabilities": {
-        "home": 0.4199,
-        "draw": 0.2833,
-        "away": 0.2968
+        "home": 0.4453,
+        "draw": 0.2773,
+        "away": 0.2774
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -4591,39 +4532,39 @@
         "itemScores": {
           "hardStrength": {
             "home": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 45.0,
+              "squadValue": 72.08,
+              "recentForm": 80.0,
+              "venueAttribute": 63.6
             },
             "away": {
-              "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "leagueRanking": 55.0,
+              "squadValue": 27.92,
+              "recentForm": 80.0,
+              "venueAttribute": 78.0
             }
           },
           "tacticalMatchup": {
             "home": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 68.2,
               "headToHead": 50.0,
               "coreAvailability": 50.0
             },
             "away": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 70.0,
               "headToHead": 50.0,
               "coreAvailability": 50.0
             }
           },
           "psychologicalState": {
             "home": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
+              "lastResult": 70.0,
+              "scheduleFitness": 57.0,
               "motivation": 72.0
             },
             "away": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
+              "lastResult": 70.0,
+              "scheduleFitness": 60.0,
               "motivation": 70.0
             }
           }
@@ -4633,69 +4574,69 @@
             "home": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 45.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第3位 vs 第1位",
+                "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 72.08,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€146.75m vs €48.65m",
+                "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 80.0,
+                "status": "verified",
+                "evidence": "公开赛果近5场：WWWDW，场均积分2.60、净胜球+2.60",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 63.6,
+                "status": "verified",
+                "evidence": "近五场中对应主场样本2场，场均积分2.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             },
             "away": {
               "leagueRanking": {
                 "label": "联赛排名",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 55.0,
+                "status": "verified",
+                "evidence": "公开联赛表位置：第1位 vs 第3位",
+                "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 27.92,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€48.65m vs €146.75m",
+                "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 80.0,
+                "status": "verified",
+                "evidence": "公开赛果近5场：WWWWW，场均积分3.00、净胜球+3.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 78.0,
+                "status": "verified",
+                "evidence": "近五场中对应客场样本2场，场均积分3.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             }
           },
@@ -4703,11 +4644,11 @@
             "home": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 68.2,
+                "status": "verified",
+                "evidence": "近五场场均进4.00、失1.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -4729,11 +4670,11 @@
             "away": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "近五场场均进3.60、失0.20",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -4757,19 +4698,19 @@
             "home": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-15 W，5-1 对 Dalbeattie Star",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 57.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-15，赛前休息5天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
@@ -4783,19 +4724,19 @@
             "away": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-14 W，4-1 对 SV Ried",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 60.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-14，赛前休息6天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
@@ -4810,48 +4751,34 @@
         },
         "layerScores": {
           "hardStrength": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 65.17,
+            "away": 60.23
           },
           "tacticalMatchup": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 56.07,
+            "away": 56.67
           },
           "psychologicalState": {
-            "home": 57.33,
-            "away": 56.67
+            "home": 66.33,
+            "away": 66.67
           }
         },
         "totalScores": {
-          "home": 51.83,
-          "away": 51.67
+          "home": 62.27,
+          "away": 60.59
         },
         "probabilities": {
-          "home": 0.4199,
-          "draw": 0.2833,
-          "away": 0.2968
+          "home": 0.4453,
+          "draw": 0.2773,
+          "away": 0.2774
         },
-        "dataCompleteness": 0.1,
-        "confidencePenalty": -11,
+        "dataCompleteness": 0.8,
+        "confidencePenalty": -2,
         "missingItems": [
-          "hardStrength.home.leagueRanking",
-          "hardStrength.home.squadValue",
-          "hardStrength.home.recentForm",
-          "hardStrength.home.venueAttribute",
-          "hardStrength.away.leagueRanking",
-          "hardStrength.away.squadValue",
-          "hardStrength.away.recentForm",
-          "hardStrength.away.venueAttribute",
-          "tacticalMatchup.home.styleMatchup",
           "tacticalMatchup.home.headToHead",
           "tacticalMatchup.home.coreAvailability",
-          "tacticalMatchup.away.styleMatchup",
           "tacticalMatchup.away.headToHead",
-          "tacticalMatchup.away.coreAvailability",
-          "psychologicalState.home.lastResult",
-          "psychologicalState.home.scheduleFitness",
-          "psychologicalState.away.lastResult",
-          "psychologicalState.away.scheduleFitness"
+          "tacticalMatchup.away.coreAvailability"
         ],
         "drawCaution": 0.0,
         "method": "hard strength 40% + tactical matchup 35% + psychological state 25%; missing items use neutral 50"
@@ -5044,8 +4971,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 1.58,
-          "modelProbability": 0.5038,
-          "expectedValue": -0.204
+          "modelProbability": 0.5186,
+          "expectedValue": -0.1806
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注2-0 / 1-0 / 3-1，半全场为胜/胜；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
@@ -5068,9 +4995,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.4504,
-        "draw": 0.2658,
-        "away": 0.2838
+        "home": 0.5016,
+        "draw": 0.2535,
+        "away": 0.2449
       },
       "direction": "home",
       "directionText": "主胜",
@@ -5088,7 +5015,7 @@
         "3",
         "1"
       ],
-      "confidenceScore": 30,
+      "confidenceScore": 35,
       "confidence": "中低",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
@@ -5106,12 +5033,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.4504
+          "probability": 0.5016
         },
         {
-          "key": "away",
-          "text": "客胜",
-          "probability": 0.2838
+          "key": "draw",
+          "text": "平",
+          "probability": 0.2535
         }
       ],
       "goalProbabilities": {
@@ -5198,9 +5125,9 @@
         "away": 0.2319
       },
       "fundamentalProbabilities": {
-        "home": 0.3877,
-        "draw": 0.291,
-        "away": 0.3213
+        "home": 0.4759,
+        "draw": 0.2699,
+        "away": 0.2542
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -5286,15 +5213,15 @@
           "hardStrength": {
             "home": {
               "leagueRanking": 50.0,
-              "squadValue": 50.0,
+              "squadValue": 42.37,
               "recentForm": 50.0,
               "venueAttribute": 50.0
             },
             "away": {
               "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
-              "venueAttribute": 50.0
+              "squadValue": 57.63,
+              "recentForm": 30.0,
+              "venueAttribute": 32.0
             }
           },
           "tacticalMatchup": {
@@ -5304,7 +5231,7 @@
               "coreAvailability": 43.0
             },
             "away": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 35.0,
               "headToHead": 50.0,
               "coreAvailability": 48.0
             }
@@ -5313,12 +5240,12 @@
             "home": {
               "lastResult": 50.0,
               "scheduleFitness": 52.0,
-              "motivation": 50.0
+              "motivation": 78.0
             },
             "away": {
-              "lastResult": 50.0,
+              "lastResult": 35.0,
               "scheduleFitness": 66.0,
-              "motivation": 50.0
+              "motivation": 78.0
             }
           }
         },
@@ -5335,11 +5262,11 @@
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 42.37,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€56.38m vs €82.55m",
+                "source": "https://www.transfermarkt.com/bodo-glimt/startseite/verein/501/sort/marketValueRaw.desc",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
@@ -5369,27 +5296,27 @@
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 57.63,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€82.55m vs €56.38m",
+                "source": "https://www.transfermarkt.com/bodo-glimt/startseite/verein/501/sort/marketValueRaw.desc",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 30.0,
+                "status": "verified",
+                "evidence": "公开赛果近5场：LLLLL，场均积分0.00、净胜球-3.20",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 32.0,
+                "status": "verified",
+                "evidence": "近五场中对应客场样本2场，场均积分0.00",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
               }
             }
           },
@@ -5423,11 +5350,11 @@
             "away": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 35.0,
+                "status": "verified",
+                "evidence": "近五场场均进1.20、失4.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -5467,21 +5394,21 @@
               },
               "motivation": {
                 "label": "战意",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 78.0,
+                "status": "verified",
+                "evidence": "官方赛程字段：Play-offs",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+                "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
               }
             },
             "away": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 35.0,
+                "status": "verified",
+                "evidence": "上轮 2024-10-27 L，1-3 对 Harstad",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
@@ -5493,57 +5420,49 @@
               },
               "motivation": {
                 "label": "战意",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 78.0,
+                "status": "verified",
+                "evidence": "官方赛程字段：Play-offs",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+                "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
               }
             }
           }
         },
         "layerScores": {
           "hardStrength": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 48.09,
+            "away": 42.41
           },
           "tacticalMatchup": {
             "home": 47.67,
-            "away": 49.33
+            "away": 44.33
           },
           "psychologicalState": {
-            "home": 50.67,
-            "away": 55.33
+            "home": 60.0,
+            "away": 59.67
           }
         },
         "totalScores": {
-          "home": 49.35,
-          "away": 51.1
+          "home": 50.92,
+          "away": 47.4
         },
         "probabilities": {
-          "home": 0.3877,
-          "draw": 0.291,
-          "away": 0.3213
+          "home": 0.4759,
+          "draw": 0.2699,
+          "away": 0.2542
         },
-        "dataCompleteness": 0.2,
-        "confidencePenalty": -10,
+        "dataCompleteness": 0.6,
+        "confidencePenalty": -5,
         "missingItems": [
           "hardStrength.home.leagueRanking",
-          "hardStrength.home.squadValue",
           "hardStrength.home.recentForm",
           "hardStrength.home.venueAttribute",
           "hardStrength.away.leagueRanking",
-          "hardStrength.away.squadValue",
-          "hardStrength.away.recentForm",
-          "hardStrength.away.venueAttribute",
           "tacticalMatchup.home.styleMatchup",
           "tacticalMatchup.home.headToHead",
-          "tacticalMatchup.away.styleMatchup",
           "tacticalMatchup.away.headToHead",
-          "psychologicalState.home.lastResult",
-          "psychologicalState.home.motivation",
-          "psychologicalState.away.lastResult",
-          "psychologicalState.away.motivation"
+          "psychologicalState.home.lastResult"
         ],
         "drawCaution": 0.0,
         "method": "hard strength 40% + tactical matchup 35% + psychological state 25%; missing items use neutral 50"
@@ -5744,8 +5663,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 2.35,
-          "modelProbability": 0.4504,
-          "expectedValue": 0.0584
+          "modelProbability": 0.5016,
+          "expectedValue": 0.1788
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注2-0 / 1-0 / 3-1，半全场为胜/胜；已核验recent_performance、home_away、schedule_load，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
@@ -5768,9 +5687,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.5588,
-        "draw": 0.2458,
-        "away": 0.1954
+        "home": 0.643,
+        "draw": 0.2212,
+        "away": 0.1358
       },
       "direction": "home",
       "directionText": "主胜",
@@ -5788,8 +5707,8 @@
         "3",
         "1"
       ],
-      "confidenceScore": 48,
-      "confidence": "中低",
+      "confidenceScore": 53,
+      "confidence": "中",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
       "odds": {
@@ -5806,12 +5725,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.5588
+          "probability": 0.643
         },
         {
           "key": "draw",
           "text": "平",
-          "probability": 0.2458
+          "probability": 0.2212
         }
       ],
       "goalProbabilities": {
@@ -5898,9 +5817,9 @@
         "away": 0.1658
       },
       "fundamentalProbabilities": {
-        "home": 0.5257,
-        "draw": 0.2575,
-        "away": 0.2168
+        "home": 0.6709,
+        "draw": 0.215,
+        "away": 0.1141
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -5986,20 +5905,20 @@
           "hardStrength": {
             "home": {
               "leagueRanking": 50.0,
-              "squadValue": 50.0,
-              "recentForm": 50.0,
+              "squadValue": 67.93,
+              "recentForm": 80.0,
               "venueAttribute": 66.0
             },
             "away": {
               "leagueRanking": 50.0,
-              "squadValue": 50.0,
+              "squadValue": 32.07,
               "recentForm": 50.0,
               "venueAttribute": 48.0
             }
           },
           "tacticalMatchup": {
             "home": {
-              "styleMatchup": 50.0,
+              "styleMatchup": 65.4,
               "headToHead": 72.5,
               "coreAvailability": 53.0
             },
@@ -6011,8 +5930,8 @@
           },
           "psychologicalState": {
             "home": {
-              "lastResult": 50.0,
-              "scheduleFitness": 50.0,
+              "lastResult": 70.0,
+              "scheduleFitness": 57.0,
               "motivation": 78.0
             },
             "away": {
@@ -6028,26 +5947,26 @@
               "leagueRanking": {
                 "label": "联赛排名",
                 "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "status": "verified",
+                "evidence": "公开联赛表位置：第1位 vs 第1位",
+                "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 67.93,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€34.15m vs €13.93m",
+                "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 80.0,
+                "status": "verified",
+                "evidence": "公开赛果近5场：WWWWD，场均积分2.60、净胜球+2.20",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "近五场积分与净胜球量化近期状态"
               },
               "venueAttribute": {
                 "label": "主客场属性",
@@ -6062,18 +5981,18 @@
               "leagueRanking": {
                 "label": "联赛排名",
                 "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "status": "verified",
+                "evidence": "公开联赛表位置：第1位 vs 第1位",
+                "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+                "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
               },
               "squadValue": {
                 "label": "身价/阵容实力",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 32.07,
+                "status": "verified",
+                "evidence": "公开阵容总身价：€13.93m vs €34.15m",
+                "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+                "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
               },
               "recentForm": {
                 "label": "近期状态",
@@ -6097,11 +6016,11 @@
             "home": {
               "styleMatchup": {
                 "label": "打法风格匹配",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 65.4,
+                "status": "verified",
+                "evidence": "近五场场均进2.60、失0.40",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
               },
               "headToHead": {
                 "label": "交锋记录",
@@ -6151,19 +6070,19 @@
             "home": {
               "lastResult": {
                 "label": "上轮结果",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 70.0,
+                "status": "verified",
+                "evidence": "上轮 2026-08-15 W，5-0 对 MFK Ruzomberok",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "上轮赛果只作短期心理修正"
               },
               "scheduleFitness": {
                 "label": "体能与赛程",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 57.0,
+                "status": "verified",
+                "evidence": "最近已赛日 2026-08-15，赛前休息5天",
+                "source": "https://sportscore.com/developers/",
+                "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
               },
               "motivation": {
                 "label": "战意",
@@ -6204,40 +6123,32 @@
         },
         "layerScores": {
           "hardStrength": {
-            "home": 54.0,
-            "away": 49.5
+            "home": 65.98,
+            "away": 45.02
           },
           "tacticalMatchup": {
-            "home": 58.5,
+            "home": 63.63,
             "away": 45.17
           },
           "psychologicalState": {
-            "home": 59.33,
+            "home": 68.33,
             "away": 58.67
           }
         },
         "totalScores": {
-          "home": 56.91,
-          "away": 50.28
+          "home": 65.75,
+          "away": 48.48
         },
         "probabilities": {
-          "home": 0.5257,
-          "draw": 0.2575,
-          "away": 0.2168
+          "home": 0.6709,
+          "draw": 0.215,
+          "away": 0.1141
         },
-        "dataCompleteness": 0.4,
-        "confidencePenalty": -7,
+        "dataCompleteness": 0.8,
+        "confidencePenalty": -2,
         "missingItems": [
-          "hardStrength.home.leagueRanking",
-          "hardStrength.home.squadValue",
-          "hardStrength.home.recentForm",
-          "hardStrength.away.leagueRanking",
-          "hardStrength.away.squadValue",
           "hardStrength.away.recentForm",
-          "tacticalMatchup.home.styleMatchup",
           "tacticalMatchup.away.styleMatchup",
-          "psychologicalState.home.lastResult",
-          "psychologicalState.home.scheduleFitness",
           "psychologicalState.away.lastResult",
           "psychologicalState.away.scheduleFitness"
         ],
@@ -6436,8 +6347,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 1.68,
-          "modelProbability": 0.5588,
-          "expectedValue": -0.0612
+          "modelProbability": 0.643,
+          "expectedValue": 0.0802
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注2-0 / 1-0 / 3-1，半全场为胜/胜；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",

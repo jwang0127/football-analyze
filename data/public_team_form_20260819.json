@@ -1,0 +1,590 @@
+{
+  "version": "sportscore-public-form-v1",
+  "source": "https://sportscore.com/developers/",
+  "matches": {
+    "wed001": {
+      "home": [
+        {
+          "date": "2026-08-15",
+          "venue": "away",
+          "opponent": "Jeju SK FC",
+          "gf": 0,
+          "ga": 2,
+          "result": "L",
+          "competition": "Korean K League 1"
+        },
+        {
+          "date": "2026-08-08",
+          "venue": "home",
+          "opponent": "Daejeon Citizen",
+          "gf": 1,
+          "ga": 2,
+          "result": "L",
+          "competition": "Korean K League 1"
+        },
+        {
+          "date": "2026-08-02",
+          "venue": "away",
+          "opponent": "Ulsan HD FC",
+          "gf": 1,
+          "ga": 3,
+          "result": "L",
+          "competition": "Korean K League 1"
+        },
+        {
+          "date": "2026-07-29",
+          "venue": "away",
+          "opponent": "Chungbuk Cheongju FC",
+          "gf": 3,
+          "ga": 1,
+          "result": "W",
+          "competition": "Korean Cup"
+        },
+        {
+          "date": "2026-07-26",
+          "venue": "home",
+          "opponent": "Gangwon Football Club",
+          "gf": 2,
+          "ga": 1,
+          "result": "W",
+          "competition": "Korean K League 1"
+        }
+      ],
+      "away": [
+        {
+          "date": "2014-09-27",
+          "venue": "away",
+          "opponent": "Gwangju Football Club U18",
+          "gf": 2,
+          "ga": 1,
+          "result": "W",
+          "competition": "Korean U18 Challenge League"
+        },
+        {
+          "date": "2014-09-20",
+          "venue": "home",
+          "opponent": "Ulsan Hyundai Horang-i U18",
+          "gf": 1,
+          "ga": 3,
+          "result": "L",
+          "competition": "Korean U18 Challenge League"
+        },
+        {
+          "date": "2014-09-13",
+          "venue": "home",
+          "opponent": "Seongnam Ilhwa Chunma U18",
+          "gf": 0,
+          "ga": 0,
+          "result": "D",
+          "competition": "Korean U18 Challenge League"
+        },
+        {
+          "date": "2014-08-30",
+          "venue": "away",
+          "opponent": "Chungju Hummel U18",
+          "gf": 0,
+          "ga": 0,
+          "result": "D",
+          "competition": "Korean U18 Challenge League"
+        },
+        {
+          "date": "2014-08-23",
+          "venue": "home",
+          "opponent": "Suwon Samsung Bluewings U18",
+          "gf": 1,
+          "ga": 1,
+          "result": "D",
+          "competition": "Korean U18 Challenge League"
+        }
+      ]
+    },
+    "wed002": {
+      "home": [],
+      "away": []
+    },
+    "wed003": {
+      "home": [
+        {
+          "date": "2026-08-16",
+          "venue": "home",
+          "opponent": "Sportivo San Lorenzo",
+          "gf": 1,
+          "ga": 0,
+          "result": "W",
+          "competition": "Paraguayan Primera Division"
+        },
+        {
+          "date": "2026-08-12",
+          "venue": "away",
+          "opponent": "Palmeiras - SP",
+          "gf": 1,
+          "ga": 1,
+          "result": "D",
+          "competition": "CONMEBOL Copa Libertadores"
+        },
+        {
+          "date": "2026-08-08",
+          "venue": "away",
+          "opponent": "Sportivo Ameliano",
+          "gf": 0,
+          "ga": 1,
+          "result": "L",
+          "competition": "Paraguayan Primera Division"
+        },
+        {
+          "date": "2026-08-01",
+          "venue": "home",
+          "opponent": "Sportivo Luqueno",
+          "gf": 3,
+          "ga": 0,
+          "result": "W",
+          "competition": "Paraguayan Primera Division"
+        },
+        {
+          "date": "2026-07-28",
+          "venue": "away",
+          "opponent": "Club Sportivo 2 de Mayo",
+          "gf": 1,
+          "ga": 2,
+          "result": "L",
+          "competition": "Paraguayan Primera Division"
+        }
+      ],
+      "away": [
+        {
+          "date": "2026-08-15",
+          "venue": "away",
+          "opponent": "Fluminense - RJ",
+          "gf": 2,
+          "ga": 3,
+          "result": "L",
+          "competition": "Brazilian Serie A"
+        },
+        {
+          "date": "2026-08-12",
+          "venue": "home",
+          "opponent": "Cerro Porteno",
+          "gf": 1,
+          "ga": 1,
+          "result": "D",
+          "competition": "CONMEBOL Copa Libertadores"
+        },
+        {
+          "date": "2026-08-09",
+          "venue": "home",
+          "opponent": "Internacional - RS",
+          "gf": 0,
+          "ga": 0,
+          "result": "D",
+          "competition": "Brazilian Serie A"
+        },
+        {
+          "date": "2026-08-06",
+          "venue": "away",
+          "opponent": "Fortaleza",
+          "gf": 2,
+          "ga": 3,
+          "result": "L",
+          "competition": "Brazilian Cup"
+        },
+        {
+          "date": "2026-08-02",
+          "venue": "home",
+          "opponent": "Fortaleza",
+          "gf": 3,
+          "ga": 0,
+          "result": "W",
+          "competition": "Brazilian Cup"
+        }
+      ]
+    },
+    "wed004": {
+      "home": [
+        {
+          "date": "2026-08-15",
+          "venue": "away",
+          "opponent": "Atlanta United",
+          "gf": 1,
+          "ga": 2,
+          "result": "L",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-08-01",
+          "venue": "home",
+          "opponent": "Orlando City",
+          "gf": 3,
+          "ga": 2,
+          "result": "W",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-07-25",
+          "venue": "home",
+          "opponent": "Charlotte FC",
+          "gf": 0,
+          "ga": 2,
+          "result": "L",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-07-22",
+          "venue": "away",
+          "opponent": "Philadelphia Union",
+          "gf": 1,
+          "ga": 3,
+          "result": "L",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-05-24",
+          "venue": "away",
+          "opponent": "Sporting Kansas City",
+          "gf": 2,
+          "ga": 1,
+          "result": "W",
+          "competition": "United States Major League Soccer"
+        }
+      ],
+      "away": [
+        {
+          "date": "2026-08-16",
+          "venue": "home",
+          "opponent": "Inter Miami CF",
+          "gf": 4,
+          "ga": 1,
+          "result": "W",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-08-13",
+          "venue": "away",
+          "opponent": "Rayados de Monterrey",
+          "gf": 1,
+          "ga": 2,
+          "result": "L",
+          "competition": "Leagues Cup"
+        },
+        {
+          "date": "2026-08-10",
+          "venue": "home",
+          "opponent": "Atletico San Luis",
+          "gf": 4,
+          "ga": 1,
+          "result": "W",
+          "competition": "Leagues Cup"
+        },
+        {
+          "date": "2026-08-06",
+          "venue": "home",
+          "opponent": "Club Leon",
+          "gf": 0,
+          "ga": 1,
+          "result": "L",
+          "competition": "Leagues Cup"
+        },
+        {
+          "date": "2026-08-01",
+          "venue": "away",
+          "opponent": "DC United",
+          "gf": 2,
+          "ga": 2,
+          "result": "D",
+          "competition": "United States Major League Soccer"
+        }
+      ]
+    },
+    "wed005": {
+      "home": [
+        {
+          "date": "2026-08-16",
+          "venue": "home",
+          "opponent": "Sporting Kansas City",
+          "gf": 2,
+          "ga": 0,
+          "result": "W",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-08-02",
+          "venue": "home",
+          "opponent": "Austin FC",
+          "gf": 1,
+          "ga": 0,
+          "result": "W",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-07-26",
+          "venue": "away",
+          "opponent": "St. Louis City SC",
+          "gf": 0,
+          "ga": 1,
+          "result": "L",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-07-23",
+          "venue": "home",
+          "opponent": "San Diego FC",
+          "gf": 1,
+          "ga": 0,
+          "result": "W",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-07-10",
+          "venue": "home",
+          "opponent": "FC Juarez",
+          "gf": 1,
+          "ga": 1,
+          "result": "D",
+          "competition": "International Club Friendly"
+        }
+      ],
+      "away": [
+        {
+          "date": "2026-08-16",
+          "venue": "home",
+          "opponent": "San Diego FC",
+          "gf": 0,
+          "ga": 1,
+          "result": "L",
+          "competition": "United States Major League Soccer"
+        },
+        {
+          "date": "2026-08-13",
+          "venue": "home",
+          "opponent": "Queretaro FC",
+          "gf": 6,
+          "ga": 4,
+          "result": "W",
+          "competition": "Leagues Cup"
+        },
+        {
+          "date": "2026-08-09",
+          "venue": "away",
+          "opponent": "Toluca",
+          "gf": 1,
+          "ga": 0,
+          "result": "W",
+          "competition": "Leagues Cup"
+        },
+        {
+          "date": "2026-08-06",
+          "venue": "home",
+          "opponent": "Club Deportivo Guadalajara",
+          "gf": 6,
+          "ga": 5,
+          "result": "W",
+          "competition": "Leagues Cup"
+        },
+        {
+          "date": "2026-08-01",
+          "venue": "away",
+          "opponent": "Vancouver Whitecaps",
+          "gf": 1,
+          "ga": 1,
+          "result": "D",
+          "competition": "United States Major League Soccer"
+        }
+      ]
+    },
+    "wed006": {
+      "home": [
+        {
+          "date": "2026-08-15",
+          "venue": "away",
+          "opponent": "Dalbeattie Star",
+          "gf": 5,
+          "ga": 1,
+          "result": "W",
+          "competition": "Scottish Lowland Football League"
+        },
+        {
+          "date": "2026-08-12",
+          "venue": "away",
+          "opponent": "Hamilton Academical F.C.",
+          "gf": 3,
+          "ga": 1,
+          "result": "W",
+          "competition": "Scottish Bells Challenge Cup"
+        },
+        {
+          "date": "2026-08-08",
+          "venue": "away",
+          "opponent": "Renfrew FC",
+          "gf": 5,
+          "ga": 3,
+          "result": "W",
+          "competition": "Scottish Lowland Football League"
+        },
+        {
+          "date": "2026-08-01",
+          "venue": "home",
+          "opponent": "Johnstone Burgh FC",
+          "gf": 1,
+          "ga": 1,
+          "result": "D",
+          "competition": "Scottish Lowland Football League"
+        },
+        {
+          "date": "2026-07-28",
+          "venue": "home",
+          "opponent": "Clydebank FC",
+          "gf": 6,
+          "ga": 1,
+          "result": "W",
+          "competition": "Scottish Lowland Football League"
+        }
+      ],
+      "away": [
+        {
+          "date": "2026-08-14",
+          "venue": "home",
+          "opponent": "SV Ried",
+          "gf": 4,
+          "ga": 1,
+          "result": "W",
+          "competition": "Austrian Bundesliga"
+        },
+        {
+          "date": "2026-08-09",
+          "venue": "away",
+          "opponent": "Austria Vienna",
+          "gf": 2,
+          "ga": 0,
+          "result": "W",
+          "competition": "Austrian Bundesliga"
+        },
+        {
+          "date": "2026-07-31",
+          "venue": "home",
+          "opponent": "Grazer AK",
+          "gf": 3,
+          "ga": 0,
+          "result": "W",
+          "competition": "Austrian Bundesliga"
+        },
+        {
+          "date": "2026-07-25",
+          "venue": "away",
+          "opponent": "SC Kalsdorf",
+          "gf": 7,
+          "ga": 0,
+          "result": "W",
+          "competition": "Austrian Cup"
+        },
+        {
+          "date": "2026-07-18",
+          "venue": "home",
+          "opponent": "Fortuna Dusseldorf",
+          "gf": 2,
+          "ga": 0,
+          "result": "W",
+          "competition": "International Club Friendly"
+        }
+      ]
+    },
+    "wed007": {
+      "home": [],
+      "away": [
+        {
+          "date": "2024-10-27",
+          "venue": "home",
+          "opponent": "Harstad",
+          "gf": 1,
+          "ga": 3,
+          "result": "L",
+          "competition": "Norwegian 3.Divisjon"
+        },
+        {
+          "date": "2024-10-20",
+          "venue": "away",
+          "opponent": "Fyllingsdalen",
+          "gf": 2,
+          "ga": 4,
+          "result": "L",
+          "competition": "Norwegian 3.Divisjon"
+        },
+        {
+          "date": "2024-10-06",
+          "venue": "home",
+          "opponent": "HamKam B",
+          "gf": 0,
+          "ga": 4,
+          "result": "L",
+          "competition": "Norwegian 3.Divisjon"
+        },
+        {
+          "date": "2024-09-29",
+          "venue": "away",
+          "opponent": "Sprint-Jeloy",
+          "gf": 1,
+          "ga": 3,
+          "result": "L",
+          "competition": "Norwegian 3.Divisjon"
+        },
+        {
+          "date": "2024-09-22",
+          "venue": "home",
+          "opponent": "IF Floya",
+          "gf": 2,
+          "ga": 8,
+          "result": "L",
+          "competition": "Norwegian 3.Divisjon"
+        }
+      ]
+    },
+    "wed008": {
+      "home": [
+        {
+          "date": "2026-08-15",
+          "venue": "home",
+          "opponent": "MFK Ruzomberok",
+          "gf": 5,
+          "ga": 0,
+          "result": "W",
+          "competition": "Slovak Nike liga"
+        },
+        {
+          "date": "2026-08-11",
+          "venue": "home",
+          "opponent": "Mjallby AIF",
+          "gf": 2,
+          "ga": 0,
+          "result": "W",
+          "competition": "UEFA Champions League"
+        },
+        {
+          "date": "2026-08-04",
+          "venue": "away",
+          "opponent": "Mjallby AIF",
+          "gf": 2,
+          "ga": 1,
+          "result": "W",
+          "competition": "UEFA Champions League"
+        },
+        {
+          "date": "2026-08-01",
+          "venue": "home",
+          "opponent": "Sport Podbrezova",
+          "gf": 3,
+          "ga": 0,
+          "result": "W",
+          "competition": "Slovak Nike liga"
+        },
+        {
+          "date": "2026-07-29",
+          "venue": "home",
+          "opponent": "FC Iberia 1999 Tbilisi",
+          "gf": 1,
+          "ga": 1,
+          "result": "D",
+          "competition": "UEFA Champions League"
+        }
+      ],
+      "away": []
+    }
+  }
+}

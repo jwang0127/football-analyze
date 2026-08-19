@@ -50,7 +50,7 @@ def api(path: str, key: str):
     for attempt in range(4):
         req = Request("https://v3.football.api-sports.io/" + path, headers={"x-apisports-key": key, "User-Agent": "Mozilla/5.0"})
         try:
-            with urlopen(req, timeout=15) as response:
+            with urlopen(req, timeout=6) as response:
                 return json.loads(response.read())
         except HTTPError as exc:
             if exc.code != 429 or attempt == 3:
@@ -89,6 +89,43 @@ def sportscore_next(team_name: str, current_iso: str):
         return {"home": match.get("home"), "away": match.get("away"), "time": match_dt.isoformat(), "competition": match.get("competition"), "source": "https://sportscore.com/developers/"}
     except Exception:
         return None
+
+
+def recent_fixtures(team_id: int, team_name: str, key: str):
+    """Return a compact, reproducible five-match form sample from API-Football."""
+    payload = api(f"fixtures?team={team_id}&last=5", key)
+    rows = []
+    for item in payload.get("response", []):
+        fixture = item.get("fixture") or {}
+        goals = item.get("goals") or {}
+        home = (item.get("teams") or {}).get("home") or {}
+        away = (item.get("teams") or {}).get("away") or {}
+        is_home = home.get("id") == team_id
+        gf = goals.get("home") if is_home else goals.get("away")
+        ga = goals.get("away") if is_home else goals.get("home")
+        if gf is None or ga is None:
+            continue
+        rows.append({
+            "date": str(fixture.get("date") or "")[:10], "venue": "home" if is_home else "away",
+            "opponent": away.get("name") if is_home else home.get("name"), "gf": gf, "ga": ga,
+            "result": "W" if gf > ga else "D" if gf == ga else "L",
+            "league": (item.get("league") or {}).get("name"),
+        })
+    return rows
+
+
+def team_standing(team_id: int, league_id: int, season: int, key: str):
+    """Find the specific club row while tolerating nested group standings."""
+    try:
+        payload = api(f"standings?league={league_id}&season={season}", key)
+        groups = (((payload.get("response") or [{}])[0].get("league") or {}).get("standings") or [])
+        for group in groups:
+            for row in group:
+                if (row.get("team") or {}).get("id") == team_id:
+                    return {"rank": row.get("rank"), "points": row.get("points"), "form": row.get("form"), "description": row.get("description")}
+    except Exception:
+        pass
+    return {}
 
 def main():
     ap = argparse.ArgumentParser()
@@ -161,6 +198,20 @@ def main():
             h2h = [{"date": x.get("fixture", {}).get("date", "")[:10], "home": x.get("teams", {}).get("home", {}).get("name"), "away": x.get("teams", {}).get("away", {}).get("name"), "homeGoals": x.get("goals", {}).get("home"), "awayGoals": x.get("goals", {}).get("away"), "league": x.get("league", {}).get("name")} for x in h2h_payload.get("response", []) if x.get("goals", {}).get("home") is not None and x.get("goals", {}).get("away") is not None]
         except Exception:
             h2h = []
+        home_id = item.get("teams", {}).get("home", {}).get("id")
+        away_id = item.get("teams", {}).get("away", {}).get("id")
+        try:
+            recent = {
+                "home": recent_fixtures(home_id, (item.get("teams", {}).get("home") or {}).get("name", ""), key),
+                "away": recent_fixtures(away_id, (item.get("teams", {}).get("away") or {}).get("name", ""), key),
+            }
+        except Exception:
+            recent = {"home": [], "away": []}
+        league = item.get("league", {})
+        standings = {
+            "home": team_standing(home_id, league.get("id"), league.get("season"), key),
+            "away": team_standing(away_id, league.get("id"), league.get("season"), key),
+        } if league.get("standings") else {"home": {}, "away": {}}
         current_iso = item.get("fixture", {}).get("date") or ""
         sportscore_fixtures = {} if args.fast else {
             "home": sportscore_next((item.get("teams", {}).get("home") or {}).get("name", ""), current_iso),
@@ -173,7 +224,7 @@ def main():
             "fixture": {"date": item.get("fixture", {}).get("date"), "status": item.get("fixture", {}).get("status"), "venue": item.get("fixture", {}).get("venue"), "referee": item.get("fixture", {}).get("referee")},
             "injuries": injuries, "injuryCount": len(injuries), "injuryApiErrors": injury_payload.get("errors", {}),
             "marketOdds": market,
-            "h2h": h2h,
+            "h2h": h2h, "recentFixtures": recent, "standings": standings,
             "sportscoreNext": sportscore_fixtures,
         }
         time.sleep(1)
@@ -183,3 +234,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

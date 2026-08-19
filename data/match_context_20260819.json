@@ -1,6 +1,6 @@
 {
   "version": "public-context-v1",
-  "generatedAt": "2026-08-19T10:33:29",
+  "generatedAt": "2026-08-19T11:34:44",
   "matches": {
     "wed001": {
       "ranking": "安养FC 未提供；济州SK 未提供",
@@ -121,6 +121,12 @@
               "evidence": "公开交锋页列出近年安养对济州多次取胜",
               "source": "zucaijia/webjx",
               "analysis": "历史对赛对主队略有支持"
+            },
+            "styleMatchup": {
+              "score": 47.2,
+              "evidence": "近五场场均进1.40、失1.80",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           },
           "away": {
@@ -129,16 +135,98 @@
               "evidence": "公开交锋页列出近年安养对济州多次取胜",
               "source": "zucaijia/webjx",
               "analysis": "客队交锋处于被动，分数仅反映历史维度"
+            },
+            "styleMatchup": {
+              "score": 48.6,
+              "evidence": "近五场场均进0.80、失1.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           }
         },
         "hardStrength": {
-          "home": {},
-          "away": {}
+          "home": {
+            "recentForm": {
+              "score": 46.8,
+              "evidence": "公开赛果近5场：LLLWW，场均积分1.20、净胜球-0.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 55.1,
+              "evidence": "近五场中对应主场样本2场，场均积分1.50",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 47.84,
+              "evidence": "公开阵容总身价：€7.90m vs €8.80m",
+              "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 65.0,
+              "evidence": "公开联赛表位置：第2位 vs 第8位",
+              "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          },
+          "away": {
+            "recentForm": {
+              "score": 48.4,
+              "evidence": "公开赛果近5场：WLDDD，场均积分1.20、净胜球-0.20",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 63.6,
+              "evidence": "近五场中对应客场样本2场，场均积分2.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 52.16,
+              "evidence": "公开阵容总身价：€8.80m vs €7.90m",
+              "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 35.0,
+              "evidence": "公开联赛表位置：第8位 vs 第2位",
+              "source": "https://www.transfermarkt.com/-/startseite/wettbewerb/RSK1/sort/marktwert_gesamt_anzeige",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          }
         },
         "psychologicalState": {
-          "home": {},
-          "away": {}
+          "home": {
+            "lastResult": {
+              "score": 35,
+              "evidence": "上轮 2026-08-15 L，0-2 对 Jeju SK FC",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 54,
+              "evidence": "最近已赛日 2026-08-15，赛前休息4天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
+            }
+          },
+          "away": {
+            "lastResult": {
+              "score": 70,
+              "evidence": "上轮 2014-09-27 W，2-1 对 Gwangju Football Club U18",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 69,
+              "evidence": "最近已赛日 2014-09-27，赛前休息4344天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
+            }
+          }
         }
       },
       "apiFootball": {
@@ -271,6 +359,12 @@
               "evidence": "LaLiga官方赛程确认马竞为西甲主队，公开赛季目标与阵容投入明显更高",
               "source": "LaLiga/AS",
               "analysis": "顶级联赛竞争层级和阵容深度明显占优"
+            },
+            "squadValue": {
+              "score": 75.0,
+              "evidence": "公开阵容总身价：€576.10m vs €30.93m",
+              "source": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4909441",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
             }
           },
           "away": {
@@ -279,6 +373,12 @@
               "evidence": "AS报道马拉加重返西甲，赛季目标以保级为主",
               "source": "AS",
               "analysis": "升班马级别与整体实力处于下风"
+            },
+            "squadValue": {
+              "score": 25.0,
+              "evidence": "公开阵容总身价：€30.93m vs €576.10m",
+              "source": "https://www.transfermarkt.com/spielbericht/index/spielbericht/4909441",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
             }
           }
         },
@@ -712,8 +812,58 @@
       "threeLayer": {
         "enabled": true,
         "hardStrength": {
-          "home": {},
-          "away": {}
+          "home": {
+            "recentForm": {
+              "score": 56.4,
+              "evidence": "公开赛果近5场：WDLWL，场均积分1.40、净胜球+0.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 78,
+              "evidence": "近五场中对应主场样本2场，场均积分3.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 25.0,
+              "evidence": "公开阵容总身价：€26.85m vs €229.48m",
+              "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 45.0,
+              "evidence": "公开联赛表位置：第3位 vs 第1位",
+              "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          },
+          "away": {
+            "recentForm": {
+              "score": 48.4,
+              "evidence": "公开赛果近5场：LDDLW，场均积分1.00、净胜球+0.20",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 32,
+              "evidence": "近五场中对应客场样本2场，场均积分0.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 75.0,
+              "evidence": "公开阵容总身价：€229.48m vs €26.85m",
+              "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 55.0,
+              "evidence": "公开联赛表位置：第1位 vs 第3位",
+              "source": "https://www.transfermarkt.com/copa-libertadores/spieltag/pokalwettbewerb/CLI/saison_id/2025",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          }
         },
         "tacticalMatchup": {
           "home": {
@@ -728,6 +878,12 @@
               "evidence": "API-Football近9次交锋：当前主队1胜、6负",
               "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
               "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            },
+            "styleMatchup": {
+              "score": 52.8,
+              "evidence": "近五场场均进1.20、失0.80",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           },
           "away": {
@@ -742,12 +898,56 @@
               "evidence": "API-Football近9次交锋：当前客队6胜、1负",
               "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
               "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            },
+            "styleMatchup": {
+              "score": 51.4,
+              "evidence": "近五场场均进1.60、失1.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           }
         },
         "psychologicalState": {
-          "home": {},
-          "away": {}
+          "home": {
+            "motivation": {
+              "score": 78,
+              "evidence": "官方赛程字段：Round of 16",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+              "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
+            },
+            "lastResult": {
+              "score": 70,
+              "evidence": "上轮 2026-08-16 W，1-0 对 Sportivo San Lorenzo",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 54,
+              "evidence": "最近已赛日 2026-08-16，赛前休息4天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
+            }
+          },
+          "away": {
+            "motivation": {
+              "score": 78,
+              "evidence": "官方赛程字段：Round of 16",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+              "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
+            },
+            "lastResult": {
+              "score": 35,
+              "evidence": "上轮 2026-08-15 L，2-3 对 Fluminense - RJ",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 57,
+              "evidence": "最近已赛日 2026-08-15，赛前休息5天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
+            }
+          }
         }
       },
       "apiFootball": {
@@ -993,6 +1193,24 @@
               "evidence": "公开MLS排名页显示纽约红牛处于东部附加赛区附近",
               "source": "Qiumiwu",
               "analysis": "主队排名竞争力中等"
+            },
+            "recentForm": {
+              "score": 45.2,
+              "evidence": "公开赛果近5场：LWLLW，场均积分1.20、净胜球-0.60",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 55.1,
+              "evidence": "近五场中对应主场样本2场，场均积分1.50",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 51.58,
+              "evidence": "公开阵容总身价：€47.60m vs €43.98m",
+              "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
             }
           },
           "away": {
@@ -1001,6 +1219,24 @@
               "evidence": "公开MLS排名页显示纳什维尔处于东部前列",
               "source": "Qiumiwu",
               "analysis": "客队常规赛排名优势明显"
+            },
+            "recentForm": {
+              "score": 59.6,
+              "evidence": "公开赛果近5场：WLWLD，场均积分1.40、净胜球+0.80",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 38.1,
+              "evidence": "近五场中对应客场样本2场，场均积分0.50",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 48.42,
+              "evidence": "公开阵容总身价：€43.98m vs €47.60m",
+              "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
             }
           }
         },
@@ -1011,6 +1247,18 @@
               "evidence": "公开赛程显示纽约红牛连续处于常规赛密集期",
               "source": "OurSportsCentral",
               "analysis": "主队有主场但赛程压力不低"
+            },
+            "motivation": {
+              "score": 66,
+              "evidence": "官方赛程字段：Regular Season - 20",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+              "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
+            },
+            "lastResult": {
+              "score": 35,
+              "evidence": "上轮 2026-08-15 L，1-2 对 Atlanta United",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
             }
           },
           "away": {
@@ -1019,6 +1267,18 @@
               "evidence": "公开赛程显示纳什维尔同处常规赛密集期",
               "source": "Qiumiwu",
               "analysis": "客队体能没有明确优势"
+            },
+            "motivation": {
+              "score": 66,
+              "evidence": "官方赛程字段：Regular Season - 20",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+              "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
+            },
+            "lastResult": {
+              "score": 70,
+              "evidence": "上轮 2026-08-16 W，4-1 对 Inter Miami CF",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
             }
           }
         },
@@ -1029,6 +1289,12 @@
               "evidence": "API-Football伤停记录 2 人：A. Marcucci、R. Mosquera",
               "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
               "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            },
+            "styleMatchup": {
+              "score": 45.8,
+              "evidence": "近五场场均进1.40、失2.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           },
           "away": {
@@ -1037,6 +1303,12 @@
               "evidence": "API-Football伤停记录 2 人：W. Madrigal、P. Yazbek",
               "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
               "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            },
+            "styleMatchup": {
+              "score": 55.6,
+              "evidence": "近五场场均进2.20、失1.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           }
         }
@@ -1256,6 +1528,12 @@
               "evidence": "API-Football近18次交锋：当前主队5胜、10负",
               "source": "https://v3.football.api-sports.io/fixtures?id=1490400",
               "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            },
+            "styleMatchup": {
+              "score": 54.2,
+              "evidence": "近五场场均进1.00、失0.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           },
           "away": {
@@ -1270,6 +1548,12 @@
               "evidence": "API-Football近18次交锋：当前客队10胜、5负",
               "source": "https://v3.football.api-sports.io/fixtures?id=1490400",
               "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            },
+            "styleMatchup": {
+              "score": 54.2,
+              "evidence": "近五场场均进2.80、失2.20",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           }
         },
@@ -1280,6 +1564,18 @@
               "evidence": "MLS常规赛主场比赛",
               "source": "365Scores",
               "analysis": "主场抢分动机正常"
+            },
+            "lastResult": {
+              "score": 70,
+              "evidence": "上轮 2026-08-16 W，2-0 对 Sporting Kansas City",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 54,
+              "evidence": "最近已赛日 2026-08-16，赛前休息4天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
             }
           },
           "away": {
@@ -1288,12 +1584,74 @@
               "evidence": "LAFC处于季后赛竞争阶段，前锋轮休需平衡赛程",
               "source": "AS/MLS",
               "analysis": "客队战意强但轮换风险抑制稳定性"
+            },
+            "lastResult": {
+              "score": 35,
+              "evidence": "上轮 2026-08-16 L，0-1 对 San Diego FC",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 54,
+              "evidence": "最近已赛日 2026-08-16，赛前休息4天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
             }
           }
         },
         "hardStrength": {
-          "home": {},
-          "away": {}
+          "home": {
+            "recentForm": {
+              "score": 67.6,
+              "evidence": "公开赛果近5场：WWLWD，场均积分2.00、净胜球+0.60",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 72.1,
+              "evidence": "近五场中对应主场样本4场，场均积分2.50",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 42.26,
+              "evidence": "公开阵容总身价：€44.95m vs €66.18m",
+              "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 20.0,
+              "evidence": "公开联赛表位置：第20位 vs 第8位",
+              "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          },
+          "away": {
+            "recentForm": {
+              "score": 67.6,
+              "evidence": "公开赛果近5场：LWWWD，场均积分2.00、净胜球+0.60",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 63.6,
+              "evidence": "近五场中对应客场样本2场，场均积分2.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 57.74,
+              "evidence": "公开阵容总身价：€66.18m vs €44.95m",
+              "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 80.0,
+              "evidence": "公开联赛表位置：第8位 vs 第20位",
+              "source": "https://www.transfermarkt.com/major-league-soccer/startseite/wettbewerb/MLS1/saison_id/2025",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          }
         }
       },
       "apiFootball": {
@@ -1698,6 +2056,18 @@
               "evidence": "公开赛程确认欧战资格赛主场，凯尔特人有晋级目标",
               "source": "777 Empire/Celtic community",
               "analysis": "主场欧战战意明确"
+            },
+            "lastResult": {
+              "score": 70,
+              "evidence": "上轮 2026-08-15 W，5-1 对 Dalbeattie Star",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 57,
+              "evidence": "最近已赛日 2026-08-15，赛前休息5天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
             }
           },
           "away": {
@@ -1706,16 +2076,92 @@
               "evidence": "公开赛程确认LASK参加欧战资格赛",
               "source": "777 Empire/Celtic community",
               "analysis": "客队同样有晋级目标"
+            },
+            "lastResult": {
+              "score": 70,
+              "evidence": "上轮 2026-08-14 W，4-1 对 SV Ried",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 60,
+              "evidence": "最近已赛日 2026-08-14，赛前休息6天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
             }
           }
         },
         "hardStrength": {
-          "home": {},
-          "away": {}
+          "home": {
+            "recentForm": {
+              "score": 80,
+              "evidence": "公开赛果近5场：WWWDW，场均积分2.60、净胜球+2.60",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 63.6,
+              "evidence": "近五场中对应主场样本2场，场均积分2.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 72.08,
+              "evidence": "公开阵容总身价：€146.75m vs €48.65m",
+              "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 45.0,
+              "evidence": "公开联赛表位置：第3位 vs 第1位",
+              "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          },
+          "away": {
+            "recentForm": {
+              "score": 80,
+              "evidence": "公开赛果近5场：WWWWW，场均积分3.00、净胜球+3.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 78,
+              "evidence": "近五场中对应客场样本2场，场均积分3.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 27.92,
+              "evidence": "公开阵容总身价：€48.65m vs €146.75m",
+              "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 55.0,
+              "evidence": "公开联赛表位置：第1位 vs 第3位",
+              "source": "https://www.transfermarkt.com/celtic-glasgow/alletransfers/verein/371",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
+            }
+          }
         },
         "tacticalMatchup": {
-          "home": {},
-          "away": {}
+          "home": {
+            "styleMatchup": {
+              "score": 68.2,
+              "evidence": "近五场场均进4.00、失1.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
+            }
+          },
+          "away": {
+            "styleMatchup": {
+              "score": 70,
+              "evidence": "近五场场均进3.60、失0.20",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
+            }
+          }
         }
       },
       "apiFootball": {
@@ -1854,6 +2300,12 @@
               "evidence": "公开赛程显示NEC主场迎战欧战资格赛对手",
               "source": "NEC/public schedule",
               "analysis": "主队有主场适应优势但缺乏体能量化资料"
+            },
+            "motivation": {
+              "score": 78,
+              "evidence": "官方赛程字段：Play-offs",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+              "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
             }
           },
           "away": {
@@ -1862,12 +2314,50 @@
               "evidence": "公开报道博德闪耀提前前往荷兰备战",
               "source": "Reddit/Eredivisie",
               "analysis": "客队提前适应客场，体能准备略占优"
+            },
+            "motivation": {
+              "score": 78,
+              "evidence": "官方赛程字段：Play-offs",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+              "analysis": "赛事阶段确认带来基础战意；只有存在保级/争冠积分证据时才额外拉开双方差距"
+            },
+            "lastResult": {
+              "score": 35,
+              "evidence": "上轮 2024-10-27 L，1-3 对 Harstad",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
             }
           }
         },
         "hardStrength": {
-          "home": {},
-          "away": {}
+          "home": {
+            "squadValue": {
+              "score": 42.37,
+              "evidence": "公开阵容总身价：€56.38m vs €82.55m",
+              "source": "https://www.transfermarkt.com/bodo-glimt/startseite/verein/501/sort/marketValueRaw.desc",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            }
+          },
+          "away": {
+            "recentForm": {
+              "score": 30,
+              "evidence": "公开赛果近5场：LLLLL，场均积分0.00、净胜球-3.20",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "venueAttribute": {
+              "score": 32,
+              "evidence": "近五场中对应客场样本2场，场均积分0.00",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "主队取主场样本、客队取客场样本，避免用总战绩替代主客表现"
+            },
+            "squadValue": {
+              "score": 57.63,
+              "evidence": "公开阵容总身价：€82.55m vs €56.38m",
+              "source": "https://www.transfermarkt.com/bodo-glimt/startseite/verein/501/sort/marketValueRaw.desc",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            }
+          }
         },
         "tacticalMatchup": {
           "home": {
@@ -1884,6 +2374,12 @@
               "evidence": "API-Football伤停记录 4 人：H. Evjen、A. Mikkelsen、I. Sjong、J. Gundersen",
               "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
               "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            },
+            "styleMatchup": {
+              "score": 35,
+              "evidence": "近五场场均进1.20、失4.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           }
         }
@@ -2140,6 +2636,24 @@
               "evidence": "斯洛万官方确认在Tehelné Pole主场进行欧冠附加赛",
               "source": "Slovan official",
               "analysis": "明确主场和欧战环境提供主场加成"
+            },
+            "recentForm": {
+              "score": 80,
+              "evidence": "公开赛果近5场：WWWWD，场均积分2.60、净胜球+2.20",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "近五场积分与净胜球量化近期状态"
+            },
+            "squadValue": {
+              "score": 67.93,
+              "evidence": "公开阵容总身价：€34.15m vs €13.93m",
+              "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 50.0,
+              "evidence": "公开联赛表位置：第1位 vs 第1位",
+              "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
             }
           },
           "away": {
@@ -2148,6 +2662,18 @@
               "evidence": "采列为客场参赛，未找到客场专项优势证据",
               "source": "Slovan official",
               "analysis": "客队客场维度保持偏中性"
+            },
+            "squadValue": {
+              "score": 32.07,
+              "evidence": "公开阵容总身价：€13.93m vs €34.15m",
+              "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+              "analysis": "以身价对数比缩放，避免大俱乐部绝对金额过度主导"
+            },
+            "leagueRanking": {
+              "score": 50.0,
+              "evidence": "公开联赛表位置：第1位 vs 第1位",
+              "source": "https://www.transfermarkt.com/slovan-bratislava/startseite/verein/540",
+              "analysis": "同一公开表的排名差仅作为实力背景，跨联赛不横向比较"
             }
           }
         },
@@ -2158,6 +2684,18 @@
               "evidence": "斯洛万官方将比赛标为欧冠附加赛",
               "source": "Slovan official",
               "analysis": "晋级目标清晰，主队战意高"
+            },
+            "lastResult": {
+              "score": 70,
+              "evidence": "上轮 2026-08-15 W，5-0 对 MFK Ruzomberok",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "上轮赛果只作短期心理修正"
+            },
+            "scheduleFitness": {
+              "score": 57,
+              "evidence": "最近已赛日 2026-08-15，赛前休息5天",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "休息天数作为体能基线，旅行与轮换单独处理"
             }
           },
           "away": {
@@ -2182,6 +2720,12 @@
               "evidence": "API-Football近2次交锋：当前主队1胜、0负",
               "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
               "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            },
+            "styleMatchup": {
+              "score": 65.4,
+              "evidence": "近五场场均进2.60、失0.40",
+              "source": "https://sportscore.com/developers/",
+              "analysis": "以近期进失球结构作攻防风格代理，不等同于阵型判断"
             }
           },
           "away": {
