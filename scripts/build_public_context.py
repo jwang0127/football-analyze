@@ -279,6 +279,51 @@ def three_layer_from_verified_data(match, fundamental, h2h):
         "evidenceMode": "verified-data-auto-mapped",
     }
 
+
+def api_three_layer(match, api_row):
+    """Convert fixture-level API-Football evidence into missing item scores."""
+    if not isinstance(api_row, dict) or api_row.get("status") != "ok":
+        return {"enabled": True}
+    teams = api_row.get("teams") or {}
+    home_id = (teams.get("home") or {}).get("id")
+    away_id = (teams.get("away") or {}).get("id")
+    injuries = api_row.get("injuries") or []
+    def availability(team_id):
+        rows = [x for x in injuries if x.get("teamId") == team_id]
+        score = max(35, 68 - len(rows) * 5)
+        names = "、".join(str(x.get("player")) for x in rows[:5]) or "无API伤停记录"
+        return {"score": score, "evidence": f"API-Football伤停记录 {len(rows)} 人：{names}", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"}
+    h2h_rows = api_row.get("h2h") or []
+    home_wins = home_losses = 0
+    for row in h2h_rows:
+        if row.get("home") == (teams.get("home") or {}).get("name"):
+            hg, ag = row.get("homeGoals"), row.get("awayGoals")
+        else:
+            hg, ag = row.get("awayGoals"), row.get("homeGoals")
+        if hg is not None and ag is not None:
+            home_wins += hg > ag
+            home_losses += hg < ag
+    total = home_wins + home_losses + sum(1 for row in h2h_rows if row.get("homeGoals") == row.get("awayGoals"))
+    h2h = {}
+    if total:
+        home_score = round(50 + (home_wins - home_losses) * 45 / total, 2)
+        h2h = {
+            "home": {"score": home_score, "evidence": f"API-Football近{total}次交锋：当前主队{home_wins}胜、{home_losses}负", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"},
+            "away": {"score": round(100 - home_score, 2), "evidence": f"API-Football近{total}次交锋：当前客队{home_losses}胜、{home_wins}负", "source": api_row.get("sourceUrl", "API-Football"), "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"},
+        }
+    return {"enabled": True, "tacticalMatchup": {"home": {"coreAvailability": availability(home_id)}, "away": {"coreAvailability": availability(away_id)}, **({"home": {"coreAvailability": availability(home_id), "headToHead": h2h["home"]}, "away": {"coreAvailability": availability(away_id), "headToHead": h2h["away"]}} if h2h else {})}}
+
+
+def merge_three_layer(primary, supplement):
+    result = json.loads(json.dumps(primary or {"enabled": True}, ensure_ascii=False))
+    result["enabled"] = True
+    for layer in ("hardStrength", "tacticalMatchup", "psychologicalState"):
+        for side in ("home", "away"):
+            target = result.setdefault(layer, {}).setdefault(side, {})
+            for item, value in ((supplement.get(layer) or {}).get(side) or {}).items():
+                target.setdefault(item, value)
+    return result
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", required=True)
@@ -293,6 +338,13 @@ def main():
             external_context = read(external_context_path).get("matches", {})
         except (OSError, json.JSONDecodeError):
             external_context = {}
+    enrichment = {}
+    enrichment_path = DATA / f"match_radar_enrichment_{args.date}.json"
+    if enrichment_path.exists():
+        try:
+            enrichment = read(enrichment_path).get("matches", {})
+        except (OSError, json.JSONDecodeError):
+            enrichment = {}
     history = []
     for path in sorted(DATA.glob("sporttery_*_latest.json")) + sorted(DATA.glob("20????????.json")):
         try:
@@ -332,6 +384,7 @@ def main():
     contexts = {}
     for key, match in current.items():
         external = external_context.get(key, {})
+        api_row = enrichment.get(key, {})
         home_code, away_code = str(match.get("homeCode", "")), str(match.get("awayCode", ""))
         rows = {}
         for code in (home_code, away_code):
@@ -387,10 +440,11 @@ def main():
         # Keep manually/externally collected three-layer evidence intact.  When
         # it is absent, only retained numeric evidence is mapped automatically;
         # unknown items remain neutral inside the model.
-        if isinstance(external.get("threeLayer"), dict):
-            context["threeLayer"] = external["threeLayer"]
-        else:
-            context["threeLayer"] = three_layer_from_verified_data(match, fundamental, h2h)
+        base_three_layer = external.get("threeLayer") if isinstance(external.get("threeLayer"), dict) else three_layer_from_verified_data(match, fundamental, h2h)
+        context["threeLayer"] = merge_three_layer(base_three_layer, api_three_layer(match, api_row))
+        context["apiFootball"] = api_row
+        if api_row.get("sourceUrl"):
+            context["sources"].append({"name": "API-Football比赛、伤停与交锋", "url": api_row["sourceUrl"]})
         contexts[key] = context
     output = {"version": "public-context-v1", "generatedAt": datetime.now().isoformat(timespec="seconds"), "matches": contexts}
     (DATA / f"match_context_{args.date}.json").write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")

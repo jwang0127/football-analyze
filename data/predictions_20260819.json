@@ -731,7 +731,7 @@
     ],
     "generatedAt": "2026-08-15T12:07:01"
   },
-  "generatedAt": "2026-08-19T10:08:05",
+  "generatedAt": "2026-08-19T10:33:29",
   "oddsUpdatedAt": "",
   "matches": [
     {
@@ -1480,9 +1480,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.5682,
-        "draw": 0.2421,
-        "away": 0.1897
+        "home": 0.6131,
+        "draw": 0.2299,
+        "away": 0.157
       },
       "direction": "home",
       "directionText": "主胜",
@@ -1518,12 +1518,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.5682
+          "probability": 0.6131
         },
         {
           "key": "draw",
           "text": "平",
-          "probability": 0.2421
+          "probability": 0.2299
         }
       ],
       "goalProbabilities": {
@@ -1610,9 +1610,9 @@
         "away": 0.1507
       },
       "fundamentalProbabilities": {
-        "home": 0.5242,
-        "draw": 0.2579,
-        "away": 0.2179
+        "home": 0.6017,
+        "draw": 0.2369,
+        "away": 0.1615
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -1712,12 +1712,12 @@
           "tacticalMatchup": {
             "home": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
+              "headToHead": 72.5,
               "coreAvailability": 62.0
             },
             "away": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
+              "headToHead": 27.5,
               "coreAvailability": 48.0
             }
           },
@@ -1817,11 +1817,11 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 72.5,
+                "status": "verified",
+                "evidence": "API-Football近16次交锋：当前主队10胜、2负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1570334",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
@@ -1843,11 +1843,11 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 27.5,
+                "status": "verified",
+                "evidence": "API-Football近16次交锋：当前客队2胜、10负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1570334",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
@@ -1920,8 +1920,8 @@
             "away": 48.0
           },
           "tacticalMatchup": {
-            "home": 54.0,
-            "away": 49.33
+            "home": 61.5,
+            "away": 41.83
           },
           "psychologicalState": {
             "home": 59.33,
@@ -1929,16 +1929,16 @@
           }
         },
         "totalScores": {
-          "home": 57.33,
-          "away": 50.8
+          "home": 59.96,
+          "away": 48.17
         },
         "probabilities": {
-          "home": 0.5242,
-          "draw": 0.2579,
-          "away": 0.2179
+          "home": 0.6017,
+          "draw": 0.2369,
+          "away": 0.1615
         },
-        "dataCompleteness": 0.3,
-        "confidencePenalty": -8,
+        "dataCompleteness": 0.4,
+        "confidencePenalty": -7,
         "missingItems": [
           "hardStrength.home.squadValue",
           "hardStrength.home.recentForm",
@@ -1947,9 +1947,7 @@
           "hardStrength.away.recentForm",
           "hardStrength.away.venueAttribute",
           "tacticalMatchup.home.styleMatchup",
-          "tacticalMatchup.home.headToHead",
           "tacticalMatchup.away.styleMatchup",
-          "tacticalMatchup.away.headToHead",
           "psychologicalState.home.lastResult",
           "psychologicalState.home.scheduleFitness",
           "psychologicalState.away.lastResult",
@@ -2061,6 +2059,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://www.oddschecker.com/es/futbol/espana/primera-division/atletico-madrid-v-malaga"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1570334"
         }
       ],
       "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
@@ -2180,8 +2182,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 1.2,
-          "modelProbability": 0.5682,
-          "expectedValue": -0.3182
+          "modelProbability": 0.6131,
+          "expectedValue": -0.2643
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注1-0 / 2-1 / 3-1，半全场为平/平；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
@@ -2204,15 +2206,15 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.3898,
-        "draw": 0.2996,
-        "away": 0.3107
+        "home": 0.3355,
+        "draw": 0.3048,
+        "away": 0.3597
       },
-      "direction": "home",
-      "directionText": "主胜",
-      "mainScore": "1-0",
+      "direction": "away",
+      "directionText": "客胜",
+      "mainScore": "0-1",
       "backupScores": [
-        "2-1",
+        "1-2",
         "3-1"
       ],
       "tailRiskScores": [
@@ -2228,9 +2230,9 @@
         "1",
         "3"
       ],
-      "confidenceScore": 44,
+      "confidenceScore": 46,
       "confidence": "中低",
-      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
+      "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为客胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
       "odds": {
         "had": {
@@ -2244,14 +2246,14 @@
       },
       "directionOptions": [
         {
-          "key": "home",
-          "text": "主胜",
-          "probability": 0.3898
-        },
-        {
           "key": "away",
           "text": "客胜",
-          "probability": 0.3107
+          "probability": 0.3597
+        },
+        {
+          "key": "home",
+          "text": "主胜",
+          "probability": 0.3355
         }
       ],
       "goalProbabilities": {
@@ -2338,9 +2340,9 @@
         "away": 0.3283
       },
       "fundamentalProbabilities": {
-        "home": 0.4171,
-        "draw": 0.284,
-        "away": 0.2989
+        "home": 0.3267,
+        "draw": 0.2927,
+        "away": 0.3806
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -2352,10 +2354,10 @@
         "status": "attack/tempo/defensive-hole gate not fully supported"
       },
       "upsetAttackCapability": {
-        "favourite": "home",
-        "underdog": "away",
-        "scoringMass": 0.5231,
-        "twoGoalMass": 0.17,
+        "favourite": "away",
+        "underdog": "home",
+        "scoringMass": 0.7711,
+        "twoGoalMass": 0.4334,
         "viable": true,
         "bigViable": true
       },
@@ -2446,13 +2448,13 @@
           "tacticalMatchup": {
             "home": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "headToHead": 25.0,
+              "coreAvailability": 68.0
             },
             "away": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "headToHead": 75.0,
+              "coreAvailability": 68.0
             }
           },
           "psychologicalState": {
@@ -2551,19 +2553,19 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 25.0,
+                "status": "verified",
+                "evidence": "API-Football近9次交锋：当前主队1胜、6负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 68.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 0 人：无API伤停记录",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             },
             "away": {
@@ -2577,19 +2579,19 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 75.0,
+                "status": "verified",
+                "evidence": "API-Football近9次交锋：当前客队6胜、1负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 68.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 0 人：无API伤停记录",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             }
           },
@@ -2654,8 +2656,8 @@
             "away": 50.0
           },
           "tacticalMatchup": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 47.67,
+            "away": 64.33
           },
           "psychologicalState": {
             "home": 50.0,
@@ -2663,16 +2665,16 @@
           }
         },
         "totalScores": {
-          "home": 50.0,
-          "away": 50.0
+          "home": 49.18,
+          "away": 55.02
         },
         "probabilities": {
-          "home": 0.4171,
-          "draw": 0.284,
-          "away": 0.2989
+          "home": 0.3267,
+          "draw": 0.2927,
+          "away": 0.3806
         },
-        "dataCompleteness": 0.0,
-        "confidencePenalty": -12,
+        "dataCompleteness": 0.2,
+        "confidencePenalty": -10,
         "missingItems": [
           "hardStrength.home.leagueRanking",
           "hardStrength.home.squadValue",
@@ -2683,11 +2685,7 @@
           "hardStrength.away.recentForm",
           "hardStrength.away.venueAttribute",
           "tacticalMatchup.home.styleMatchup",
-          "tacticalMatchup.home.headToHead",
-          "tacticalMatchup.home.coreAvailability",
           "tacticalMatchup.away.styleMatchup",
-          "tacticalMatchup.away.headToHead",
-          "tacticalMatchup.away.coreAvailability",
           "psychologicalState.home.lastResult",
           "psychologicalState.home.scheduleFitness",
           "psychologicalState.home.motivation",
@@ -2714,8 +2712,8 @@
         "type": "total_goals"
       },
       "scorePrediction": {
-        "pick": "1-0",
-        "probability": 0.1611,
+        "pick": "0-1",
+        "probability": 0.0809,
         "type": "exact_score"
       },
       "goalScoreSeparation": "总进球命中与精确比分命中分开统计",
@@ -2767,6 +2765,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://as.com/futbol/internacional/tiron-de-orejas-a-palmeiras-f202608-n/"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1547765"
         }
       ],
       "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
@@ -2778,7 +2780,7 @@
         "whyLose": "未知；没有足够的球队、教练、阵容和比赛计划证据支持具体输球叙事。",
         "whyNotLose": "仅保留比分矩阵中的低比分、平局和一球差保护，不把它们宣称为已验证事实。",
         "whyDraw": "未知；平局只作为结构性保护路径，不是由赔率低赔直接推导。",
-        "decision": "主队为市场与联赛基线下的暂定方向，主比分1-0，备选2-1/3-1；证据不足，置信度下调。",
+        "decision": "客队为市场与联赛基线下的暂定方向，主比分0-1，备选1-2/3-1；证据不足，置信度下调。",
         "dimensionReport": {
           "dimensions": {
             "schedule_load": "已从历史赛果计算最近比赛与休息间隔；具体杯赛轮次、首回合比分和下一场优先级仍需官方赛程确认",
@@ -2884,13 +2886,13 @@
         {
           "market": "had",
           "marketText": "胜平负",
-          "pick": "主胜",
-          "odds": 5.05,
-          "modelProbability": 0.3898,
-          "expectedValue": 0.9685
+          "pick": "客胜",
+          "odds": 1.66,
+          "modelProbability": 0.3597,
+          "expectedValue": -0.4029
         }
       ],
-      "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注1-0 / 2-1 / 3-1，半全场为平/平；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
+      "integratedAnalysis": "结论：客胜，总进球重点2球，比分关注0-1 / 1-2 / 3-1，半全场为平/平；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",
       "analysisBasis": "竞彩赔率/比分矩阵作为市场层；排名、近况、进失球、主客场和赛程间隔作为基本面层；伤停、首发、战术和晋级动机未核验时不作硬修正。",
       "marketBasis": "官方胜平负赔率"
     },
@@ -2931,7 +2933,7 @@
         "3",
         "1"
       ],
-      "confidenceScore": 25,
+      "confidenceScore": 27,
       "confidence": "中低",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。 官方胜平负、比分、总进球和半全场赔率均未取得；方向与比分由对应赛事模型先验生成，不参与赔率价值审计或胜平负串关。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
@@ -3140,12 +3142,12 @@
             "home": {
               "styleMatchup": 50.0,
               "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "coreAvailability": 58.0
             },
             "away": {
               "styleMatchup": 50.0,
               "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "coreAvailability": 58.0
             }
           },
           "psychologicalState": {
@@ -3252,11 +3254,11 @@
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 58.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 2 人：A. Marcucci、R. Mosquera",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             },
             "away": {
@@ -3278,11 +3280,11 @@
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 58.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 2 人：W. Madrigal、P. Yazbek",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             }
           },
@@ -3347,8 +3349,8 @@
             "away": 55.0
           },
           "tacticalMatchup": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 52.67,
+            "away": 52.67
           },
           "psychologicalState": {
             "home": 51.67,
@@ -3356,16 +3358,16 @@
           }
         },
         "totalScores": {
-          "home": 50.02,
-          "away": 52.42
+          "home": 50.95,
+          "away": 53.35
         },
         "probabilities": {
           "home": 0.3767,
           "draw": 0.2936,
           "away": 0.3297
         },
-        "dataCompleteness": 0.2,
-        "confidencePenalty": -10,
+        "dataCompleteness": 0.3,
+        "confidencePenalty": -8,
         "missingItems": [
           "hardStrength.home.squadValue",
           "hardStrength.home.recentForm",
@@ -3375,10 +3377,8 @@
           "hardStrength.away.venueAttribute",
           "tacticalMatchup.home.styleMatchup",
           "tacticalMatchup.home.headToHead",
-          "tacticalMatchup.home.coreAvailability",
           "tacticalMatchup.away.styleMatchup",
           "tacticalMatchup.away.headToHead",
-          "tacticalMatchup.away.coreAvailability",
           "psychologicalState.home.lastResult",
           "psychologicalState.home.motivation",
           "psychologicalState.away.lastResult",
@@ -3488,6 +3488,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://www.oursportscentral.com/services/schedule/red-bull-new-york/t-123"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1490394"
         }
       ],
       "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
@@ -3638,9 +3642,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.4323,
-        "draw": 0.289,
-        "away": 0.2788
+        "home": 0.4038,
+        "draw": 0.2957,
+        "away": 0.3005
       },
       "direction": "home",
       "directionText": "主胜",
@@ -3659,7 +3663,7 @@
         "1",
         "3"
       ],
-      "confidenceScore": 25,
+      "confidenceScore": 27,
       "confidence": "中低",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。 官方胜平负、比分、总进球和半全场赔率均未取得；方向与比分由对应赛事模型先验生成，不参与赔率价值审计或胜平负串关。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
@@ -3673,12 +3677,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.4323
+          "probability": 0.4038
         },
         {
-          "key": "draw",
-          "text": "平",
-          "probability": 0.289
+          "key": "away",
+          "text": "客胜",
+          "probability": 0.3005
         }
       ],
       "goalProbabilities": {
@@ -3765,9 +3769,9 @@
         "away": 0.2597
       },
       "fundamentalProbabilities": {
-        "home": 0.4253,
-        "draw": 0.2821,
-        "away": 0.2926
+        "home": 0.3762,
+        "draw": 0.2937,
+        "away": 0.3301
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -3867,12 +3871,12 @@
           "tacticalMatchup": {
             "home": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
+              "headToHead": 37.5,
               "coreAvailability": 55.0
             },
             "away": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
+              "headToHead": 62.5,
               "coreAvailability": 48.0
             }
           },
@@ -3972,11 +3976,11 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 37.5,
+                "status": "verified",
+                "evidence": "API-Football近18次交锋：当前主队5胜、10负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1490400",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
@@ -3998,11 +4002,11 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 62.5,
+                "status": "verified",
+                "evidence": "API-Football近18次交锋：当前客队10胜、5负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1490400",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
@@ -4075,8 +4079,8 @@
             "away": 50.0
           },
           "tacticalMatchup": {
-            "home": 51.67,
-            "away": 49.33
+            "home": 47.5,
+            "away": 53.5
           },
           "psychologicalState": {
             "home": 54.67,
@@ -4084,16 +4088,16 @@
           }
         },
         "totalScores": {
-          "home": 51.75,
-          "away": 51.27
+          "home": 50.29,
+          "away": 52.72
         },
         "probabilities": {
-          "home": 0.4253,
-          "draw": 0.2821,
-          "away": 0.2926
+          "home": 0.3762,
+          "draw": 0.2937,
+          "away": 0.3301
         },
-        "dataCompleteness": 0.2,
-        "confidencePenalty": -10,
+        "dataCompleteness": 0.3,
+        "confidencePenalty": -8,
         "missingItems": [
           "hardStrength.home.leagueRanking",
           "hardStrength.home.squadValue",
@@ -4104,9 +4108,7 @@
           "hardStrength.away.recentForm",
           "hardStrength.away.venueAttribute",
           "tacticalMatchup.home.styleMatchup",
-          "tacticalMatchup.home.headToHead",
           "tacticalMatchup.away.styleMatchup",
-          "tacticalMatchup.away.headToHead",
           "psychologicalState.home.lastResult",
           "psychologicalState.home.scheduleFitness",
           "psychologicalState.away.lastResult",
@@ -4216,6 +4218,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://as.com/us/futbol/lafc-pone-el-freno-con-son-ante-el-riesgo-de-una-lesion-f202608-n/"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1490400"
         }
       ],
       "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
@@ -5062,9 +5068,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.4561,
-        "draw": 0.2644,
-        "away": 0.2795
+        "home": 0.4504,
+        "draw": 0.2658,
+        "away": 0.2838
       },
       "direction": "home",
       "directionText": "主胜",
@@ -5082,7 +5088,7 @@
         "3",
         "1"
       ],
-      "confidenceScore": 29,
+      "confidenceScore": 30,
       "confidence": "中低",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
@@ -5100,12 +5106,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.4561
+          "probability": 0.4504
         },
         {
           "key": "away",
           "text": "客胜",
-          "probability": 0.2795
+          "probability": 0.2838
         }
       ],
       "goalProbabilities": {
@@ -5192,9 +5198,9 @@
         "away": 0.2319
       },
       "fundamentalProbabilities": {
-        "home": 0.3975,
-        "draw": 0.2887,
-        "away": 0.3139
+        "home": 0.3877,
+        "draw": 0.291,
+        "away": 0.3213
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -5295,12 +5301,12 @@
             "home": {
               "styleMatchup": 50.0,
               "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "coreAvailability": 43.0
             },
             "away": {
               "styleMatchup": 50.0,
               "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "coreAvailability": 48.0
             }
           },
           "psychologicalState": {
@@ -5407,11 +5413,11 @@
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 43.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 5 人：Y. Moslih、K. Ogawa、S. Ouaissa、P. Sandler、P. Schuurs",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             },
             "away": {
@@ -5433,11 +5439,11 @@
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 48.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 4 人：H. Evjen、A. Mikkelsen、I. Sjong、J. Gundersen",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             }
           },
@@ -5502,8 +5508,8 @@
             "away": 50.0
           },
           "tacticalMatchup": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 47.67,
+            "away": 49.33
           },
           "psychologicalState": {
             "home": 50.67,
@@ -5511,16 +5517,16 @@
           }
         },
         "totalScores": {
-          "home": 50.17,
-          "away": 51.33
+          "home": 49.35,
+          "away": 51.1
         },
         "probabilities": {
-          "home": 0.3975,
-          "draw": 0.2887,
-          "away": 0.3139
+          "home": 0.3877,
+          "draw": 0.291,
+          "away": 0.3213
         },
-        "dataCompleteness": 0.1,
-        "confidencePenalty": -11,
+        "dataCompleteness": 0.2,
+        "confidencePenalty": -10,
         "missingItems": [
           "hardStrength.home.leagueRanking",
           "hardStrength.home.squadValue",
@@ -5532,10 +5538,8 @@
           "hardStrength.away.venueAttribute",
           "tacticalMatchup.home.styleMatchup",
           "tacticalMatchup.home.headToHead",
-          "tacticalMatchup.home.coreAvailability",
           "tacticalMatchup.away.styleMatchup",
           "tacticalMatchup.away.headToHead",
-          "tacticalMatchup.away.coreAvailability",
           "psychologicalState.home.lastResult",
           "psychologicalState.home.motivation",
           "psychologicalState.away.lastResult",
@@ -5613,6 +5617,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://www.sansabet.com/content/Documents/SansaBetLista036-2026.pdf"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1622624"
         }
       ],
       "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
@@ -5736,8 +5744,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 2.35,
-          "modelProbability": 0.4561,
-          "expectedValue": 0.0718
+          "modelProbability": 0.4504,
+          "expectedValue": 0.0584
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注2-0 / 1-0 / 3-1，半全场为平/平；已核验recent_performance、home_away、schedule_load，仅将这些已核验因素按情境层进入模型；未列出的阵容、天气和战术仍不作方向性修正。主要反向路径：未核验；保留市场反向和阵容突变路径。",
@@ -5760,9 +5768,9 @@
       "homeRank": "",
       "awayRank": "",
       "probabilities": {
-        "home": 0.5149,
-        "draw": 0.2566,
-        "away": 0.2284
+        "home": 0.5588,
+        "draw": 0.2458,
+        "away": 0.1954
       },
       "direction": "home",
       "directionText": "主胜",
@@ -5780,7 +5788,7 @@
         "3",
         "1"
       ],
-      "confidenceScore": 45,
+      "confidenceScore": 48,
       "confidence": "中低",
       "reason": "先按基本面与比赛逻辑，再用赔率检查矛盾；当前方向为主胜。",
       "context": "按官方赛程、竞彩赔率与比分矩阵交叉校准。",
@@ -5798,12 +5806,12 @@
         {
           "key": "home",
           "text": "主胜",
-          "probability": 0.5149
+          "probability": 0.5588
         },
         {
           "key": "draw",
           "text": "平",
-          "probability": 0.2566
+          "probability": 0.2458
         }
       ],
       "goalProbabilities": {
@@ -5890,9 +5898,9 @@
         "away": 0.1658
       },
       "fundamentalProbabilities": {
-        "home": 0.4501,
-        "draw": 0.2761,
-        "away": 0.2738
+        "home": 0.5257,
+        "draw": 0.2575,
+        "away": 0.2168
       },
       "fundamentalFirst": true,
       "marketContradiction": false,
@@ -5992,13 +6000,13 @@
           "tacticalMatchup": {
             "home": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "headToHead": 72.5,
+              "coreAvailability": 53.0
             },
             "away": {
               "styleMatchup": 50.0,
-              "headToHead": 50.0,
-              "coreAvailability": 50.0
+              "headToHead": 27.5,
+              "coreAvailability": 58.0
             }
           },
           "psychologicalState": {
@@ -6097,19 +6105,19 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 72.5,
+                "status": "verified",
+                "evidence": "API-Football近2次交锋：当前主队1胜、0负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 53.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 3 人：M. Kukharevych、N. Marcelli、A. Sporar",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             },
             "away": {
@@ -6123,19 +6131,19 @@
               },
               "headToHead": {
                 "label": "交锋记录",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 27.5,
+                "status": "verified",
+                "evidence": "API-Football近2次交锋：当前客队0胜、1负",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+                "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
               },
               "coreAvailability": {
                 "label": "核心伤停/可用性",
-                "score": 50.0,
-                "status": "missing_neutral",
-                "evidence": "未提供可核验资料",
-                "source": "",
-                "analysis": "缺失资料按50分中性处理，不产生方向性优势"
+                "score": 58.0,
+                "status": "verified",
+                "evidence": "API-Football伤停记录 2 人：L. Bejger、J. Pisek",
+                "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+                "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
               }
             }
           },
@@ -6200,8 +6208,8 @@
             "away": 49.5
           },
           "tacticalMatchup": {
-            "home": 50.0,
-            "away": 50.0
+            "home": 58.5,
+            "away": 45.17
           },
           "psychologicalState": {
             "home": 59.33,
@@ -6209,16 +6217,16 @@
           }
         },
         "totalScores": {
-          "home": 53.93,
-          "away": 51.97
+          "home": 56.91,
+          "away": 50.28
         },
         "probabilities": {
-          "home": 0.4501,
-          "draw": 0.2761,
-          "away": 0.2738
+          "home": 0.5257,
+          "draw": 0.2575,
+          "away": 0.2168
         },
-        "dataCompleteness": 0.2,
-        "confidencePenalty": -10,
+        "dataCompleteness": 0.4,
+        "confidencePenalty": -7,
         "missingItems": [
           "hardStrength.home.leagueRanking",
           "hardStrength.home.squadValue",
@@ -6227,11 +6235,7 @@
           "hardStrength.away.squadValue",
           "hardStrength.away.recentForm",
           "tacticalMatchup.home.styleMatchup",
-          "tacticalMatchup.home.headToHead",
-          "tacticalMatchup.home.coreAvailability",
           "tacticalMatchup.away.styleMatchup",
-          "tacticalMatchup.away.headToHead",
-          "tacticalMatchup.away.coreAvailability",
           "psychologicalState.home.lastResult",
           "psychologicalState.home.scheduleFitness",
           "psychologicalState.away.lastResult",
@@ -6309,6 +6313,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://vstupenky.skslovan.com/event/SK-SLOVAN-BRATISLAVA-vs-NK-CELJE"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1622625"
         }
       ],
       "evidenceStatus": "已接入排名、近5场进失球、主客场拆分与休息间隔；外部赛程/赛果和天气按本场匹配结果写入；伤停、首发、战术和杯赛战意仍保持证据闸门",
@@ -6428,8 +6436,8 @@
           "marketText": "胜平负",
           "pick": "主胜",
           "odds": 1.68,
-          "modelProbability": 0.5149,
-          "expectedValue": -0.135
+          "modelProbability": 0.5588,
+          "expectedValue": -0.0612
         }
       ],
       "integratedAnalysis": "结论：主胜，总进球重点2球，比分关注2-0 / 1-0 / 3-1，半全场为平/平；证据闸门未通过，当前仅使用市场/比分矩阵和联赛先验，不把未核验的球队、赛程、阵容或战术写成原因。主要反向路径：未核验；保留市场反向和阵容突变路径。",

@@ -1,6 +1,6 @@
 {
   "version": "public-context-v1",
-  "generatedAt": "2026-08-19T10:08:05",
+  "generatedAt": "2026-08-19T10:33:29",
   "matches": {
     "wed001": {
       "ranking": "安养FC 未提供；济州SK 未提供",
@@ -131,7 +131,23 @@
               "analysis": "客队交锋处于被动，分数仅反映历史维度"
             }
           }
+        },
+        "hardStrength": {
+          "home": {},
+          "away": {}
+        },
+        "psychologicalState": {
+          "home": {},
+          "away": {}
         }
+      },
+      "apiFootball": {
+        "status": "fixture_not_matched",
+        "teamAliases": [
+          "Anyang FC",
+          "Jeju SK"
+        ],
+        "sportscoreNext": {}
       }
     },
     "wed002": {
@@ -240,6 +256,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://www.oddschecker.com/es/futbol/espana/primera-division/atletico-madrid-v-malaga"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1570334"
         }
       ],
       "threeLayer": {
@@ -269,6 +289,12 @@
               "evidence": "AS报道索尔洛特因肌肉问题缺席，部分世界杯球员仍在调整",
               "source": "AS",
               "analysis": "主队有锋线缺口，但整体替补深度仍足"
+            },
+            "headToHead": {
+              "score": 72.5,
+              "evidence": "API-Football近16次交锋：当前主队10胜、2负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1570334",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
             }
           },
           "away": {
@@ -277,6 +303,12 @@
               "evidence": "AS报道马拉加卡莱罗、多托和阿德里安·尼诺缺席",
               "source": "AS",
               "analysis": "客队伤停对首轮客场作战影响更大"
+            },
+            "headToHead": {
+              "score": 27.5,
+              "evidence": "API-Football近16次交锋：当前客队2胜、10负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1570334",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
             }
           }
         },
@@ -298,6 +330,269 @@
             }
           }
         }
+      },
+      "apiFootball": {
+        "status": "ok",
+        "fixtureId": 1570334,
+        "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1570334",
+        "league": {
+          "id": 140,
+          "name": "La Liga",
+          "country": "Spain",
+          "logo": "https://media.api-sports.io/football/leagues/140.png",
+          "flag": "https://media.api-sports.io/flags/es.svg",
+          "season": 2026,
+          "round": "Regular Season - 1",
+          "standings": true
+        },
+        "round": "Regular Season - 1",
+        "season": 2026,
+        "teams": {
+          "home": {
+            "id": 530,
+            "name": "Atletico Madrid",
+            "logo": "https://media.api-sports.io/football/teams/530.png",
+            "winner": null
+          },
+          "away": {
+            "id": 535,
+            "name": "Malaga",
+            "logo": "https://media.api-sports.io/football/teams/535.png",
+            "winner": null
+          }
+        },
+        "fixture": {
+          "date": "2026-08-19T19:00:00+00:00",
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "venue": {
+            "id": null,
+            "name": "Metropolitano Stadium",
+            "city": "Madrid"
+          },
+          "referee": "A. Cordero"
+        },
+        "injuries": [
+          {
+            "teamId": 530,
+            "team": "Atletico Madrid",
+            "playerId": 6009,
+            "player": "J. Alvarez",
+            "status": "Missing Fixture",
+            "reason": "Lacking Match Fitness",
+            "position": ""
+          },
+          {
+            "teamId": 530,
+            "team": "Atletico Madrid",
+            "playerId": 8492,
+            "player": "A. Sorloth",
+            "status": "Missing Fixture",
+            "reason": "Muscle Injury",
+            "position": ""
+          },
+          {
+            "teamId": 530,
+            "team": "Atletico Madrid",
+            "playerId": 30776,
+            "player": "C. Romero",
+            "status": "Questionable",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 535,
+            "team": "Malaga",
+            "playerId": 47478,
+            "player": "F. Calero",
+            "status": "Missing Fixture",
+            "reason": "Ribs Injury",
+            "position": ""
+          },
+          {
+            "teamId": 535,
+            "team": "Malaga",
+            "playerId": 328192,
+            "player": "M. Diarra",
+            "status": "Missing Fixture",
+            "reason": "Calf Injury",
+            "position": ""
+          },
+          {
+            "teamId": 535,
+            "team": "Malaga",
+            "playerId": 182786,
+            "player": "Juanpe",
+            "status": "Missing Fixture",
+            "reason": "Muscle Injury",
+            "position": ""
+          },
+          {
+            "teamId": 535,
+            "team": "Malaga",
+            "playerId": 185234,
+            "player": "D. Murillo",
+            "status": "Missing Fixture",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 535,
+            "team": "Malaga",
+            "playerId": 386850,
+            "player": "A. Nino",
+            "status": "Missing Fixture",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 535,
+            "team": "Malaga",
+            "playerId": 444451,
+            "player": "A. Ochoa",
+            "status": "Missing Fixture",
+            "reason": "Red Card",
+            "position": ""
+          }
+        ],
+        "injuryCount": 9,
+        "injuryApiErrors": [],
+        "marketOdds": {},
+        "h2h": [
+          {
+            "date": "2017-09-16",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 1,
+            "awayGoals": 0,
+            "league": "La Liga"
+          },
+          {
+            "date": "2016-10-29",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 4,
+            "awayGoals": 2,
+            "league": "La Liga"
+          },
+          {
+            "date": "2016-04-23",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 1,
+            "awayGoals": 0,
+            "league": "La Liga"
+          },
+          {
+            "date": "2014-11-22",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 3,
+            "awayGoals": 1,
+            "league": "La Liga"
+          },
+          {
+            "date": "2014-05-11",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 1,
+            "awayGoals": 1,
+            "league": "La Liga"
+          },
+          {
+            "date": "2012-10-07",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 2,
+            "awayGoals": 1,
+            "league": "La Liga"
+          },
+          {
+            "date": "2012-05-05",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 2,
+            "awayGoals": 1,
+            "league": "La Liga"
+          },
+          {
+            "date": "2011-05-07",
+            "home": "Atletico Madrid",
+            "away": "Malaga",
+            "homeGoals": 0,
+            "awayGoals": 3,
+            "league": "La Liga"
+          },
+          {
+            "date": "2018-02-10",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 0,
+            "awayGoals": 1,
+            "league": "La Liga"
+          },
+          {
+            "date": "2017-04-01",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 0,
+            "awayGoals": 2,
+            "league": "La Liga"
+          },
+          {
+            "date": "2015-12-20",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 1,
+            "awayGoals": 0,
+            "league": "La Liga"
+          },
+          {
+            "date": "2015-04-11",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 2,
+            "awayGoals": 2,
+            "league": "La Liga"
+          },
+          {
+            "date": "2014-01-04",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 0,
+            "awayGoals": 1,
+            "league": "La Liga"
+          },
+          {
+            "date": "2013-03-03",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 0,
+            "awayGoals": 0,
+            "league": "La Liga"
+          },
+          {
+            "date": "2012-01-07",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 0,
+            "awayGoals": 0,
+            "league": "La Liga"
+          },
+          {
+            "date": "2010-12-19",
+            "home": "Malaga",
+            "away": "Atletico Madrid",
+            "homeGoals": 0,
+            "awayGoals": 3,
+            "league": "La Liga"
+          }
+        ],
+        "sportscoreNext": {}
       }
     },
     "wed003": {
@@ -408,10 +703,177 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://as.com/futbol/internacional/tiron-de-orejas-a-palmeiras-f202608-n/"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1547765"
         }
       ],
       "threeLayer": {
-        "enabled": true
+        "enabled": true,
+        "hardStrength": {
+          "home": {},
+          "away": {}
+        },
+        "tacticalMatchup": {
+          "home": {
+            "coreAvailability": {
+              "score": 68,
+              "evidence": "API-Football伤停记录 0 人：无API伤停记录",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            },
+            "headToHead": {
+              "score": 25.0,
+              "evidence": "API-Football近9次交锋：当前主队1胜、6负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            }
+          },
+          "away": {
+            "coreAvailability": {
+              "score": 68,
+              "evidence": "API-Football伤停记录 0 人：无API伤停记录",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            },
+            "headToHead": {
+              "score": 75.0,
+              "evidence": "API-Football近9次交锋：当前客队6胜、1负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1547765",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            }
+          }
+        },
+        "psychologicalState": {
+          "home": {},
+          "away": {}
+        }
+      },
+      "apiFootball": {
+        "status": "ok",
+        "fixtureId": 1547765,
+        "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1547765",
+        "league": {
+          "id": 13,
+          "name": "CONMEBOL Libertadores",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/13.png",
+          "flag": null,
+          "season": 2026,
+          "round": "Round of 16",
+          "standings": true
+        },
+        "round": "Round of 16",
+        "season": 2026,
+        "teams": {
+          "home": {
+            "id": 1176,
+            "name": "Cerro Porteno",
+            "logo": "https://media.api-sports.io/football/teams/1176.png",
+            "winner": null
+          },
+          "away": {
+            "id": 121,
+            "name": "Palmeiras",
+            "logo": "https://media.api-sports.io/football/teams/121.png",
+            "winner": null
+          }
+        },
+        "fixture": {
+          "date": "2026-08-19T22:00:00+00:00",
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "venue": {
+            "id": null,
+            "name": "Estadio General Pablo Rojas",
+            "city": null
+          },
+          "referee": "F. Tello"
+        },
+        "injuries": [],
+        "injuryCount": 0,
+        "injuryApiErrors": [],
+        "marketOdds": {},
+        "h2h": [
+          {
+            "date": "2022-06-29",
+            "home": "Cerro Porteno",
+            "away": "Palmeiras",
+            "homeGoals": 0,
+            "awayGoals": 3,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2023-05-24",
+            "home": "Cerro Porteno",
+            "away": "Palmeiras",
+            "homeGoals": 0,
+            "awayGoals": 3,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2025-05-08",
+            "home": "Cerro Porteno",
+            "away": "Palmeiras",
+            "homeGoals": 0,
+            "awayGoals": 2,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2026-04-30",
+            "home": "Cerro Porteno",
+            "away": "Palmeiras",
+            "homeGoals": 1,
+            "awayGoals": 1,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2022-07-06",
+            "home": "Palmeiras",
+            "away": "Cerro Porteno",
+            "homeGoals": 5,
+            "awayGoals": 0,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2023-04-21",
+            "home": "Palmeiras",
+            "away": "Cerro Porteno",
+            "homeGoals": 2,
+            "awayGoals": 1,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2025-04-10",
+            "home": "Palmeiras",
+            "away": "Cerro Porteno",
+            "homeGoals": 1,
+            "awayGoals": 0,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2026-05-21",
+            "home": "Palmeiras",
+            "away": "Cerro Porteno",
+            "homeGoals": 0,
+            "awayGoals": 1,
+            "league": "CONMEBOL Libertadores"
+          },
+          {
+            "date": "2026-08-12",
+            "home": "Palmeiras",
+            "away": "Cerro Porteno",
+            "homeGoals": 1,
+            "awayGoals": 1,
+            "league": "CONMEBOL Libertadores"
+          }
+        ],
+        "sportscoreNext": {}
       }
     },
     "wed004": {
@@ -516,6 +978,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://www.oursportscentral.com/services/schedule/red-bull-new-york/t-123"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1490394"
         }
       ],
       "threeLayer": {
@@ -555,7 +1021,114 @@
               "analysis": "客队体能没有明确优势"
             }
           }
+        },
+        "tacticalMatchup": {
+          "home": {
+            "coreAvailability": {
+              "score": 58,
+              "evidence": "API-Football伤停记录 2 人：A. Marcucci、R. Mosquera",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            }
+          },
+          "away": {
+            "coreAvailability": {
+              "score": 58,
+              "evidence": "API-Football伤停记录 2 人：W. Madrigal、P. Yazbek",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1490394",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            }
+          }
         }
+      },
+      "apiFootball": {
+        "status": "ok",
+        "fixtureId": 1490394,
+        "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1490394",
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "country": "USA",
+          "logo": "https://media.api-sports.io/football/leagues/253.png",
+          "flag": "https://media.api-sports.io/flags/us.svg",
+          "season": 2026,
+          "round": "Regular Season - 20",
+          "standings": true
+        },
+        "round": "Regular Season - 20",
+        "season": 2026,
+        "teams": {
+          "home": {
+            "id": 1602,
+            "name": "New York Red Bulls",
+            "logo": "https://media.api-sports.io/football/teams/1602.png",
+            "winner": null
+          },
+          "away": {
+            "id": 9569,
+            "name": "Nashville SC",
+            "logo": "https://media.api-sports.io/football/teams/9569.png",
+            "winner": null
+          }
+        },
+        "fixture": {
+          "date": "2026-08-19T23:30:00+00:00",
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "venue": {
+            "id": null,
+            "name": "Sports Illustrated Stadium",
+            "city": "Harrison"
+          },
+          "referee": null
+        },
+        "injuries": [
+          {
+            "teamId": 1602,
+            "team": "New York Red Bulls",
+            "playerId": 216421,
+            "player": "A. Marcucci",
+            "status": "Missing Fixture",
+            "reason": "Knee Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1602,
+            "team": "New York Red Bulls",
+            "playerId": 313773,
+            "player": "R. Mosquera",
+            "status": "Questionable",
+            "reason": "Thigh Injury",
+            "position": ""
+          },
+          {
+            "teamId": 9569,
+            "team": "Nashville SC",
+            "playerId": 270498,
+            "player": "W. Madrigal",
+            "status": "Questionable",
+            "reason": "Lower-Body Injury",
+            "position": ""
+          },
+          {
+            "teamId": 9569,
+            "team": "Nashville SC",
+            "playerId": 269539,
+            "player": "P. Yazbek",
+            "status": "Questionable",
+            "reason": "Muscle Injury",
+            "position": ""
+          }
+        ],
+        "injuryCount": 4,
+        "injuryApiErrors": [],
+        "marketOdds": {},
+        "h2h": [],
+        "sportscoreNext": {}
       }
     },
     "wed005": {
@@ -662,6 +1235,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://as.com/us/futbol/lafc-pone-el-freno-con-son-ante-el-riesgo-de-una-lesion-f202608-n/"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1490400"
         }
       ],
       "threeLayer": {
@@ -673,6 +1250,12 @@
               "evidence": "公开前瞻未显示科罗拉多重大核心缺席",
               "source": "365Scores",
               "analysis": "主队阵容信息不完整，保持接近中性"
+            },
+            "headToHead": {
+              "score": 37.5,
+              "evidence": "API-Football近18次交锋：当前主队5胜、10负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1490400",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
             }
           },
           "away": {
@@ -681,6 +1264,12 @@
               "evidence": "AS报道孙兴慜连续出场后存在轮休可能",
               "source": "AS",
               "analysis": "客队头号进攻点存在出场时间不确定性"
+            },
+            "headToHead": {
+              "score": 62.5,
+              "evidence": "API-Football近18次交锋：当前客队10胜、5负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1490400",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
             }
           }
         },
@@ -701,7 +1290,299 @@
               "analysis": "客队战意强但轮换风险抑制稳定性"
             }
           }
+        },
+        "hardStrength": {
+          "home": {},
+          "away": {}
         }
+      },
+      "apiFootball": {
+        "status": "ok",
+        "fixtureId": 1490400,
+        "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1490400",
+        "league": {
+          "id": 253,
+          "name": "Major League Soccer",
+          "country": "USA",
+          "logo": "https://media.api-sports.io/football/leagues/253.png",
+          "flag": "https://media.api-sports.io/flags/us.svg",
+          "season": 2026,
+          "round": "Regular Season - 20",
+          "standings": true
+        },
+        "round": "Regular Season - 20",
+        "season": 2026,
+        "teams": {
+          "home": {
+            "id": 1610,
+            "name": "Colorado Rapids",
+            "logo": "https://media.api-sports.io/football/teams/1610.png",
+            "winner": null
+          },
+          "away": {
+            "id": 1616,
+            "name": "Los Angeles FC",
+            "logo": "https://media.api-sports.io/football/teams/1616.png",
+            "winner": null
+          }
+        },
+        "fixture": {
+          "date": "2026-08-20T01:30:00+00:00",
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "venue": {
+            "id": 0,
+            "name": "Dick's Sporting Goods Park",
+            "city": "Trade City"
+          },
+          "referee": null
+        },
+        "injuries": [
+          {
+            "teamId": 1610,
+            "team": "Colorado Rapids",
+            "playerId": 73863,
+            "player": "J. Atencio",
+            "status": "Missing Fixture",
+            "reason": "Yellow Cards",
+            "position": ""
+          },
+          {
+            "teamId": 1610,
+            "team": "Colorado Rapids",
+            "playerId": 71110,
+            "player": "T. Ku-DiPietro",
+            "status": "Missing Fixture",
+            "reason": "Shoulder Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1610,
+            "team": "Colorado Rapids",
+            "playerId": 50828,
+            "player": "Z. Steffen",
+            "status": "Missing Fixture",
+            "reason": "Shoulder Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1610,
+            "team": "Colorado Rapids",
+            "playerId": 542059,
+            "player": "M. Diop",
+            "status": "Questionable",
+            "reason": "Knee Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1610,
+            "team": "Colorado Rapids",
+            "playerId": 453232,
+            "player": "K. Stewart-Baynes",
+            "status": "Questionable",
+            "reason": "Leg Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1610,
+            "team": "Colorado Rapids",
+            "playerId": 362176,
+            "player": "J. Travis",
+            "status": "Questionable",
+            "reason": "Ankle Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1616,
+            "team": "Los Angeles FC",
+            "playerId": 199404,
+            "player": "T. Hasal",
+            "status": "Missing Fixture",
+            "reason": "Arm Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1616,
+            "team": "Los Angeles FC",
+            "playerId": 356814,
+            "player": "D. Martinez",
+            "status": "Missing Fixture",
+            "reason": "Leg Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1616,
+            "team": "Los Angeles FC",
+            "playerId": 1261,
+            "player": "S. Palencia",
+            "status": "Missing Fixture",
+            "reason": "Groin Injury",
+            "position": ""
+          },
+          {
+            "teamId": 1616,
+            "team": "Los Angeles FC",
+            "playerId": 322067,
+            "player": "Igor Jesus",
+            "status": "Questionable",
+            "reason": "Knee Injury",
+            "position": ""
+          }
+        ],
+        "injuryCount": 10,
+        "injuryApiErrors": [],
+        "marketOdds": {},
+        "h2h": [
+          {
+            "date": "2019-10-06",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 3,
+            "awayGoals": 1,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2018-08-20",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 2,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2021-05-23",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 2,
+            "awayGoals": 1,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2022-02-26",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 3,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2023-08-24",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 4,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2024-06-30",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 3,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2024-08-22",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 4,
+            "awayGoals": 0,
+            "league": "Leagues Cup"
+          },
+          {
+            "date": "2025-02-26",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 1,
+            "awayGoals": 0,
+            "league": "CONCACAF Champions League"
+          },
+          {
+            "date": "2025-07-10",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 3,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2026-04-23",
+            "home": "Los Angeles FC",
+            "away": "Colorado Rapids",
+            "homeGoals": 0,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2019-06-29",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 1,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2018-10-07",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 0,
+            "awayGoals": 3,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2021-11-07",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 5,
+            "awayGoals": 2,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2022-05-14",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 2,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2023-04-02",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 0,
+            "awayGoals": 0,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2024-03-30",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 3,
+            "awayGoals": 2,
+            "league": "Major League Soccer"
+          },
+          {
+            "date": "2025-02-19",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 2,
+            "awayGoals": 1,
+            "league": "CONCACAF Champions League"
+          },
+          {
+            "date": "2025-10-19",
+            "home": "Colorado Rapids",
+            "away": "Los Angeles FC",
+            "homeGoals": 2,
+            "awayGoals": 2,
+            "league": "Major League Soccer"
+          }
+        ],
+        "sportscoreNext": {}
       }
     },
     "wed006": {
@@ -827,7 +1708,23 @@
               "analysis": "客队同样有晋级目标"
             }
           }
+        },
+        "hardStrength": {
+          "home": {},
+          "away": {}
+        },
+        "tacticalMatchup": {
+          "home": {},
+          "away": {}
         }
+      },
+      "apiFootball": {
+        "status": "fixture_not_matched",
+        "teamAliases": [
+          "Celtic",
+          "LASK"
+        ],
+        "sportscoreNext": {}
       }
     },
     "wed007": {
@@ -942,6 +1839,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://www.sansabet.com/content/Documents/SansaBetLista036-2026.pdf"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1622624"
         }
       ],
       "threeLayer": {
@@ -963,7 +1864,163 @@
               "analysis": "客队提前适应客场，体能准备略占优"
             }
           }
+        },
+        "hardStrength": {
+          "home": {},
+          "away": {}
+        },
+        "tacticalMatchup": {
+          "home": {
+            "coreAvailability": {
+              "score": 43,
+              "evidence": "API-Football伤停记录 5 人：Y. Moslih、K. Ogawa、S. Ouaissa、P. Sandler、P. Schuurs",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            }
+          },
+          "away": {
+            "coreAvailability": {
+              "score": 48,
+              "evidence": "API-Football伤停记录 4 人：H. Evjen、A. Mikkelsen、I. Sjong、J. Gundersen",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622624",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            }
+          }
         }
+      },
+      "apiFootball": {
+        "status": "ok",
+        "fixtureId": 1622624,
+        "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1622624",
+        "league": {
+          "id": 2,
+          "name": "UEFA Champions League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/2.png",
+          "flag": null,
+          "season": 2026,
+          "round": "Play-offs",
+          "standings": false
+        },
+        "round": "Play-offs",
+        "season": 2026,
+        "teams": {
+          "home": {
+            "id": 413,
+            "name": "NEC Nijmegen",
+            "logo": "https://media.api-sports.io/football/teams/413.png",
+            "winner": null
+          },
+          "away": {
+            "id": 327,
+            "name": "Bodo/Glimt",
+            "logo": "https://media.api-sports.io/football/teams/327.png",
+            "winner": null
+          }
+        },
+        "fixture": {
+          "date": "2026-08-19T19:00:00+00:00",
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "venue": {
+            "id": null,
+            "name": "Goffertstadion",
+            "city": "Nijmegen"
+          },
+          "referee": "F. Letexier"
+        },
+        "injuries": [
+          {
+            "teamId": 413,
+            "team": "NEC Nijmegen",
+            "playerId": 528298,
+            "player": "Y. Moslih",
+            "status": "Missing Fixture",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 413,
+            "team": "NEC Nijmegen",
+            "playerId": 33289,
+            "player": "K. Ogawa",
+            "status": "Missing Fixture",
+            "reason": "Head Injury",
+            "position": ""
+          },
+          {
+            "teamId": 413,
+            "team": "NEC Nijmegen",
+            "playerId": 378864,
+            "player": "S. Ouaissa",
+            "status": "Missing Fixture",
+            "reason": "Muscle Injury",
+            "position": ""
+          },
+          {
+            "teamId": 413,
+            "team": "NEC Nijmegen",
+            "playerId": 625,
+            "player": "P. Sandler",
+            "status": "Missing Fixture",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 413,
+            "team": "NEC Nijmegen",
+            "playerId": 535,
+            "player": "P. Schuurs",
+            "status": "Missing Fixture",
+            "reason": "Knee Injury",
+            "position": ""
+          },
+          {
+            "teamId": 327,
+            "team": "Bodo/Glimt",
+            "playerId": 39065,
+            "player": "H. Evjen",
+            "status": "Missing Fixture",
+            "reason": "Knee Injury",
+            "position": ""
+          },
+          {
+            "teamId": 327,
+            "team": "Bodo/Glimt",
+            "playerId": 39360,
+            "player": "A. Mikkelsen",
+            "status": "Missing Fixture",
+            "reason": "Groin Injury",
+            "position": ""
+          },
+          {
+            "teamId": 327,
+            "team": "Bodo/Glimt",
+            "playerId": 407659,
+            "player": "I. Sjong",
+            "status": "Missing Fixture",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 327,
+            "team": "Bodo/Glimt",
+            "playerId": 39352,
+            "player": "J. Gundersen",
+            "status": "Questionable",
+            "reason": "Injury",
+            "position": ""
+          }
+        ],
+        "injuryCount": 9,
+        "injuryApiErrors": [],
+        "marketOdds": {},
+        "h2h": [],
+        "sportscoreNext": {}
       }
     },
     "wed008": {
@@ -1068,6 +2125,10 @@
         {
           "name": "外部公开赛果/赛程接口",
           "url": "https://vstupenky.skslovan.com/event/SK-SLOVAN-BRATISLAVA-vs-NK-CELJE"
+        },
+        {
+          "name": "API-Football比赛、伤停与交锋",
+          "url": "https://v3.football.api-sports.io/fixtures?id=1622625"
         }
       ],
       "threeLayer": {
@@ -1107,7 +2168,152 @@
               "analysis": "客队同样有明确晋级战意"
             }
           }
+        },
+        "tacticalMatchup": {
+          "home": {
+            "coreAvailability": {
+              "score": 53,
+              "evidence": "API-Football伤停记录 3 人：M. Kukharevych、N. Marcelli、A. Sporar",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            },
+            "headToHead": {
+              "score": 72.5,
+              "evidence": "API-Football近2次交锋：当前主队1胜、0负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            }
+          },
+          "away": {
+            "coreAvailability": {
+              "score": 58,
+              "evidence": "API-Football伤停记录 2 人：L. Bejger、J. Pisek",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+              "analysis": "伤停人数越多，可用性分数越低；未区分最终首发，临场需复核"
+            },
+            "headToHead": {
+              "score": 27.5,
+              "evidence": "API-Football近2次交锋：当前客队0胜、1负",
+              "source": "https://v3.football.api-sports.io/fixtures?id=1622625",
+              "analysis": "交锋只作为战术背景，不覆盖当前阵容与状态"
+            }
+          }
         }
+      },
+      "apiFootball": {
+        "status": "ok",
+        "fixtureId": 1622625,
+        "sourceUrl": "https://v3.football.api-sports.io/fixtures?id=1622625",
+        "league": {
+          "id": 2,
+          "name": "UEFA Champions League",
+          "country": "World",
+          "logo": "https://media.api-sports.io/football/leagues/2.png",
+          "flag": null,
+          "season": 2026,
+          "round": "Play-offs",
+          "standings": false
+        },
+        "round": "Play-offs",
+        "season": 2026,
+        "teams": {
+          "home": {
+            "id": 656,
+            "name": "Slovan Bratislava",
+            "logo": "https://media.api-sports.io/football/teams/656.png",
+            "winner": null
+          },
+          "away": {
+            "id": 4360,
+            "name": "Celje",
+            "logo": "https://media.api-sports.io/football/teams/4360.png",
+            "winner": null
+          }
+        },
+        "fixture": {
+          "date": "2026-08-19T19:00:00+00:00",
+          "status": {
+            "long": "Not Started",
+            "short": "NS",
+            "elapsed": null,
+            "extra": null
+          },
+          "venue": {
+            "id": null,
+            "name": null,
+            "city": "Bratislava"
+          },
+          "referee": "F. Zwayer"
+        },
+        "injuries": [
+          {
+            "teamId": 656,
+            "team": "Slovan Bratislava",
+            "playerId": 208398,
+            "player": "M. Kukharevych",
+            "status": "Missing Fixture",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 656,
+            "team": "Slovan Bratislava",
+            "playerId": 383041,
+            "player": "N. Marcelli",
+            "status": "Missing Fixture",
+            "reason": "Injury",
+            "position": ""
+          },
+          {
+            "teamId": 656,
+            "team": "Slovan Bratislava",
+            "playerId": 56026,
+            "player": "A. Sporar",
+            "status": "Missing Fixture",
+            "reason": "Muscle Injury",
+            "position": ""
+          },
+          {
+            "teamId": 4360,
+            "team": "Celje",
+            "playerId": 163053,
+            "player": "L. Bejger",
+            "status": "Missing Fixture",
+            "reason": "Shin Injury",
+            "position": ""
+          },
+          {
+            "teamId": 4360,
+            "team": "Celje",
+            "playerId": 161587,
+            "player": "J. Pisek",
+            "status": "Missing Fixture",
+            "reason": "Knee Injury",
+            "position": ""
+          }
+        ],
+        "injuryCount": 5,
+        "injuryApiErrors": [],
+        "marketOdds": {},
+        "h2h": [
+          {
+            "date": "2024-07-30",
+            "home": "Slovan Bratislava",
+            "away": "Celje",
+            "homeGoals": 5,
+            "awayGoals": 0,
+            "league": "UEFA Champions League"
+          },
+          {
+            "date": "2024-07-24",
+            "home": "Celje",
+            "away": "Slovan Bratislava",
+            "homeGoals": 1,
+            "awayGoals": 1,
+            "league": "UEFA Champions League"
+          }
+        ],
+        "sportscoreNext": {}
       }
     }
   }

@@ -1,7 +1,7 @@
 """Fetch concrete fixture metadata and fixture-level injury records for the radar."""
 from __future__ import annotations
 import argparse, json, os, time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -50,7 +50,7 @@ def api(path: str, key: str):
     for attempt in range(4):
         req = Request("https://v3.football.api-sports.io/" + path, headers={"x-apisports-key": key, "User-Agent": "Mozilla/5.0"})
         try:
-            with urlopen(req, timeout=45) as response:
+            with urlopen(req, timeout=15) as response:
                 return json.loads(response.read())
         except HTTPError as exc:
             if exc.code != 429 or attempt == 3:
@@ -93,6 +93,7 @@ def sportscore_next(team_name: str, current_iso: str):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", required=True)
+    ap.add_argument("--fast", action="store_true", help="Skip slow squad, odds and next-fixture lookups")
     args = ap.parse_args()
     key = os.environ.get("API_FOOTBALL_KEY", "").strip().strip("'")
     if not key:
@@ -101,7 +102,9 @@ def main():
     previous_path = DATA / f"match_radar_enrichment_{args.date}.json"
     previous = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else {}
     fixtures = {}
-    for day in (args.date[:4] + "-" + args.date[4:6] + "-" + args.date[6:8],):
+    base_day = datetime.strptime(args.date, "%Y%m%d").date()
+    for day_date in (base_day, base_day + timedelta(days=1)):
+        day = day_date.isoformat()
         payload = api("fixtures?date=" + day, key)
         for item in payload.get("response", []):
             home = item.get("teams", {}).get("home", {}).get("name", "")
@@ -114,7 +117,7 @@ def main():
         if not item:
             mid = str(match.get("matchId") or match.get("id"))
             old = dict((previous.get("matches") or {}).get(mid) or {})
-            old["sportscoreNext"] = {
+            old["sportscoreNext"] = {} if args.fast else {
                 "home": sportscore_next((aliases or ["", ""])[0], ((old.get("fixture") or {}).get("date") or args.date + "T00:00:00+00:00")),
                 "away": sportscore_next((aliases or ["", ""])[1], ((old.get("fixture") or {}).get("date") or args.date + "T00:00:00+00:00")),
             }
@@ -132,7 +135,7 @@ def main():
             injuries = []
             injury_payload = {"errors": {"exception": str(exc)}}
         squad_positions = {}
-        for team_id in [item.get("teams", {}).get("home", {}).get("id"), item.get("teams", {}).get("away", {}).get("id")]:
+        for team_id in ([] if args.fast else [item.get("teams", {}).get("home", {}).get("id"), item.get("teams", {}).get("away", {}).get("id")]):
             try:
                 squad = api(f"players/squads?team={team_id}", key)
                 for player in (squad.get("response") or [{}])[0].get("players", []):
@@ -142,6 +145,8 @@ def main():
         for injury in injuries:
             injury["position"] = squad_positions.get(str(injury.get("playerId")), "")
         try:
+            if args.fast:
+                raise RuntimeError("skipped in fast mode")
             odds_payload = api(f"odds?fixture={fid}", key)
             bookmaker = (odds_payload.get("response") or [{}])[0].get("bookmakers", [{}])[0]
             winner = next((bet for bet in bookmaker.get("bets", []) if bet.get("name") == "Match Winner"), {})
@@ -157,7 +162,7 @@ def main():
         except Exception:
             h2h = []
         current_iso = item.get("fixture", {}).get("date") or ""
-        sportscore_fixtures = {
+        sportscore_fixtures = {} if args.fast else {
             "home": sportscore_next((item.get("teams", {}).get("home") or {}).get("name", ""), current_iso),
             "away": sportscore_next((item.get("teams", {}).get("away") or {}).get("name", ""), current_iso),
         }
